@@ -13,14 +13,12 @@ body {
   }
 
 header {
-    background-color: rgb(250, 250, 249);
     color: #333;
     text-align: center;
     padding: 20px 0;
 }
 
 nav {
-    background-color: rgb(250, 250, 249);
     text-align: center;
     padding: 10px 0px 35px 0px;
 }
@@ -39,7 +37,6 @@ nav a:hover {
 
 footer{
     color: #999;
-    background-color: rgb(250, 250, 249);
     text-align: center;
     padding: 60px 0px 10px 0px;
 }
@@ -48,7 +45,6 @@ section {
     padding: 5px 20px 10px 20px;
     margin: 5px auto;
     max-width: 800px;
-    background: rgb(250, 250, 249);
 }
 
 h1 {

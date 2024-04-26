@@ -7,7 +7,12 @@ body {
     font-size: 18px;
 }
 
-header, footer {
+::selection {
+    background: rgb(50 50 50);
+    color: white;
+  }
+
+header {
     background-color: rgb(250, 250, 249);
     color: #333;
     text-align: center;
@@ -33,13 +38,15 @@ nav a:hover {
 }
 
 footer{
-    color: #333;
+    color: #999;
+    background-color: rgb(250, 250, 249);
+    text-align: center;
+    padding: 60px 0px 10px 0px;
 }
 
 section {
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 10px 5px;
     margin: 5px auto;
-    width: 80%;
     max-width: 800px;
     background: rgb(250, 250, 249);
 }
@@ -55,7 +62,7 @@ h2 {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.80;
     font-size: 1.25rem;
 }
 
@@ -67,7 +74,6 @@ nav a:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .date {
     font-size: 1rem;
     color: #888;
-    margin-top: 5px;
 }
 .excerpt {
     color: #666;
@@ -87,3 +93,22 @@ b:hover {
 b:nth-child(2):hover { background-color: rgb(76, 150, 252); }
 b:nth-child(3):hover { background-color: rgb(222, 173, 82); }
 b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
+
+.c {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+.c:hover {
+    background-color: rgb(76, 150, 252);
+}
+
+.article-number {
+    font-size: 1.25rem; /* Smaller than the article title */
+    margin-right: 10px; /* Space between the number and the title */
+    color: #333; /* Same color as your article titles for consistency */
+}
+
+.d {
+    background-color: rgb(76, 150, 252);
+}

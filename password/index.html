@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密碼保護頁面</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<style>
+    .warning {
+    background-color: rgb(253, 223, 225); /* Pinkish background color */
+    color: rgb(255, 92, 105); /* White text for contrast and readability */
+    }
+</style>
+<body>
+    <header>
+        <h1>らおしゃん，中れ！</h1>
+    </header>
+    <nav>
+        <a href="/">本站簡介</a>
+        <a href="/character">人設存放</a>
+        <a href="/note">閒言碎語</a>
+        <a href="/contact">假人慢打</a>
+    </nav>
+    <div class="warning">
+        警告：這扇門後藏有未知的秘密。若非真正的探險者，請三思而行！
+        <br>
+    </div>
+    <section id="password-section" style="padding: 5px 20px 10px 20px; margin: 5px auto; max-width: 800px;">
+        <h2>此頁面為密碼保護頁面</h2>
+        <p>請輸入密碼</p>
+        <input type="password" id="password-input" placeholder="輸入密碼">
+        <button onclick="checkPassword()">確認</button>
+        <p id="error-message" style="color: red; display: none;">密碼錯誤，請重新輸入！</p>
+    </section>
+    <div id="content" style="display: none; padding: 5px 20px 10px 20px; margin: 5px auto; max-width: 800px;">
+        <h2>歡迎進入！</h2>
+        <p>這裡是加密後的內容區域，請享用。</p>
+    </div>
+    <footer>
+        <p style="color: #999; font-size: 1rem;">版權所有 &copy; 2024 by AibaGohan</p>
+    </footer>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password-input').value;
+            if (password == '123123') { // 將'123123'替換成你想要的密碼
+                document.getElementById('password-section').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                document.getElementById('error-message').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

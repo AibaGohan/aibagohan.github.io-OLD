@@ -73,7 +73,7 @@
 
         .button-link {
             width: 100%;
-            padding: 12px 48px 12px 48px;
+            padding: 12px 60px 12px 60px;
             background-color: rgb(83, 209, 176);
             color: #333;
             border: none;
@@ -112,8 +112,18 @@
             flex: 0 0 58%; /* Corrected to 60% */
         }
 
+        .hover-effect {
+            display: block; /* 讓 span 標籤表現得像 block 元素，這樣 margin 會正常工作 */
+            margin-bottom: 10px; /* 給上鎖內容下方增加空間 */
+        }
 
-
+        .passwordenter-button {
+            display: block; /* 確保按鈕是區塊級別元素 */
+            width: 100%; /* 讓按鈕寬度和容器一樣寬 */
+            text-align: center; /* 文字居中對齊 */
+            margin-bottom: 20px; /* 底部間距 */
+            max-width: 200px;
+        }
 
         @media (max-width: 700px) {
             #contact-container {
@@ -150,6 +160,8 @@
                 <p><strong>QQ: </strong>&nbsp;1016070674
                 <br><strong>百度貼吧: </strong>&nbsp;@相葉五月半
                 <br><strong>Discord: </strong>&nbsp;ShortIslandBoilingTea</p>
+                <h2><span class="hover-effect">上鎖內容</span></h2>
+                <a href="/password" class="passwordenter-button" style="display: block; margin-bottom: 15px;">由此進入</a>
             </section>
             <section class="contact-section" id="contact-form">
                 <h2><span class="hover-effect">聯絡站主</span></h2>

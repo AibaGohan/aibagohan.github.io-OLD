@@ -199,3 +199,17 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     border: none;
     color: white;
 }
+
+.passwordenter-button {
+    padding: 10px 50px;
+    border: 1.5px solid black;
+    color: black; /* White text */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Larger text */
+    font-weight: normal;
+}
+
+.passwordenter-button:hover {
+    background-color: rgb(147, 205, 190); /* Darker green background on hover */
+    border: 1.5px solid rgb(250, 246, 242);
+}

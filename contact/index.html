@@ -10,7 +10,7 @@
         p {
         color: #666;
         line-height: 1.75;
-        font-size: 1.20rem;
+        font-size: 1.15rem;
         }
         
         h2{
@@ -113,15 +113,20 @@
             #contact-container {
                 flex-direction: column;
                 align-items: flex-start; /* Ensures all content aligns to the left */
-                width: 91%; /* Takes full width of its container */
+                width: 100%; /* Takes full width of its container */
                 padding: 20px;
                 }
             #social-info, #contact-form {
                 width: 100%; /* Full width on smaller screens */
                 margin: 0; /* Remove any default margins */
             }
+
+            .form-group{
+                width: 87%; /* Ensure form also takes full width */
+            }
+
             form, .button-link {
-                width: 94%; /* Ensure form also takes full width */
+                width: 100%; /* Ensure form also takes full width */
                 box-sizing: border-box; /* Include padding and border in width */
             }
         }

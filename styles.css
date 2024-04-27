@@ -111,3 +111,22 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .d {
     background-color: rgb(76, 150, 252);
 }
+
+.navigation-buttons {
+    text-align: center; /* Center align the navigation buttons */
+    margin-top: 30px; /* Space above the navigation buttons */
+}
+
+.next-page-button {
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    color: black; /* White text */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Larger text */
+    font-weight: normal;
+}
+
+.next-page-button:hover {
+    background-color: rgb(245, 178, 115); /* Darker green background on hover */
+    border: none;
+}

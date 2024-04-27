@@ -41,8 +41,7 @@
         .form-group textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 1.5px solid #ccc;
             background-color: white;
             font-size: 1.15rem;
             font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
@@ -68,15 +67,14 @@
         }
 
         input:focus, textarea:focus {
-            border-color: #91cda1; /* Light green border for focus */
+            border-color: rgb(0, 207, 152); /* Light green border for focus */
         }
 
         button {
-            padding: 10px 50px 10px 50px;
-            background-color: rgb(91, 201, 171);
+            padding: 10px 40px 10px 40px;
+            background-color: rgb(83, 209, 176);
             color: black;
             border: none;
-            border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
             font-weight: 700;
@@ -118,15 +116,15 @@
             #contact-container {
                 flex-direction: column;
                 align-items: flex-start; /* Ensures all content aligns to the left */
-                width: 100%; /* Takes full width of its container */
+                width: 91%; /* Takes full width of its container */
                 padding: 20px;
                 }
             #social-info, #contact-form {
                 width: 100%; /* Full width on smaller screens */
                 margin: 0; /* Remove any default margins */
             }
-            form {
-                width: 85%; /* Ensure form also takes full width */
+            form, button {
+                width: 94%; /* Ensure form also takes full width */
                 box-sizing: border-box; /* Include padding and border in width */
             }
         }

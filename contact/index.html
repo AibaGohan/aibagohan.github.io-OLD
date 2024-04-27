@@ -32,18 +32,53 @@
             color: rgb(34, 109, 89); 
         }
 
-        label, input, textarea, button {
-            width: 100%; /* 确保填满容器宽度 */
-            box-sizing: border-box; /* 防止padding和border增加元素宽度 */
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
         }
-        input, textarea {
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            background-color: rgb(207, 231, 225); 
-            font-size: 1.15rem; /* Enlarged font size */
-            color: black;
+            background-color: white; /* Adjust the background color as needed */
+            font-size: 1.15rem;
             font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
+            outline: none; /* Removes the outline */
+        }
+
+        .form-group label {
+            position: absolute;
+            left: 10px;
+            top: 0;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            pointer-events: none; /* Allows the input to be clicked */
+            color: #666;
+            font-size: 1.15rem;
+        }
+
+        .form-group input:placeholder-shown + label,
+        .form-group textarea:placeholder-shown + label {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .form-group input:not(:placeholder-shown) + label,
+        .form-group textarea:not(:placeholder-shown) + label,
+        .form-group input:focus + label,
+        .form-group textarea:focus + label {
+            top: -10px;
+            background: white; /* Matches the input background */
+            padding: 0 5px; /* Small padding to ensure the label has a background */
+            font-size: 0.85rem; /* Smaller font size when the label is above the input */
+            color: #333;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #91cda1; /* Light green border for focus */
         }
 
         button {
@@ -55,7 +90,9 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
         }
+
         button:hover {
             background-color: rgb(43, 189, 150);
         }
@@ -131,12 +168,18 @@
                 <h2><span class="hover-effect">聯絡站主</span></h2>
                 <p>如有任何問題或建议，请使用下面的表单与我联系：</p>
                 <form action="YOUR_SERVER_ENDPOINT" method="POST">
-                    <label for="name">名字:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">聯繫方式:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">留言:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">名字</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">聯繫方式</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message">留言</label>
+                    </div>
                     <button type="submit">發送</button>
                 </form>
             </section>

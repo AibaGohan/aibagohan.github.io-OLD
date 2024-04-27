@@ -2,7 +2,7 @@ body {
     font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 251, 247);
+    background-color: rgb(250, 246, 242);
     color: #333;
     font-size: 18px;
 }
@@ -15,7 +15,7 @@ body {
 header {
     color: #333;
     text-align: center;
-    padding: 15px;
+    padding: 5px 0px 5px 0px;
 }
 
 nav {
@@ -46,7 +46,7 @@ nav a:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 footer{
     color: #999;
     text-align: center;
-    padding: 60px 0px 10px 0px;
+    padding: 55px 0px 10px 0px;
 }
 
 section {
@@ -62,6 +62,7 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
+    font-weight: 500;
 }
 
 p {

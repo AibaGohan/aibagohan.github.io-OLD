@@ -17,6 +17,17 @@
     background-color: rgb(245, 153, 160);
     color: black;
     }
+
+    .warning {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Maintain bottom margin for the warning box */
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(253, 223, 225); /* Pinkish background color */
+    color: rgb(255, 92, 105); /* White text for contrast and readability */
+    }
 </style>
 <body>
     <header>
@@ -28,21 +39,25 @@
         <a href="/note">閒言碎語</a>
         <a href="/contact">假人慢打</a>
     </nav>
-    <section id="about">
+    <div class="warning">
+        注意：手機端只做了基本適配，推薦使用電腦等大屏設備閱讀本站。
+        <br>
+    </div>
+    <section id="about" style="padding-top: 0.1px;">
         <h2><b href="#">這裡是哪裡？</b></h2>
         <p>站主用來放置從2024年開始寫的人設以及不宜在公眾平臺釋出的怪話的地方，草泥馬的百度貼吧再吞就跟你拼了。
-            <br>對不起站主的前端水平非常糞這網站能跑起來簡直就是個奇跡所以就別再靠腰本站的美觀程度了，Less is More！手機端只做了簡單適配，建議用電腦等大屏幕設備閱讀本站。</p>
+            <br>站主前端從零學起，本站能正常運行已屬不易，因此請勿苛責美觀程度，Less is More！</p>
     </section>
-    <section id="who">
+    <section id="who" style="padding-top: 0.1px;">
         <h2><b href="#">站主係邊位？</b></h2>
         <p>一年前曾是生活西化的單親二孩量子力學博士後怨婦，現在是渣爹回鄉下找的二婚艷俗小媽。135反同246反異7參加光明會。</p>
     </section>
-    <section id="contact">
+    <section id="contact" style="padding-top: 0.1px;">
         <h2><b href="#">與站主溝通</b></h2>
         <p>如果你有任何問題或建議，請點擊導航欄中的「假人慢打」獲得我的聯繫方式。如果點不開那就是尚在施工中aka我暫時還沒建。</p>
     </section>
     <footer>
-        <p style="color: #999;">版權所有 &copy; 2024 by AibaGohan</p>
+        <p style="color: #999;padding-top: -2px;">版權所有 &copy; 2024 by AibaGohan</p>
     </footer>
 </body>
 </html>

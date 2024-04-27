@@ -6,32 +6,50 @@
     <title>聯絡站主</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box; /* 确保padding和border不会影响元素实际大小 */
+
+        p {
+        color: #666;
+        line-height: 1.75;
+        font-size: 1.20rem;
         }
-        form {
-            max-width: 90vw; /* 适应视口宽度的90% */
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.60;
-            color: rgb(13, 71, 56);
-            background-color: rgb(235, 243, 241);
-            font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+        
+        h2{
+        color: black;
         }
+
+        section{
+            padding: 0px 0px 0px 0px;
+            margin: 0px auto;
+        }
+        .warning {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px; 
+            text-align: center;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgb(207, 231, 225); 
+            color: rgb(34, 109, 89); 
+        }
+
         label, input, textarea, button {
             width: 100%; /* 确保填满容器宽度 */
             box-sizing: border-box; /* 防止padding和border增加元素宽度 */
         }
         input, textarea {
-            padding: 8px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            background-color: rgb(207, 231, 225); 
+            font-size: 1.15rem; /* Enlarged font size */
+            color: black;
+            font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
         }
+
         button {
             padding: 10px;
-            background-color: rgb(147, 205, 190);
+            margin-top: 10px;
+            background-color: rgb(91, 201, 171);
             color: black;
             border: none;
             border-radius: 4px;
@@ -39,13 +57,53 @@
             font-size: 16px;
         }
         button:hover {
-            background-color: rgb(89, 138, 125);
+            background-color: rgb(43, 189, 150);
         }
-        @media (max-width: 768px) {
+        #contact-container {
+            display: flex;
+            justify-content: space-between; /* Adjusts space distribution */
+            align-items: flex-start; /* Aligns content to the top */
+            max-width: 800px;
+            width: 100%; /* Ensures it takes the full width up to 800px */
+            margin: 0 auto; /* Centers the container with no vertical margins */
+        }
+
+        .contact-section {
+            box-sizing: border-box; 
+        }
+
+        #social-info {
+            flex: 0 0 42%; /* Corrected to 40% */
+        }
+
+        #contact-form {
+            flex: 0 0 58%; /* Corrected to 60% */
+        }
+
+        form {
+            margin-top: 0; /* Removing any default margin above the form */
+            box-sizing: border-box; /* Include padding in the form’s total width */
+            color: #666;
+            font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
+        }
+
+        @media (max-width: 600px) {
+            #contact-container {
+                flex-direction: column;
+                align-items: flex-start; /* Ensures all content aligns to the left */
+                width: 100%; /* Takes full width of its container */
+                padding: 20px;
+                }
+            #social-info, #contact-form {
+                width: 100%; /* Full width on smaller screens */
+                margin: 0; /* Remove any default margins */
+            }
             form {
-                padding: 10px;
+                width: 93%; /* Ensure form also takes full width */
+                box-sizing: border-box; /* Include padding and border in width */
             }
         }
+
     </style>
 </head>
 <body>
@@ -58,27 +116,32 @@
         <a href="/note">閒言碎語</a>
         <a href="/contact">假人慢打</a>
     </nav>
+    <div class="warning">
+        注意：由於存在時區差異，站主可能無法即時回覆您的訊息。
+    </div>
     <main>
-        <section id="contact">
-            <h2><b>社交資訊</b></h2>
-            <p><strong>QQ: </strong>&nbsp;1016070674
-            <br><strong>百度貼吧: </strong>&nbsp;@相葉五月半
-            <br><strong>Discord: </strong>&nbsp;ShortIslandBoilingTea</p>
-        </section>
-        <section id="form">
-            <h2><b>聯絡站主</b></h2>
-            <p>如果你有任何問題或建议，请使用下面的表单与我联系：</p>
-            <form action="YOUR_SERVER_ENDPOINT" method="POST">
-                <label for="name">姓名：</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">电子邮件：</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">留言：</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">发送</button>
-            </form>
-        </section>
-    </main>
+        <div id="contact-container">
+            <section class="contact-section" id="social-info">
+                <h2><span class="hover-effect" style="padding-top: 0.1px;">社交資訊</span></h2>
+                <p><strong>QQ: </strong>&nbsp;1016070674
+                <br><strong>百度貼吧: </strong>&nbsp;@相葉五月半
+                <br><strong>Discord: </strong>&nbsp;ShortIslandBoilingTea</p>
+            </section>
+            <section class="contact-section" id="contact-form">
+                <h2><span class="hover-effect">聯絡站主</span></h2>
+                <p>如有任何問題或建议，请使用下面的表单与我联系：</p>
+                <form action="YOUR_SERVER_ENDPOINT" method="POST">
+                    <label for="name">名字:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">聯繫方式:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">留言:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">發送</button>
+                </form>
+            </section>
+        </div>
+    </main>       
     <footer>
         <p>版权所有 &copy; 2024 by AibaGohan</p>
     </footer>

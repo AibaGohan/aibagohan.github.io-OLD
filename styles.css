@@ -177,6 +177,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .next-page-button {
     padding: 10px 35px;
     border: 1.5px solid black;
+    border-radius: 25px;
     color: black; /* White text */
     text-decoration: none; /* No underline */
     font-size: 18px; /* Larger text */

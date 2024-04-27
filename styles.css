@@ -91,7 +91,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .c {
     color: black;
-    font-weight: normal;
+    font-weight: 500;
     text-decoration: none;
 }
 .c:hover {

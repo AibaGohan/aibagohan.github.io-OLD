@@ -112,21 +112,77 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     background-color: rgb(76, 150, 252);
 }
 
+.notes-container {
+    column-count: 2; /* 分成两列 */
+    column-gap: 20px; /* 列之间的间隔 */
+    max-width: 1024px;
+    margin: auto;
+    padding: 0px 15px 0px 15px; /* 添加内边距 */
+    }
+
+.note {
+    background-color: #fff;
+    break-inside: avoid; /* 防止note被分割到两列 */
+    margin-bottom: 20px; /* 仅设置底部间距 */
+    padding: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    border: 1.5px solid #b3b3b3; /* 添加浅灰色边框 */
+}
+
+.note h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.note p {
+    font-size: 17.5px;
+    color: #666;
+}
+
+.page-navigation {
+    text-align: center; /* Center the navigation links */
+    margin: 20px auto; /* Space above the navigation bar */
+}
+
 .navigation-buttons {
     text-align: center; /* Center align the navigation buttons */
     margin-top: 30px; /* Space above the navigation buttons */
 }
 
+.page-link{
+    padding: 8px 15px;
+    border: 1.5px solid black;
+    color: black; /* White text */
+    text-decoration: none; /* No underline */
+    font-size: 14px; /* Larger text */
+    font-weight: normal;
+    margin-left: 5px;
+    margin-right: 5px; 
+    border-radius: 25px;
+}
+
 .next-page-button {
-    padding: 10px 20px;
+    padding: 10px 35px;
     border: 1.5px solid black;
     color: black; /* White text */
     text-decoration: none; /* No underline */
     font-size: 18px; /* Larger text */
     font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.next-page-button:hover {
+.next-page-button:hover, .page-link:hover {
     background-color: rgb(245, 178, 115); /* Darker green background on hover */
+    border: 1.5px solid rgb(250, 246, 242);
+}
+
+.page-link.active {
+    background-color: #acacac; /* Dark grey background for current page */
+    cursor: default; /* Default cursor to indicate non-clickability */
+    pointer-events: none; /* Prevents clicking on the link */
     border: none;
+    color: white;
 }

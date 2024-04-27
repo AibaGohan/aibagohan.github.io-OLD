@@ -6,7 +6,9 @@
     <title>聯絡站主</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
-
+        * {
+            box-sizing: border-box; /* Includes padding and borders in the element's total width */
+        }
         p {
         color: #666;
         line-height: 1.75;
@@ -30,6 +32,7 @@
         .form-group {
             position: relative;
             margin-bottom: 25px;
+            max-width: 464px;
         }
 
         .form-group input,
@@ -41,6 +44,7 @@
             font-size: 1.15rem;
             font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
             outline: none;
+            max-width: 464px;
         }
 
         .form-group label {
@@ -52,6 +56,7 @@
             font-size: 1.15rem;
             transition: opacity 0.3s ease-out;
             pointer-events: none;
+            max-width: 464px;
         }
 
         input:focus + label,
@@ -66,7 +71,8 @@
         }
 
         .button-link {
-            padding: 10px 40px 10px 40px;
+            width: 100%;
+            padding: 12px 48px 12px 48px;
             background-color: rgb(83, 209, 176);
             color: #333;
             border: none;
@@ -75,6 +81,7 @@
             font-weight: 700;
             font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
             text-decoration: none;
+            max-width: 464px;
         }
 
         .button-link:hover {
@@ -86,11 +93,14 @@
             align-items: flex-start; /* Aligns content to the top */
             max-width: 800px;
             width: 100%; /* Ensures it takes the full width up to 800px */
+            margin-top: 0px;
+            padding-top: 0px;
             margin: 0 auto; /* Centers the container with no vertical margins */
         }
 
         .contact-section {
             box-sizing: border-box; 
+            max-width: 464px;
         }
 
         #social-info {
@@ -104,28 +114,17 @@
 
 
 
-        @media (max-width: 770px) {
+        @media (max-width: 700px) {
             #contact-container {
                 flex-direction: column;
                 align-items: flex-start; /* Ensures all content aligns to the left */
                 width: 100%; /* Takes full width of its container */
-                padding: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
                 }
             #social-info, #contact-form {
                 width: 100%; /* Full width on smaller screens */
                 margin: 0; /* Remove any default margins */
-            }
-
-            .form-group{
-                width: 87%; /* Ensure form also takes full width */
-            }
-
-            form, .button-link {
-                width: 80%; /* Ensure form also takes full width */
-                box-sizing: border-box; /* Include padding and border in width */
-            }
-            .contact-section{
-                width: 80%; /* Ensure form also takes full width */
             }
         }
 
@@ -144,7 +143,6 @@
     <div class="warning">
         注意：由於存在時區差異，站主可能無法即時回覆您的訊息。
     </div>
-    <main>
         <div id="contact-container">
             <section class="contact-section" id="social-info">
                 <h2><span class="hover-effect" style="padding-top: 0.1px;">社交資訊</span></h2>
@@ -170,7 +168,7 @@
                 <a href="/underconstruction/underconstructiongreen.html" class="button-link">SEND</a>
             </section>            
         </div>
-    </main>       
+        <br>
     <footer>
         <p style="color: #999; font-size: 1rem;">版權所有 &copy; 2024 by AibaGohan</p>
     </footer>

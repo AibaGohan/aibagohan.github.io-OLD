@@ -112,6 +112,16 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     background-color: rgb(76, 150, 252);
 }
 
+.warning {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* 保持警告框底部间隔 */
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
 .notes-container {
     column-count: 2; /* 分成两列 */
     column-gap: 20px; /* 列之间的间隔 */

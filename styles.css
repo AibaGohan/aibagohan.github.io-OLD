@@ -80,12 +80,12 @@ p {
     font-size: 1.25rem;
     margin-top: 5px;
 }
-b {
+.b {
     color: #333;
     font-weight: 600;
     text-decoration: none;
 }
-b:hover {
+.b:hover {
     background-color: rgb(245, 153, 160);
 }
 

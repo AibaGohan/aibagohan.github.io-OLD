@@ -242,7 +242,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .passwordenter-button:hover {
-    background-color: rgb(147, 205, 190); /* Darker green background on hover */
+    background-color: rgb(43, 189, 150); /* Darker green background on hover */
     border: 1.5px solid rgb(250, 248, 242);
     color: black;
 }

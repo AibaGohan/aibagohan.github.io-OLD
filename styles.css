@@ -62,13 +62,13 @@ section {
 }
 
 h1 {
-    font-weight: bolder;
     font-size: 2.35rem;
+    font-weight: 800;
 }
 
 h2 {
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: 700;
     color:#333;
 }
 
@@ -88,7 +88,7 @@ p {
 }
 .b {
     color: #333;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
 }
 .b:hover {
@@ -115,6 +115,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     font-size: 1.25rem; /* Smaller than the article title */
     margin-right: 10px; /* Space between the number and the title */
     color: #333; /* Same color as your article titles for consistency */
+    font-weight: 700;
 }
 
 .d {
@@ -222,42 +223,44 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .hamburger {
-    display: none; /* 默认不显示，仅在小屏幕上显示 */
-    font-size: 24px; /* 按钮大小 */
+    display: none; /* 在大屏幕上隐藏汉堡菜单 */
+    font-size: 24px;
     background: none;
     border: none;
     cursor: pointer;
-    float: right; /* 使按钮靠右显示 */
-    margin-right: 20px; /* 右侧边距，根据需要调整 */
+    padding-right: 10px;
 }
 
-@media (max-width: 600px) {
-    .hamburger {
-        display: block; /* 在小屏幕显示按钮 */
-
+@media (max-width: 768px) {
+    header {
+        display: flex; /* 使用Flex布局 */
+        justify-content: space-between; /* 左右布局 */
+        align-items: center; /* 垂直居中 */
+        padding: 5px 10px; /* 调整内边距 */
     }
 
-    header h1 {
-        font-size: 28px; /* 缩小标题的字体大小 */
-        margin: 20px 20px 20px 20px; /* 可能需要去掉外边距 */
-        display: flex; /* 使用Flex布局 */
-        justify-content: space-between; /* 标题和按钮分散对齐 */
+    header h1{
+        font-size: 30px;
+        padding-left: 10px;
     }
 
     .warning{
         font-size: smaller;
     }
 
+    .hamburger {
+        display: block; /* 在小屏幕上显示汉堡菜单按钮 */
+    }
+
     #navbar {
         display: none; /* 默认隐藏导航栏 */
         flex-direction: column; /* 垂直排列导航项 */
         width: 100%; /* 宽度100% */
-    }
-
-    #navbar a {
-        text-align: center; /* 居中导航链接 */
-        padding: 10px; /* 增加填充 */
-        border-top: 1px solid gray; /* 添加顶部边框 */
+        position: absolute; /* 用绝对定位 */
+        top: 94px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
+        left: 0; /* 从左边界开始 */
+        background-color: rgb(250, 246, 242); /* 设置背景色与页面背景一致 */
+        z-index: 1000; /* 确保在最前面 */
     }
 
     #navbar.active {

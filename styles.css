@@ -7,10 +7,16 @@ body {
     font-size: 18px;
 }
 
+button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+  
+
 ::selection {
     background: rgb(50 50 50);
     color: white;
-  }
+}
 
 header {
     color: #333;

@@ -263,6 +263,12 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
         z-index: 1000; /* 确保在最前面 */
     }
 
+    #navbar a {
+        text-align: center; /* 居中导航链接 */
+        padding: 10px; /* 增加填充 */
+        border-top: 1px solid gray; /* 添加顶部边框 */
+    }
+
     #navbar.active {
         display: flex; /* 当菜单打开时显示 */
     }

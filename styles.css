@@ -24,6 +24,11 @@ nav {
     margin: 0;
 }
 
+nav a:active {
+    background-color: transparent; /* 取消背景颜色 */
+    color: #333; /* 维持文字颜色不变 */
+}
+
 nav a {
     color: #333;
     text-decoration: none;

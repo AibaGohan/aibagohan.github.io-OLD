@@ -33,20 +33,17 @@
 <body>
     <header>
         <h1>らおしゃん，中れ！</h1>
+        <button class="hamburger" aria-label="Open Menu">&#9776;</button>
+        <nav id="navbar"> <!-- 添加 id="navbar" -->
+            <a href="/">本站簡介</a>
+            <a href="/character">人設存放</a>
+            <a href="/note">閒言碎語</a>
+            <a href="/contact">假人慢打</a>
+        </nav>
     </header>
-    <nav>
-        <a href="/">本站簡介</a>
-        <a href="/character">人設存放</a>
-        <a href="/note">閒言碎語</a>
-        <a href="/contact">假人慢打</a>
-    </nav>
-    </header>
+    <script src="../navigation.js"></script>
     <div class="warning">
         注意：以下碎碎念可能包含敏感內容，請自行斟酌閱讀。
-    </div>
-    <div class="page-navigation">
-        <span class="page-link active">頁1</span>
-        <a href="/note/02" class="page-link">頁2</a>
     </div>
     <div class="notes-container">
         <div class="note">
@@ -176,10 +173,11 @@
 
         <!-- Add more notes here -->
     </div>
-    <div class="navigation-buttons">
-        <a href="/note/02" class="next-page-button">下一頁</a>
+    <div class="page-navigation">
+        <span class="page-link active">頁1</span>
+        <a href="/note/02" class="page-link">頁2</a>
     </div>
-    <footer>
+    <footer style="padding-top: 15px;">
         <p style="color: #999; font-size: 1rem;">版權所有 &copy; 2024 by AibaGohan</p>
     </footer>
 </body>

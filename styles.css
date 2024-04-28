@@ -75,6 +75,8 @@ h2 {
 p {
     line-height: 1.80;
     font-size: 1.25rem;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    
 }
 
 .date {
@@ -83,7 +85,7 @@ p {
 }
 .excerpt {
     color: #666;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-top: 5px;
 }
 .b {
@@ -131,6 +133,22 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 
+.tags {
+    margin: 0px; /* 在标签和标题之间添加一些间距 */
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px; /* 添加一些内边距使标签更易读 */
+    margin-right: 5px; /* 标签之间的间距 */
+    background-color: rgb(76, 150, 252); /* 背景颜色 */
+    color: #fff; /* 字体颜色 */
+    border-radius: 25px; /* 圆角边框 */
+    font-size: 0.9rem; /* 字体大小 */
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
+
 .notes-container {
     column-count: 2; /* 分成两列 */
     column-gap: 20px; /* 列之间的间隔 */
@@ -162,7 +180,8 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .page-navigation {
     text-align: center; /* Center the navigation links */
-    margin: 20px auto; /* Space above the navigation bar */
+    margin: 15px auto; /* Space above the navigation bar */
+
 }
 
 .navigation-buttons {
@@ -175,7 +194,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     border: 1.5px solid black;
     color: black; /* White text */
     text-decoration: none; /* No underline */
-    font-size: 14px; /* Larger text */
+    font-size: 16px; /* Larger text */
     font-weight: normal;
     margin-left: 5px;
     margin-right: 5px; 

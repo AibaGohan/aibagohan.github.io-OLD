@@ -30,6 +30,7 @@
             position: relative;
             margin-bottom: 25px;
             max-width: 464px;
+            font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
         }
 
         .form-group input,
@@ -39,7 +40,7 @@
             border: 1.5px solid #ccc;
             background-color: white;
             font-size: 1.15rem;
-            font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
+            font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
             outline: none;
             max-width: 464px;
         }
@@ -140,13 +141,15 @@
 <body>
     <header>
         <h1>らおしゃん，中れ！</h1>
+        <button class="hamburger" aria-label="Open Menu">&#9776;</button>
+        <nav id="navbar"> <!-- 添加 id="navbar" -->
+            <a href="/">本站簡介</a>
+            <a href="/character">人設存放</a>
+            <a href="/note">閒言碎語</a>
+            <a href="/contact">假人慢打</a>
+        </nav>
     </header>
-    <nav>
-        <a href="/">本站簡介</a>
-        <a href="/character">人設存放</a>
-        <a href="/note">閒言碎語</a>
-        <a href="/contact">假人慢打</a>
-    </nav>
+    <script src="../navigation.js"></script>
     <div class="warning">
         注意：由於存在時區差異，站主可能無法即時回覆您的訊息。
     </div>

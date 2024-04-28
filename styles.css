@@ -17,12 +17,6 @@ button {
     outline: none;
 }
 
-a, button, input[type="button"], input[type="submit"] {
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-}
-  
-
 ::selection {
     background: rgb(50 50 50);
     color: white;

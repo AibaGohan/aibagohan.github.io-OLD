@@ -7,7 +7,17 @@ body {
     font-size: 18px;
 }
 
+html body button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
 button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+a, button, input[type="button"], input[type="submit"] {
     -webkit-tap-highlight-color: transparent;
     outline: none;
 }

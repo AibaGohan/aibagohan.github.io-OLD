@@ -163,7 +163,6 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
-
 .notes-container {
     column-count: 2; /* 分成两列 */
     column-gap: 20px; /* 列之间的间隔 */
@@ -257,7 +256,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     padding-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header {
         display: flex; /* 使用Flex布局 */
         justify-content: space-between; /* 左右布局 */

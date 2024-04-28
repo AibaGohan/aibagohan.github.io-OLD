@@ -194,9 +194,8 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .page-navigation {
-    text-align: center; /* Center the navigation links */
-    margin: 15px auto; /* Space above the navigation bar */
-
+    text-align: center;
+    margin: 15px auto;
 }
 
 .navigation-buttons {
@@ -204,41 +203,34 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     margin-top: 30px; /* Space above the navigation buttons */
 }
 
-.page-link{
+.page-link {
     padding: 8px 15px;
-    border: 1.5px solid black;
-    color: black; /* White text */
-    text-decoration: none; /* No underline */
-    font-size: 16px; /* Larger text */
-    font-weight: normal;
-    margin-left: 5px;
-    margin-right: 5px; 
-    border-radius: 25px;
+    border: 1.5px solid #d3d3d3; /* Light gray border for non-active links */
+    border-radius: 25px; /* Rounded border for the active page */
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 5px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.next-page-button {
-    padding: 10px 35px;
-    border: 1.5px solid black;
-    border-radius: 25px;
-    color: black; /* White text */
-    text-decoration: none; /* No underline */
-    font-size: 18px; /* Larger text */
-    font-weight: normal;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.next-page-button:hover, .page-link:hover {
-    background-color: rgb(245, 178, 115); /* Darker green background on hover */
-    border: 1.5px solid rgb(250, 248, 242);
+.page-link:hover {
+    border-color: #FFA500; /* Orange border for hovered page link */
+    color: black; /* To ensure text color stays black */
+    border-radius: 25px; /* Rounded border on hover */
+    background-color: #FFA500;
 }
 
 .page-link.active {
-    background-color: #acacac; /* Dark grey background for current page */
-    cursor: default; /* Default cursor to indicate non-clickability */
-    pointer-events: none; /* Prevents clicking on the link */
+    padding: 8px 15px 8px 15px;
+    border: 1.5px solid #FFA500; /* Orange border for the active page link */
+    color: black;
+    border-radius: 25px; /* Rounded border for the active page */
+    pointer-events: none; /* To prevent clicking on the active page number */
+}
+
+.page-link:not(.active) {
     border: none;
-    color: white;
 }
 
 .passwordenter-button {

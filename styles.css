@@ -24,10 +24,6 @@ nav {
     margin: 0;
 }
 
-nav a:active {
-    background-color: transparent; /* 取消背景颜色 */
-    color: #333; /* 维持文字颜色不变 */
-}
 
 nav a {
     color: #333;
@@ -39,6 +35,11 @@ nav a {
 
 nav a:hover {
     background-color: rgb(245, 153, 160);
+}
+
+nav a:active {
+    background-color: transparent; /* 取消背景颜色 */
+    color: #333; /* 维持文字颜色不变 */
 }
 
 
@@ -218,4 +219,48 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     background-color: rgb(147, 205, 190); /* Darker green background on hover */
     border: 1.5px solid rgb(250, 246, 242);
     color: black;
+}
+
+.hamburger {
+    display: none; /* 默认不显示，仅在小屏幕上显示 */
+    font-size: 24px; /* 按钮大小 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right; /* 使按钮靠右显示 */
+    margin-right: 20px; /* 右侧边距，根据需要调整 */
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block; /* 在小屏幕显示按钮 */
+
+    }
+
+    header h1 {
+        font-size: 28px; /* 缩小标题的字体大小 */
+        margin: 20px 20px 20px 20px; /* 可能需要去掉外边距 */
+        display: flex; /* 使用Flex布局 */
+        justify-content: space-between; /* 标题和按钮分散对齐 */
+    }
+
+    .warning{
+        font-size: smaller;
+    }
+
+    #navbar {
+        display: none; /* 默认隐藏导航栏 */
+        flex-direction: column; /* 垂直排列导航项 */
+        width: 100%; /* 宽度100% */
+    }
+
+    #navbar a {
+        text-align: center; /* 居中导航链接 */
+        padding: 10px; /* 增加填充 */
+        border-top: 1px solid gray; /* 添加顶部边框 */
+    }
+
+    #navbar.active {
+        display: flex; /* 当菜单打开时显示 */
+    }
 }

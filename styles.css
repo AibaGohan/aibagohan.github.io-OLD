@@ -2,7 +2,7 @@ body {
     font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', 'Source Han Serif TC', serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(250, 246, 242);
+    background-color: rgb(250, 248, 242);
     color: #333;
     font-size: 18px;
 }
@@ -231,7 +231,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .next-page-button:hover, .page-link:hover {
     background-color: rgb(245, 178, 115); /* Darker green background on hover */
-    border: 1.5px solid rgb(250, 246, 242);
+    border: 1.5px solid rgb(250, 248, 242);
 }
 
 .page-link.active {
@@ -253,7 +253,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .passwordenter-button:hover {
     background-color: rgb(147, 205, 190); /* Darker green background on hover */
-    border: 1.5px solid rgb(250, 246, 242);
+    border: 1.5px solid rgb(250, 248, 242);
     color: black;
 }
 
@@ -294,7 +294,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
         position: absolute; /* 用绝对定位 */
         top: 94px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
-        background-color: rgb(250, 246, 242); /* 设置背景色与页面背景一致 */
+        background-color: rgb(250, 248, 242); /* 设置背景色与页面背景一致 */
         z-index: 1000; /* 确保在最前面 */
     }
 

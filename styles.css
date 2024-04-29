@@ -302,6 +302,11 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     background-color: rgb(43, 189, 150);
 }
 
+img {
+    max-width: 100%; /* 確保圖片不會超出其父元素的寬度 */
+    height: auto;   /* 保持圖片的原始寬高比 */
+}
+
 
 @media (max-width: 600px) {
     header {

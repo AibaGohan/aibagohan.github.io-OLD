@@ -153,7 +153,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .tag {
     display: inline-block;
-    padding: 5px 10px; /* 添加一些内边距使标签更易读 */
+    padding: 5px 12px; /* 添加一些内边距使标签更易读 */
     margin-right: 5px; /* 标签之间的间距 */
     background-color: rgb(76, 150, 252); /* 背景颜色 */
     color: #fff; /* 字体颜色 */

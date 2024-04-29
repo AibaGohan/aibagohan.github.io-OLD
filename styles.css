@@ -147,7 +147,6 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     box-sizing: border-box;
 }
 
-
 .tags {
     margin: 0px; /* 在标签和标题之间添加一些间距 */
 }

@@ -276,7 +276,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     font-size: 1.15rem;
     margin-bottom: 10px; /* 增加間隔 */
     outline: none;
-    max-width: 420px;
+    max-width: 440px;
     font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
@@ -295,7 +295,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
-    border-radius: 5px; /* 按鈕圓角 */
+    border-radius: 0px; /* 按鈕圓角 */
 }
 
 .message-board button:hover {

@@ -42,7 +42,7 @@ loadMessages(); // 初始加載留言
 var url = window.location.href;
 
 // Check if the URL ends with a slash
-if (url.endsWith('/')) {
+if (url.charAt(url.length - 1) === '/') {
     // Remove the trailing slash
     url = url.slice(0, -1);
 }

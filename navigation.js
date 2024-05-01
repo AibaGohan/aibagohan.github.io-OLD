@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var url = window.location.href;
+    if (url.endsWith('/') && url.length > 1) {
+      window.location.href = url.slice(0, -1);
+    }
+  });
+
 document.querySelector('.hamburger').addEventListener('click', function() {
     const nav = document.getElementById('navbar');
     nav.classList.toggle('active'); // 切换 'active' 类，控制显示和隐藏
@@ -36,16 +43,3 @@ function loadMessages() {
 }
 
 loadMessages(); // 初始加載留言
-
-
-// Get the current URL
-var url = window.location.href;
-
-// Check if the URL ends with a slash
-if (url.charAt(url.length - 1) === '/') {
-    // Remove the trailing slash
-    url = url.slice(0, -1);
-}
-
-// Redirect to the modified URL
-window.location.href = url;

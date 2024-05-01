@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var url = window.location.href;
+    // Ensure the URL does not end with a slash unless it's the root of the domain
+    if (url.endsWith('/') && url.length > window.location.origin.length + 1) {
+      var newUrl = url.slice(0, -1);
+      // Perform a comparison and redirect if the current URL with the slash is not the same as the new URL
+      if (window.location.href !== newUrl && window.location.href !== newUrl + '/') {
+        window.location.replace(newUrl); // Use replace to avoid history loop issues
+      }
+    }
+  });
+  
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     const nav = document.getElementById('navbar');

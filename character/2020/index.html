@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人設存放：2020 | らおしゃん，中れ！</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <style>
+        .warning {
+        background-color: rgb(209, 228, 255); /* Light blue background as previously set */
+        color: rgb(0, 89, 212); /* Text color set to the specified blue */
+        margin-bottom: 18px; /* 保持警告框底部间隔 */
+        }
+        h2{
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        .page-link {
+            transition: color 0s;
+            margin: 0 0.5px;
+            padding: 8px 12px;
+        }
+
+        .page-link:hover {
+            border-color: rgb(76, 150, 252); /* Orange border for hovered page link */
+            background-color: rgb(76, 150, 252);
+            color: white;
+        }
+
+        .page-link.active {
+            padding: 8px 15px 8px 15px;
+            border: 1.5px solid rgb(76, 150, 252); /* Orange border for the active page link */
+            color: black;
+            border-radius: 25px; /* Rounded border for the active page */
+            pointer-events: none; /* To prevent clicking on the active page number */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>らおしゃん，中れ！</h1>
+        <button class="hamburger" aria-label="Open Menu">&#9776;</button>
+        <nav id="navbar"> <!-- 添加 id="navbar" -->
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">閒言碎語</a>
+            <a href="/contact">假人慢打</a>
+        </nav>
+    </header>
+    <script src="../../navigation.js"></script>
+    <div class="warning">
+        注意：本頁內容按日期正序排序。若需查看最新內容，請滑動至底部。
+    </div>
+    <section class="article">
+        <h2><span class="article-number">1.</span> <a href="/underconstruction/underconstructionblue.html" class="c">--</a></h2>
+        <div class="date">2021年--月--日</div>
+        <div class="excerpt">-----</div>
+    </section>
+
+    <div class="page-navigation" style="margin-top: 45px;">
+        <a href="../2024" class="page-link">«</a>
+        <a href="../2021" class="page-link">2021</a>
+        <a href="#" class="page-link active">2020</a>
+        <a href="/underconstruction/underconstructionblue.html" class="page-link">2019</a>
+        <a href="/underconstruction/underconstructionblue.html" class="page-link">»</a>
+    </div>
+    <footer>
+        <p style="color: #999; font-size: 1rem;">版權所有 &copy; 2024 by AibaGohan</p>
+    </footer>
+</body>
+</html>

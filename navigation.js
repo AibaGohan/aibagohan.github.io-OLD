@@ -36,3 +36,16 @@ function loadMessages() {
 }
 
 loadMessages(); // 初始加載留言
+
+
+// Get the current URL
+var url = window.location.href;
+
+// Check if the URL ends with a slash
+if (url.endsWith('/')) {
+    // Remove the trailing slash
+    url = url.slice(0, -1);
+}
+
+// Redirect to the modified URL
+window.location.href = url;

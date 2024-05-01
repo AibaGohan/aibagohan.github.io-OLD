@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     var url = window.location.href;
-    // Check if URL ends with a slash and has more than just the domain
-    if (url.endsWith('/') && url.indexOf('/', 8) !== -1) { // Starts looking after 'http://'
-      var newUrl = url.slice(0, -1); // Remove the trailing slash
-      // Check if it's exactly the same as the current without the slash to avoid infinite redirect
-      if (window.location.href !== newUrl) {
-        window.location.href = newUrl;
+    // Ensure the URL does not end with a slash unless it's the root of the domain
+    if (url.endsWith('/') && url.length > window.location.origin.length + 1) {
+      var newUrl = url.slice(0, -1);
+      // Perform a comparison and redirect if the current URL with the slash is not the same as the new URL
+      if (window.location.href !== newUrl && window.location.href !== newUrl + '/') {
+        window.location.replace(newUrl); // Use replace to avoid history loop issues
       }
     }
   });
   
+
 document.querySelector('.hamburger').addEventListener('click', function() {
     const nav = document.getElementById('navbar');
     nav.classList.toggle('active'); // 切换 'active' 类，控制显示和隐藏

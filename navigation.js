@@ -38,14 +38,3 @@ function loadMessages() {
 }
 
 loadMessages(); // 初始加載留言
-
-document.getElementById('toggle-music').addEventListener('click', function() {
-    var audio = document.getElementById('bg-music');
-    if (audio.paused) {
-        audio.play();
-        this.textContent = 'Turn Off Music';
-    } else {
-        audio.pause();
-        this.textContent = 'Turn On Music';
-    }
-});

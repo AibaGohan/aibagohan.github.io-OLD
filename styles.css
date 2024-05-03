@@ -2,8 +2,8 @@ body {
     font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', 'Source Han Serif TC', serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(250, 248, 242);
-    color: #333;
+    background-color: #fdf9ed;
+    color: #3b392c;
     font-size: 18px;
 }
 
@@ -28,7 +28,7 @@ a, button, input[type="button"], input[type="submit"] {
 }
 
 header {
-    color: #333;
+    color: #3b392c;
     text-align: center;
     padding: 5px 0px 5px 0px;
 }
@@ -41,7 +41,7 @@ nav {
 
 
 nav a {
-    color: #333;
+    color: #3b392c;
     text-decoration: none;
     font-size: 1.20rem;
     padding: 5px 7.5px;
@@ -54,7 +54,7 @@ nav a:hover {
 
 nav a:active {
     background-color: transparent; /* 取消背景颜色 */
-    color: #333; /* 维持文字颜色不变 */
+    color: #3b392c; /* 维持文字颜色不变 */
 }
 
 
@@ -84,7 +84,7 @@ h1 {
 h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    color:#333;
+    color:#3b392c;
 }
 
 p {
@@ -105,7 +105,7 @@ p {
     line-height: 1.65;
 }
 .b {
-    color: #333;
+    color: #3b392c;
     font-weight: 700;
     text-decoration: none;
 }
@@ -120,7 +120,7 @@ b:nth-child(3):hover { background-color: rgb(222, 173, 82); }
 b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .c {
-    color: #333;
+    color: #3b392c;
     font-weight: 600;
     text-decoration: none;
 }
@@ -132,7 +132,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .article-number {
     font-size: 1.25rem; /* Smaller than the article title */
     margin-right: 10px; /* Space between the number and the title */
-    color: #333; /* Same color as your article titles for consistency */
+    color: #3b392c; /* Same color as your article titles for consistency */
     font-weight: 700;
 }
 
@@ -184,7 +184,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .note h2 {
     font-size: 22px;
-    color: #333;
+    color: #3b392c;
 }
 
 .note p {
@@ -242,7 +242,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .passwordenter-button:hover {
     background-color: rgb(43, 189, 150); /* Darker green background on hover */
-    border: 1.5px solid rgb(250, 248, 242);
+    border: 1.5px solid #fdf9ed;
     color: black;
 }
 
@@ -336,7 +336,7 @@ img {
         position: absolute; /* 用绝对定位 */
         top: 94px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
-        background-color: rgb(250, 248, 242); /* 设置背景色与页面背景一致 */
+        background-color: #fdf9ed; /* 设置背景色与页面背景一致 */
         z-index: 1000; /* 确保在最前面 */
     }
 

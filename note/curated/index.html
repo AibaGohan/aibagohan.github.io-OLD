@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關於本站、以及站主 | らおしゃん，中れ！</title>
+    <title>五胖嚴選 | らおしゃん，中れ！</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -13,9 +13,9 @@
        font-weight: bolder;
     }
     .content {
-    display: flex;
-    align-items: flex-start; /* 修改这里使内容紧贴顶部 */
-    margin-bottom: 40px;
+        display: flex;
+        align-items: flex-start; /* 修改这里使内容紧贴顶部 */
+        margin-bottom: 50px;
     }
 
     .content img {
@@ -29,10 +29,40 @@
         margin: 0px;
     }
 
+    .box-header {
+        cursor: pointer;
+        padding: 15px;
+        font-size: 1.4rem;
+        border: 1px solid #3b392c;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #000; /* 新增部分 */
+        color: #fff; /* 新增部分 */
+        font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    }
+
+    .box-header::after { /* 新增部分 */
+        content: "+"; /* 新增部分 */
+        font-size: 1.5rem; /* 新增部分 */
+    } /* 新增部分 */
+
+    .box-header.expanded::after { /* 新增部分 */
+        content: "-"; /* 新增部分 */
+    } /* 新增部分 */
+
+    .box-header.expanded { /* 新增部分 */
+        background-color: transparent; /* 新增部分 */
+        color: #3b392c; /* 新增部分 */
+    } /* 新增部分 */
+
+    .hidden {
+        display: none;
+    }
+
     p{
         margin: 0px;
     }
-
 
 
     @media (max-width: 650px) { /* 当屏幕宽度小于600px时应用以下样式 */
@@ -66,43 +96,64 @@
         </nav>
     </header>
     <script src="../../navigation.js"></script>
+    <script src="../expandable.js"></script>
     <section id="introduction">
         <h2>五胖嚴選</h2>
-        <p>本名單精心從站主近期體驗的ACG作品中挑選了部分值得一看/一聽/一玩的作品，並附上編輯評語。Enjoy
-            <br>
+        <p style="padding-bottom: 25px;">本欄目為純主觀推薦。如果講到你的心頭上，那實在榮幸之至；若出現了你討厭的作品，那就說明筆者的漫畫品味不足以與您同日而語，請不必勉強自己，點擊瀏覽器右上角的紅叉果斷退出。
         </p>
-        <p><br></p>
-        <div class="content">
-            <img src="Medalist.jpg" alt="メダリスト">
-            <div class="text">
-                <p style="margin-bottom: 15px; font-size: 1.20rem;"><b>舞冰的祈願 / メダリスト</b></p>
-                <p>雙主角花樣滑冰黑白漫畫。絕對的畫力和分镜能力能給人帶來無與倫比的沉浸感和震撼，台詞也是濃縮的雞湯震得心砰砰迴響。
-                <br>甚至還讓筆者這種花滑知識為零的徹徹底底門外漢特地跑去百科上背了一大堆術語。不過作品內的講解已經足夠用心了即使完全不了解花樣滑冰也可以放心去看。
-                <br>請大家在眼睛遭到ENGI的動畫改編污染前先來看看原作固定一下第一印象！</p>
+        <div class="box">
+            <div class="box-header">運動</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="Medalist.jpg" alt="メダリスト">
+                    <div class="text">
+                        <p style="margin-bottom: 15px; font-size: 1.20rem;"><b>舞冰的祈願 / メダリスト</b></p>
+                        <p>雙主角花樣滑冰黑白漫畫。絕對的畫力和分镜能力能給人帶來無與倫比的沉浸感和震撼，台詞也是濃縮的雞湯震得心砰砰迴響。
+                        <br>甚至還讓筆者這種花滑知識為零的徹徹底底門外漢特地跑去百科上背了一大堆術語。不過作品內的講解已經足夠用心了即使完全不了解花樣滑冰也可以放心去看。
+                        <br>請大家在眼睛遭到ENGI的動畫改編污染前先來看看原作固定一下第一印象！</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="content">
-            <img src="MountHua.png" alt="화산귀환">
-            <div class="text">
-                <p style="margin-bottom: 15px; font-size: 1.20rem;"><b>劍尊歸來 / 화산귀환</b></p>
-                <p>近幾年大量發生的重生流武俠Webtoon條漫，華山派高手死掉轉生到100年後的故事。但這篇是Webtoon武俠分類第一，搞不好也是Naver歷年所有作品中綜合實力最高的一作。
-                <br>大工作室出品，文戲武戲以及顏藝水準都幾乎無可挑剔。有著恰到好處的光影與行雲流水般的分鏡，嚴肅與喜劇之間的平衡也把握得很出色。
-                <br>有別於市面上其他個人主義龍傲天爽漫，本作主角開局就很強卻要肩負起重振門派的重任。因為個人實力已經沒有可提升的空間了於是作者另闢蹊徑，著墨於天才的侷限性以及門派意志延續的必要性，將重點聚焦於「華山派」這個整體而非主角一人。隨著晚輩們實力逐漸提升，主角也經歷了心境上的成長。
-                <br>是少數能讓筆者體會到真正的武俠精神的韓國武俠漫畫。</p>
+        <div class="box">
+            <div class="box-header">Webtoon</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="MountHua.png" alt="화산귀환">
+                    <div class="text">
+                        <p style="margin-bottom: 15px; font-size: 1.20rem;"><b>劍尊歸來 / 화산귀환</b></p>
+                        <p>近幾年大量發生的重生流武俠Webtoon條漫，華山派高手死掉轉生到100年後的故事。但這篇是Webtoon武俠分類第一，搞不好也是Naver歷年所有作品中綜合實力最高的一作。
+                        <br>大工作室出品，文戲武戲以及顏藝水準都幾乎無可挑剔。有著恰到好處的光影與行雲流水般的分鏡，嚴肅與喜劇之間的平衡也把握得很出色。
+                        <br>有別於市面上其他個人主義龍傲天爽漫，本作主角開局就很強卻要肩負起重振門派的重任。因為個人實力已經沒有可提升的空間了於是作者另闢蹊徑，著墨於天才的侷限性以及門派意志延續的必要性，將重點聚焦於「華山派」這個整體而非主角一人。隨著晚輩們實力逐漸提升，主角也經歷了心境上的成長。
+                        <br>是少數能讓筆者體會到真正的武俠精神的韓國Webtoon漫。</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="CrazyDemon.jpg" alt="광마회귀">
+                    <div class="text">
+                        <p style="margin-bottom: 15px; font-size: 1.20rem;"><b>狂魔重生記 / 광마회귀</b></p>
+                        <p>還是重生流武俠作品，有著狂魔稱號的高手轉生的故事。和上面那部不同，這部比較吃電波，對上電波了就會覺得非常有意思，對不上會覺得主角和劇情莫名其妙。
+                        <br>故事有趣就在於，身為狂魔的主角真的有夠狂。他不僅行事張狂也毫無邏輯可言，只要想到什麼就會立刻付諸實行。對於身邊一眾常識人跟班來講，光是要試著跟上主角的腳步就已經費盡全力，更遑論追上他的思緒。
+                        <br>作品主要通過主角反覆無常的個性製造各種吐嘈與笑料來推進；看狂魔各種開掛發神經，然後配角吐槽，娛樂度極高！非常優秀的廁所讀物！</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="content">
-            <img src="CrazyDemon.jpg" alt="광마회귀">
-            <div class="text">
-                <p style="margin-bottom: 15px; font-size: 1.20rem;"><b>狂魔重生記 / 광마회귀</b></p>
-                <p>還是重生流武俠作品,有著狂魔稱號的高手轉生的故事。和上面那部不同，這部比較吃電波，對上電波了就會覺得非常有意思，對不上會覺得主角和劇情莫名其妙。
-                <br>故事有趣就在，這主角叫狂魔，也真的夠狂。他不僅行事張狂也毫無邏輯可言，只要他想到就會立刻付諸實行，對於身邊一眾常識人跟班來講，光是要試著跟上主角的腳步就已經費盡全力，更遑論追上他的思緒。
-                <br>作品主要通過主角反覆無常的個性製造各種吐嘈與笑料來推進；看狂魔各種開掛發神經，然後配角吐槽，娛樂度極高！非常優秀的廁所讀物！</p>
+        <div class="box">
+            <div class="box-header">BL</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="DiedFriend.png" alt="死んだ親友に告白された話">
+                    <div class="text">
+                        <p style="margin-bottom: 15px; font-size: 1.20rem;"><b>死去的摯友向我表白了 / 死んだ親友に告白された話</b></p>
+                        <p>去世很久的親友化身幽靈向主角告白的BL漫畫。身為死亡題材卻沒有想象中那麼沉重，非常平靜溫馨又充滿生活氣息，但回過頭來重看又有種淡淡的哀傷。
+                        <br>親近之人的離開不是一場暴雨，而是漫長的潮濕。在某個平凡的日子裡，當與那個人相關的記憶無意中被觸動時，那些共同度過的、看似微不足道但又難以忘懷的細節，就會像巨石一樣砸向心防。
+                        <br>兩個人未盡的話都用「打遊戲」來取代。既是彼此之間的聯結，也是難以宣之於口的心情。
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-        
     </section>
     <footer>
         <p style="color: #999; font-size: 1rem;">版权所有 &copy; 2024 by AibaGohan</p>

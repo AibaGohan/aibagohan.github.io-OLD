@@ -99,9 +99,12 @@
             max-width: 480px;
         }
 
-        #social-info {
-            flex: 0 0 45%; /* Corrected to 40% */
-            margin-right: 20px; /* 在這裡添加右邊距 */
+        #social-info img {
+            vertical-align: middle; /* 使圖標與文字垂直居中對齊 */
+        }
+
+        #social-info p {
+            line-height: 50px; /* 設置行高為圖標的高度以使文字垂直居中 */
         }
 
         #contact-form {
@@ -153,14 +156,14 @@
         注意：由於存在時區差異，站主可能無法即時回覆您的訊息。
     </div>
         <div id="contact-container" style="max-width: 800px;">
-            <section class="contact-section" id="social-info" style="max-width: 340px;">
+            <section class="contact-section" id="social-info" style="width: 360px;">
                 <h2><span class="hover-effect" style="padding-top: 0.1px;">社交資訊</span></h2>
                 <p style="margin-bottom: 45px;">
                     <img src="qq-icon.png" alt="QQ" /> 1016070674
                     <br>
                     <img src="tieba-icon.png" alt="百度貼吧" /> @相葉五月半
                     <br>
-                    <img src="discord-icon.png" alt="Discord" /> ShortIslandBoilingTea
+                    <img src="discord-icon.png" alt="Discord" /> @ShortIslandBoilingTea
                 </p>
             </section>
             <section class="contact-section" id="contact-form" style="max-width: 440px;">

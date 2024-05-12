@@ -350,6 +350,29 @@ img {
     height: auto;   /* 保持圖片的原始寬高比 */
 }
 
+@keyframes slide-out-slow-in {
+    0%, 8% { 
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+    12% { 
+      transform: translateX(100%); 
+      opacity: 0; 
+    }
+    18% { 
+      transform: translateX(-50%); 
+      opacity: 0; 
+    }
+    22%, 100% { 
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+  
+  .link-with-arrow:hover img {
+    animation: slide-out-slow-in 4s ease-in-out infinite;
+  }
+  
 
 @media (max-width: 600px) {
     header {

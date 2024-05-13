@@ -370,7 +370,7 @@ img {
   }
   
   .link-with-arrow:hover img {
-    animation: slide-out-slow-in 4s ease-in-out infinite;
+    animation: slide-out-slow-in 3s ease-in-out infinite;
   }
   
 

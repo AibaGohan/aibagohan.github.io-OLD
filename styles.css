@@ -98,6 +98,20 @@ p {
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
+.title-link {
+    text-align: center;
+    padding: 25px 10px;  /* 应用于整个 div，确保边框有足够的空间 */
+    border-top: 1.5px solid #3b392c;
+    border-bottom: 1.5px solid #3b392c;
+}
+
+.title-link h2 {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+
 .date {
     font-size: 1.15rem;
     color: #888;

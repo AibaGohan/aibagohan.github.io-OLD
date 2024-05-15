@@ -100,7 +100,7 @@ p {
 
 .title-link {
     text-align: center;
-    padding: 25px 10px;  /* 应用于整个 div，确保边框有足够的空间 */
+    padding: 20px 10px;  /* 应用于整个 div，确保边框有足够的空间 */
     border-top: 1.5px solid #3b392c;
     border-bottom: 1.5px solid #3b392c;
 }

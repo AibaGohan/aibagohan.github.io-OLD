@@ -377,6 +377,16 @@ img {
     max-width: 200px;
 }
 
+.date-nametag-container {
+    display: flex; /* 啟用flexbox */
+    justify-content: flex-start; /* 左對齊 */
+    align-items: center; /* 垂直居中 */
+    flex-wrap: wrap; /* 允許元素換行 */
+}
+
+.date, .nametag {
+    margin-right: 10px; /* 在元素之間添加一些間隔 */
+}
 
 @keyframes slide-out-slow-in {
     0%, 8% { 

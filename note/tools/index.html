@@ -26,41 +26,44 @@
     .buttons-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-between; /* Ensure buttons are spaced out evenly */
-        margin-bottom: 30px;
-        width: 800px;
-        margin: 0 auto; /* Center the container */
+        column-gap: 20px;
+        justify-content: flex-start; /* Align buttons to the left */
+        width: auto; /* Allow container to adjust to the content width */
+        margin: 0; /* Remove auto centering */
     }
 
-    .styled-button {
+
+    .styled-button, .styled-button-link {
+        color: #3b392c;
         background-color: #fdf9ed; /* initial color */
         border: 1px solid #3b392c;
-        padding: 15px 30px;
+        padding: 15px 0px;
         font-size: 1rem;
         cursor: pointer;
         box-shadow: 5px 5px 0 #3b392c; /* shadow effect */
         display: inline-block;
-        width: calc(50% - 20px); /* Each button takes up half of the container width minus the gap */
+        width: 388px; /* Fixed width for all buttons */
         text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline from links */
+        margin: 10px 0; /* Add margin to vertically space out buttons */
+        font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
     }
 
-    .styled-button:hover {
+    .styled-button:hover, .styled-button-link:hover {
         background-color: rgb(255, 177, 104); /* pink color on hover */
+        color: black;
+        border: 1px solid black;
+        box-shadow: 5px 5px 0 black; /* shadow effect */
     }
 
     @media (max-width: 800px) {
         .buttons-container {
-            width: 100%;
+                width: 100%;
         }
-        .styled-button {
-            width: calc(100% - 20px); /* Each button takes up full width minus the gap */
+        .styled-button, .styled-button-link {
+                width: calc(100% - 20px); /* Each button takes up full width minus the gap */
         }
     }
-
-
-
-
 
 </style>
 <body>
@@ -79,38 +82,28 @@
         <div class="title-link">
             <h2>龍的寶庫</h2>
         </div>
-
         <div class="section">
-            <h3>人名生成</h3>
-            <p>隨機生成角色人名或查詢人名典故的一些站點。</p>
-            <div class="buttons-container">
-                <button class="styled-button">十年之约</button>
+            <h3>起名工具</h3>
+            <p>隨機生成角色人名或查詢人名典故。</p>
+            <div class="buttons-container" style="margin-bottom: 60px;">
+                <a href="https://www.behindthename.com/" class="styled-button-link" target="_blank">Behind the Name</a>
+                <a href="https://www.behindthename.com/random/" class="styled-button-link" target="_blank">BTN: Random Name Generator</a>
+                <a href="https://blog.reedsy.com/character-name-generator/language/" class="styled-button-link" target="_blank">Language Name Generators</a>
+                <a href="https://www.fantasynamegenerators.com/" class="styled-button-link" target="_blank">Fantasy Name Generators</a>
+                <a href="http://www.hipenpal.com/tool/japanese-names-make-my-japanese-name-in-traditional-chinese.php" class="styled-button-link" target="_blank">Hi!Penpal! 日文起名</a>
+                <a href="https://www.qmsjmfb.com/jp.php" class="styled-button-link" target="_blank">日文网名在线生成器</a>
+                <a href="https://www.qmsjmfb.com/" class="styled-button-link" target="_blank">中文网名在线生成器</a>
+                <a href="https://hetu.dev/random-names/" class="styled-button-link" target="_blank">仙侠小说专有名词随机生成器</a>
             </div>
         </div>
-
         <div class="section">
-            <h3>博客相关</h3>
-            <p>这些链接与博客和记录有关。</p>
-            <div class="buttons-container">
-                <button class="styled-button">博客志</button>
-                <button class="styled-button">博客录</button>
-            </div>
-        </div>
-
-        <div class="section">
-            <h3>站点服务</h3>
-            <p>这些是站点内提供的服务和工具。</p>
-            <div class="buttons-container">
-                <button class="styled-button">个站商店</button>
-                <button class="styled-button">BlogFinder</button>
-            </div>
-        </div>
-
-        <div class="section">
-            <h3>其他</h3>
-            <p>其他有趣的链接和内容。</p>
-            <div class="buttons-container">
-                <button class="styled-button">积薪</button>
+            <h3>靈感生成</h3>
+            <p>靈感生成角子機。沒想法剋星。</p>
+            <div class="buttons-container" style="margin-bottom: 60px;">
+                <a href="http://slot.miario.com/machines/162454" class="styled-button-link" target="_blank">靈感產生器</a>
+                <a href="https://bi.guhub.cn/" class="styled-button-link" target="_blank">怪奇灵感生成器</a>
+                <a href="https://www.qqxiuzi.cn/zh/suiji-hanzi/" class="styled-button-link" target="_blank">随机汉字词语生成器</a>
+                <a href="https://wtf.hiigara.net/t/OAZI0N/412414" class="styled-button-link" target="_blank">遗失的灵感</a>
             </div>
         </div>
     </section>

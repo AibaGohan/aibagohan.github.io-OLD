@@ -350,6 +350,34 @@ img {
     height: auto;   /* 保持圖片的原始寬高比 */
 }
 
+.button-link {
+    width: 100%;
+    padding: 12px 60px 12px 60px;
+    background-color: rgb(83, 209, 176);
+    color: #3b392c;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Source Han Serif SC', 'Source Han Serif Japanese', '宋体', '新宋体', serif;
+    text-decoration: none;
+    max-width: 440px;
+}
+
+.button-link:hover {
+    background-color: rgb(43, 189, 150);
+}
+
+
+.passwordenter-button {
+    display: block; /* 確保按鈕是區塊級別元素 */
+    width: 100%; /* 讓按鈕寬度和容器一樣寬 */
+    text-align: center; /* 文字居中對齊 */
+    margin-bottom: 20px; /* 底部間距 */
+    max-width: 200px;
+}
+
+
 @keyframes slide-out-slow-in {
     0%, 8% { 
       transform: translateX(0); 

@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關於本站、以及站主 | らおしゃん，中れ！</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/png" href="../favicon.svg">
+    <title>龍的寶庫 | らおしゃん，中れ！</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="../../favicon.svg">
 </head>
 <style>
     h2{
        color:#3b392c;
        font-weight: bolder;
     }
+
+    h3{
+        margin-bottom: 0px;
+    }
+
+    p{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color:#666;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between; /* Ensure buttons are spaced out evenly */
+        margin-bottom: 30px;
+        width: 800px;
+        margin: 0 auto; /* Center the container */
+    }
+
+    .styled-button {
+        background-color: #fdf9ed; /* initial color */
+        border: 1px solid #3b392c;
+        padding: 15px 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 5px 5px 0 #3b392c; /* shadow effect */
+        display: inline-block;
+        width: calc(50% - 20px); /* Each button takes up half of the container width minus the gap */
+        text-align: center; /* Center text */
+    }
+
+    .styled-button:hover {
+        background-color: rgb(255, 177, 104); /* pink color on hover */
+    }
+
+    @media (max-width: 800px) {
+        .buttons-container {
+            width: 100%;
+        }
+        .styled-button {
+            width: calc(100% - 20px); /* Each button takes up full width minus the gap */
+        }
+    }
+
+
+
+
+
 </style>
 <body>
     <header>
@@ -24,25 +74,45 @@
             <a href="/contact">假人慢打</a>
         </nav>
     </header>
-    <script src="../navigation.js"></script>
+    <script src="../../navigation.js"></script>
     <section id="introduction">
         <div class="title-link">
-            <h2>關於本站、以及站主</h2>
+            <h2>龍的寶庫</h2>
         </div>
-        <p>早安、午安和晚安，親愛的來訪者。
-            <br>不論你身處何地，歡迎來到這片自留地，漂浮在故土和異域之間的小小浮島。
-            <br>我想你應該知道我是誰，否則你又是怎麼來到這個地方的？</p>
-        <p>雖然本站首頁的文字風格很辛辣，但自介環節我想一反常態寫得稍微正式一點。不知道從哪裡開始比較好，我平時嘴很碎，可一旦到了自介環節就感覺無從下手。</p>
-        <p>本站是純中文頁面，主要用來存放一些文字想法以及過往在貼吧寫過的人設。寫人設的初衷其實是為了給自己找個理由鍛鍊中文寫作。從國3開始就一直住在加拿大，滿打滿算也有七年了，這期間一直生活在一個以英語為主的環境中，每天四分之三的時間都無法使用中文，母語寫作能力更是退化得非常迅速，只能通過咔咔寫人設的方式逼自己去拿中文組織語言。</p>
-        <p>站主是個十年如一日的純血二刺螈傻卵，個人愛好廣泛但幾乎都能歸類為Japanese Weeb Shit；本人也常自我調侃說同齡人都陸續過上了拍拖甚至結婚的生活，而我卻還在研究毛絨絨、二刺螈、見證和野球。
-        </p>
-        <p>並沒有什麼用的個人情報暫且打住，這個頁面也許還是該談本站。</p>
-        <p>在各種愛好中虛度光陰的時候，我總有些說點什麼的衝動，但遍歷各種中文平台卻好像找不到一個合適且沒有過於嚴苛的審查、能讓我停下來理清思緒慢慢發長文的地方。直到我回想起某個朋友的至理名言：「沒有的話自己做一個不就好了嗎！」——於是，我搭建了這個座浮島。它的面積足以讓我鋪開一地陳年往事慢慢整理，沒有聒噪的條條框框限制，也沒有繁瑣的審查與屏蔽詞制度，完全歸我所有。懸停在空中的浮島脫離了地面上既有的社交關係，也許只有樂意攀上雲層的好事者才會造訪了。不過這也不壞。既然你真的到了這島上來，我們就來共享一壺高山冬茶吧。
-        </p>
-        <p>我剛剛才當上浮島的主人，還沒想好要怎麼建造它。我想這裡除了人設堆放外大概還會出現和我所有的愛好相關的自言自語，我漫無目的的種種空想，可能還會順帶堆一堆我覺得很重要卻又找不到地方存放的材料。如果你看到了它們覺得很愉快，可以用私訊和留言的方式告訴我——如果有這樣的一天，我一定也會很開心。</p>
-        <p>介紹大概就寫這麼多，夜晚已經很深了。來訪者，如果你還沒興盡離去，可以隨便找地方坐下，我會慢慢開始講故事。</p>
 
-        
+        <div class="section">
+            <h3>人名生成</h3>
+            <p>隨機生成角色人名或查詢人名典故的一些站點。</p>
+            <div class="buttons-container">
+                <button class="styled-button">十年之约</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>博客相关</h3>
+            <p>这些链接与博客和记录有关。</p>
+            <div class="buttons-container">
+                <button class="styled-button">博客志</button>
+                <button class="styled-button">博客录</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>站点服务</h3>
+            <p>这些是站点内提供的服务和工具。</p>
+            <div class="buttons-container">
+                <button class="styled-button">个站商店</button>
+                <button class="styled-button">BlogFinder</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>其他</h3>
+            <p>其他有趣的链接和内容。</p>
+            <div class="buttons-container">
+                <button class="styled-button">积薪</button>
+            </div>
+        </div>
     </section>
     <footer>
         <p style="color: #999; font-size: 1rem;">版權所有 &copy; 2024 by AibaGogetsuhan</p>

@@ -289,7 +289,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .passwordenter-button:hover {
-    background-color: rgb(43, 189, 150); /* Darker green background on hover */
+    background-color: #aaa; /* Darker green background on hover */
     border: 1.5px solid #fdf9ed;
     color: black;
 }
@@ -336,7 +336,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .message-board button {
     width: 100%;
     padding: 12px 60px;
-    background-color: rgb(83, 209, 176);
+    background-color: #aaa;
     color: #333;
     border: none;
     cursor: pointer;
@@ -347,7 +347,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .message-board button:hover {
-    background-color: rgb(43, 189, 150);
+    background-color: #999;
 }
 
 img {

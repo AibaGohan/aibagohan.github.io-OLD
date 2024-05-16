@@ -28,6 +28,23 @@
             color: rgb(218, 105, 0);
         }
 
+
+    /* 保持背景颜色 */
+    nav a:nth-child(3):hover, .dropdown:hover > a.dropdown-toggle {
+        background-color: rgb(255, 177, 104);
+    }
+    .dropdown-menu a:hover {
+        background-color: rgb(255, 177, 104); /* 次级菜单项目 hover 颜色 */
+    }
+
+    .dropdown-menu a:nth-child(2):hover {
+        background-color: rgb(255, 177, 104);
+    }
+
+    .dropdown-menu a:nth-child(4):hover {
+        background-color: rgb(255, 177, 104);
+    }
+
 </style>
 <body>
     <header>
@@ -36,7 +53,15 @@
         <nav id="navbar"> <!-- 添加 id="navbar" -->
             <a href="/">本站簡介</a>
             <a href="/character/2024">人設存放</a>
-            <a href="/note">閒言碎語</a>
+            <div class="dropdown">
+                <a href="/note" class="dropdown-toggle">閒言碎語</a>
+                <div class="dropdown-menu">
+                    <a href="../note/curated">五胖嚴選</a>
+                    <a href="/tools">龍的寶庫</a>
+                    <a href="../note/sehsehliam">念頭集散</a>
+                    <a href="/password">第四面牆</a>
+                </div>
+            </div>
             <a href="/contact">假人慢打</a>
         </nav>
     </header>

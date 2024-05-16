@@ -535,10 +535,22 @@ img {
     gap: 0.5rem;
 }
 
+.social-icons a {
+    padding: 0; /* 移除 padding */
+    color: inherit; /* 避免颜色变化 */
+    text-decoration: none; /* 移除下划线 */
+}
+
 .social-icons img {
     width: 2rem; /* 调整图标大小 */
     height: auto;
 }
+
+.social-icons a:hover img {
+    filter: none; /* 移除 hover 效果 */
+    border: none;
+}
+
 
 @keyframes slide-out-slow-in {
     0%, 8% { 
@@ -588,10 +600,10 @@ img {
     #navbar {
         display: none; /* 默认隐藏导航栏 */
         flex-direction: column; /* 垂直排列导航项 */
-        padding-top: 10px;
+        padding-top: 20px;
         width: 100%; /* 宽度100% */
         height: 100%;
-        top: 94px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
+        top: 92px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
         background-color: #fdf9ed; /* 设置背景色与页面背景一致 */
         z-index: 1000; /* 确保在最前面 */

@@ -516,12 +516,6 @@ img {
     box-shadow: 5px 5px 0 black; /* shadow effect */
 }
 
-.hamburger.active {
-    content: "\2715"; /* X号 */
-    font-size: 3rem; /* 调整 X 号大小 */
-    display: block;
-    font-weight: 100;
-}
 
 .contact-info {
     position: fixed;
@@ -584,6 +578,7 @@ img {
     #navbar {
         display: none; /* 默认隐藏导航栏 */
         flex-direction: column; /* 垂直排列导航项 */
+        padding-top: 10px;
         width: 100%; /* 宽度100% */
         height: 100%;
         top: 94px; /* 从顶部开始的位置，调整以适应你的页眉高度 */

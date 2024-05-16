@@ -3,12 +3,16 @@ document.querySelector('.hamburger').addEventListener('click', function() {
     nav.classList.toggle('active');
     document.body.classList.toggle('menu-open');
 
+    // 获取当前页面的路径深度
+    const depth = window.location.pathname.split('/').length - 1;
+    const basePath = depth === 1 ? './' : '../'.repeat(depth - 1);
+
     // 切换图标
     this.classList.toggle('active');
     if (this.classList.contains('active')) {
-        this.innerHTML = '&times;'; // X号
+        this.innerHTML = `<img src="${basePath}delete.svg" alt="Close Menu" />`; // 替换为 delete.svg
     } else {
-        this.innerHTML = '&#9776;'; // 汉堡包
+        this.innerHTML = `<img src="${basePath}hamburger.svg" alt="Menu" />`; // 汉堡包
     }
 
     // 移动端显示联系方式

@@ -93,7 +93,7 @@ h2 {
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.40rem;
 }
 
 p {
@@ -408,6 +408,45 @@ img {
 
 .date, .nametag {
     margin-right: 10px; /* 在元素之間添加一些間隔 */
+}
+
+.box-header {
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.4rem;
+    border: 1px solid #3b392c;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent; /* 新增部分 */
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    -webkit-tap-highlight-color: transparent; /* 针对iOS Safari */
+    outline: none;
+}
+.box-header:hover { 
+    background-color: #d4d4d4;
+    color: #3b392c;
+    border: 1px solid #d4d4d4;
+
+}
+
+.box-header::after { /* 新增部分 */
+    content: "+"; /* 新增部分 */
+    font-size: 1.5rem; /* 新增部分 */
+} /* 新增部分 */
+
+.box-header.expanded::after { /* 新增部分 */
+    content: "-"; /* 新增部分 */
+} /* 新增部分 */
+
+.box-header.expanded { /* 新增部分 */
+    background-color: #000; /* 新增部分 */
+    color: #fff; /* 新增部分 */
+    border: 1px solid #3b392c;
+} /* 新增部分 */
+
+.hidden {
+    display: none;
 }
 
 @keyframes slide-out-slow-in {

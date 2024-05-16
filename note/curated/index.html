@@ -29,50 +29,17 @@
         margin: 0px;
     }
 
-    .box-header {
-        cursor: pointer;
-        padding: 15px;
-        font-size: 1.4rem;
-        border: 1px solid #3b392c;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: space-between;
-        background-color: #000; /* 新增部分 */
-        color: #fff; /* 新增部分 */
-        font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
-        -webkit-tap-highlight-color: transparent; /* 针对iOS Safari */
-        outline: none;
-    }
-    .box-header:hover { 
-        background-color: #aaa;
-        color: #3b392c;
-        border: 1px solid #aaa;
-
-    }
-
-    .box-header::after { /* 新增部分 */
-        content: "+"; /* 新增部分 */
-        font-size: 1.5rem; /* 新增部分 */
-    } /* 新增部分 */
-
-    .box-header.expanded::after { /* 新增部分 */
-        content: "-"; /* 新增部分 */
-    } /* 新增部分 */
-
-    .box-header.expanded { /* 新增部分 */
-        background-color: transparent; /* 新增部分 */
-        color: #000; /* 新增部分 */
-        border: 1px solid #3b392c;
-    } /* 新增部分 */
-
-    .hidden {
-        display: none;
-    }
 
     p{
         margin: 0px;
     }
 
+
+    .box-header:hover { 
+    background-color: rgb(255, 177, 104);
+    color: #3b392c;
+    border: 1px solid rgb(255, 177, 104);
+    }
 
     @media (max-width: 650px) { /* 当屏幕宽度小于600px时应用以下样式 */
     .content {

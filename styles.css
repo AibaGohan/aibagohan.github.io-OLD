@@ -7,6 +7,10 @@ body {
     font-size: 18px;
 }
 
+body.menu-open {
+    overflow: hidden;
+}
+
 html body button {
     -webkit-tap-highlight-color: transparent;
     outline: none;
@@ -512,6 +516,26 @@ img {
     box-shadow: 5px 5px 0 black; /* shadow effect */
 }
 
+.hamburger.active {
+    content: "\2715"; /* X号 */
+    font-size: 3rem; /* 调整 X 号大小 */
+    display: block;
+    font-weight: 100;
+    margin-right: 14px;
+}
+
+.contact-info {
+    position: fixed;
+    bottom: 1.25rem;
+    left: 1.25rem;;
+}
+
+.contact-info p {
+    text-align: left;
+    font-size: 1rem;
+    margin: 0.2rem 0; /* 调整段落之间的间隙 */
+    font-family: 'Noto Serif SC', 'Noto Serif Japanese', 'Noto Serif TC', serif;
+}
 @keyframes slide-out-slow-in {
     0%, 8% { 
       transform: translateX(0); 
@@ -561,17 +585,21 @@ img {
         display: none; /* 默认隐藏导航栏 */
         flex-direction: column; /* 垂直排列导航项 */
         width: 100%; /* 宽度100% */
-        position: absolute; /* 用绝对定位 */
+        height: 100%;
         top: 94px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
         background-color: #fdf9ed; /* 设置背景色与页面背景一致 */
         z-index: 1000; /* 确保在最前面 */
+        position: absolute; /* 用绝对定位 */
+        justify-content: start;
+        text-align: center;
     }
 
     #navbar a {
         text-align: center; /* 居中导航链接 */
         padding: 10px; /* 增加填充 */
         border-top: 1px solid gray; /* 添加顶部边框 */
+        text-decoration: none;
     }
 
     #navbar.active {

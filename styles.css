@@ -522,13 +522,13 @@ img {
     bottom: 1rem;
     left: 1rem;
     color: #999;
-    font-size: 1rem;
     z-index: 1000;
 }
 
 .contact-info p {
     text-align: left;
     margin: 0.2rem 0;
+    font-size: 1rem;
 }
 
 .social-icons {
@@ -536,7 +536,7 @@ img {
     bottom: 3.75rem;
     left: 1rem;
     display: flex;
-    gap: 0.75rem;
+    gap: 0.8rem;
     z-index: 1000;
 }
 
@@ -544,8 +544,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.25rem; /* 调整图标大小 */
-    height: 2.25rem;
+    width: 2.5rem; /* 调整图标大小 */
+    height: 2.5rem;
     padding: 0;
     background: none;
     transition: none;
@@ -594,7 +594,7 @@ img {
     }
 
     .warning{
-        font-size: smaller;
+        font-size: 15px;
     }
 
     .hamburger {

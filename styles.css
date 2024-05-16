@@ -533,7 +533,7 @@ img {
 
 .social-icons {
     position: fixed;
-    bottom: 4rem;
+    bottom: 5rem;
     left: 1rem;
     display: flex;
     gap: 0.5rem;

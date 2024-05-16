@@ -1,34 +1,39 @@
-document.querySelector('.hamburger').addEventListener('click', function() {
-    const nav = document.getElementById('navbar');
-    nav.classList.toggle('active');
-    document.body.classList.toggle('menu-open');
-
-    // 获取当前页面的路径深度
+document.addEventListener('DOMContentLoaded', function() {
     const depth = window.location.pathname.split('/').length - 1;
     const basePath = depth === 1 ? './' : '../'.repeat(depth - 1);
-
-    // 切换图标
-    this.classList.toggle('active');
-    if (this.classList.contains('active')) {
-        this.innerHTML = `<img src="${basePath}delete.svg" alt="Close Menu" />`; // 替换为 delete.svg
-    } else {
-        this.innerHTML = `<img src="${basePath}hamburger.svg" alt="Menu" />`; // 汉堡包
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    if (hamburgerIcon) {
+        hamburgerIcon.src = `${basePath}hamburger.svg`;
     }
 
-    // 移动端显示联系方式
-    const contactInfo = document.createElement('div');
-    contactInfo.classList.add('contact-info');
-    contactInfo.innerHTML = `
-        <p>版權所有 © 2024 by AibaGogetsuhan</p>
-    `;
-    if (nav.classList.contains('active')) {
-        nav.appendChild(contactInfo);
-    } else {
-        const existingContactInfo = document.querySelector('.contact-info');
-        if (existingContactInfo) {
-            existingContactInfo.remove();
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        const nav = document.getElementById('navbar');
+        nav.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+
+        // 切换图标
+        this.classList.toggle('active');
+        if (this.classList.contains('active')) {
+            this.innerHTML = `<img src="${basePath}delete.svg" alt="Close Menu" />`; // 替换为 delete.svg
+        } else {
+            this.innerHTML = `<img src="${basePath}hamburger.svg" alt="Menu" />`; // 汉堡包
         }
-    }
+
+        // 移动端显示联系方式
+        const contactInfo = document.createElement('div');
+        contactInfo.classList.add('contact-info');
+        contactInfo.innerHTML = `
+        <p>版權所有 © 2024 by AibaGogetsuhan</p>
+        `;
+        if (nav.classList.contains('active')) {
+            nav.appendChild(contactInfo);
+        } else {
+            const existingContactInfo = document.querySelector('.contact-info');
+            if (existingContactInfo) {
+                existingContactInfo.remove();
+            }
+        }
+    });
 });
 
 

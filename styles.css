@@ -607,7 +607,7 @@ img {
         padding-top: 20px;
         width: 100%; /* 宽度100% */
         height: 100%;
-        top: 88px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
+        top: 86px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
         background-color: #fdf9ed; /* 设置背景色与页面背景一致 */
         z-index: 1000; /* 确保在最前面 */
@@ -620,7 +620,13 @@ img {
         text-align: center; /* 居中导航链接 */
         padding: 10px; /* 增加填充 */
         border-top: 1px solid gray; /* 添加顶部边框 */
+        margin-left: 20px;
+        margin-right: 20px;
         text-decoration: none;
+    }
+
+    #navbar a:last-child {
+        border-bottom: 1px solid gray;
     }
 
     #navbar.active {

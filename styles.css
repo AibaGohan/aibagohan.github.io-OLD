@@ -544,8 +544,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem; /* 调整图标大小 */
-    height: 2.5rem;
+    width: 2.25rem; /* 调整图标大小 */
+    height: 2.25rem;
     padding: 0;
     background: none;
     transition: none;

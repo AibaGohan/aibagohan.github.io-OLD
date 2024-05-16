@@ -20,29 +20,36 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // 移动端显示联系方式和社交媒体图标
-        const contactInfo = document.createElement('div');
-        contactInfo.classList.add('contact-info');
-        contactInfo.innerHTML = `
-            <div class="social-icons">
-                <a href="https://tieba.baidu.com" target="_blank">
+        let contactInfo = document.querySelector('.contact-info');
+        let socialIcons = document.querySelector('.social-icons');
+
+        if (!contactInfo) {
+            contactInfo = document.createElement('div');
+            contactInfo.classList.add('contact-info');
+            contactInfo.innerHTML = `<p>版權所有 © 2024 by AibaGogetsuhan</p>`;
+            document.body.appendChild(contactInfo); // 将 contactInfo 添加到 body
+        }
+
+        if (!socialIcons) {
+            socialIcons = document.createElement('div');
+            socialIcons.classList.add('social-icons');
+            socialIcons.innerHTML = `
+                <a href="https://tieba.baidu.com/home/main?id=tb.1.428b3914.fTqSzh1wdmWO4V30k21dFw?t=1706283902" target="_blank">
                     <img src="${basePath}contact/tieba-icon.svg" alt="Tieba">
                 </a>
-                <a href="https://qq.com" target="_blank">
+                <a href="https://qm.qq.com/q/LV1tWyKKeQ" target="_blank">
                     <img src="${basePath}contact/qq-icon.svg" alt="QQ">
                 </a>
-                <a href="https://discord.com" target="_blank">
+                <a href="https://discordapp.com/users/315194753757085697" target="_blank">
                     <img src="${basePath}contact/discord-icon.svg" alt="Discord">
                 </a>
-            </div>
-            <p>版權所有 © 2024 by AibaGogetsuhan</p>
-        `;
-        if (nav.classList.contains('active')) {
-            nav.appendChild(contactInfo);
-        } else {
-            const existingContactInfo = document.querySelector('.contact-info');
-            if (existingContactInfo) {
-                existingContactInfo.remove();
-            }
+            `;
+            document.body.appendChild(socialIcons); // 将 socialIcons 添加到 body
+        }
+
+        if (!nav.classList.contains('active')) {
+            if (contactInfo) contactInfo.remove();
+            if (socialIcons) socialIcons.remove();
         }
     });
 });

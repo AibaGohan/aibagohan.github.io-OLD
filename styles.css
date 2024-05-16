@@ -533,7 +533,7 @@ img {
 
 .social-icons {
     position: fixed;
-    bottom: 4rem;
+    bottom: 3.5rem;
     left: 1rem;
     display: flex;
     gap: 0.5rem;
@@ -607,7 +607,7 @@ img {
         padding-top: 20px;
         width: 100%; /* 宽度100% */
         height: 100%;
-        top: 86px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
+        top: 84px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
         background-color: #fdf9ed; /* 设置背景色与页面背景一致 */
         z-index: 1000; /* 确保在最前面 */

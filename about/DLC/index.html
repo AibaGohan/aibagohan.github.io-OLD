@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹DLC | らおしゃん，中れ！</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="../../favicon.svg">
+</head>
+<style>
+    h2{
+       color:#3b392c;
+       font-weight: bolder;
+    }
+
+    h3{
+        margin-bottom: 0px;
+    }
+
+    .box-header {
+        cursor: pointer;
+        padding: 8px 15px;
+        font-size: 1.15rem;
+        font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    }
+
+    .box-header:hover { 
+        background-color: #3b392c;
+        color: #fdf9ed;
+        border: 1px solid #3b392c;
+    }
+
+    .box-header::after {
+        font-size: 1.15rem;
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 650px) {
+        .content img {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1>らおしゃん，中れ！</h1>
+        <button class="hamburger" aria-label="Open Menu">&#9776;</button>
+        <nav id="navbar"> <!-- 添加 id="navbar" -->
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">閒言碎語</a>
+            <a href="/contact">假人慢打</a>
+        </nav>
+    </header>
+    <script src="../../navigation.js"></script>
+    <script src="../../note/expandable.js"></script>
+    <section id="introduction">
+        <div class="title-link">
+            <h2>自介DLC</h2>
+        </div>
+        <h3>01｜工作相關</h3>
+        <p>在校時主修心理學與神經科學，輔修音樂表演。
+            <br>目前在律所做敲鍵盤的文員兼可悲打雜仔。</p>
+        <h3 style="margin-top: 50px;">02｜宗教信仰</h3>
+        <p>雙親以及身邊的長輩幾乎都是基督教衛理宗信徒，從小就跟著家裡人一起去教會。
+            <br>但站主本人目前是不可知論者，頂多每個禮拜日去Chapel蹭頓午飯。
+            <br>Chapel裡大家都是好人，只是我不適合信教。</p>
+        <h3 style="margin-top: 50px;">03｜性取向</h3>
+            <p>性取向是男。雖然經常拿第四愛開玩笑實際上並沒有試過，希望沒有人當真，哈哈...</p>
+        <h3 style="margin-top: 50px;">04｜人格類型</h3>
+        <p>測完就被逐出psychology department了。</p>
+        <div class="box">
+            <div class="box-header">MBTI</div>
+            <div class="box-content hidden">
+                <div class="content" style= "display: flex; justify-content: center; align-items: center;">
+                    <img src="mbti.svg" alt="INTP">
+                </div>
+            </div>
+        </div>
+        <h3 style="margin-top: 50px;">05｜政治傾向</h3>
+            <p>...</p>
+        <div class="box">
+            <div class="box-header">CN Values娛樂性政治立場測試</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <div class="content" style= "display: flex; justify-content: center; align-items: center;">
+                        <img src="CN Value.svg" alt="CNVALUE">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+    <footer>
+        <p style="color: #999; font-size: 1rem;">版權所有 &copy; 2024 by AibaGogetsuhan</p>
+    </footer>
+</body>
+</html>

@@ -449,6 +449,39 @@ img {
     display: none;
 }
 
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: flex-start; /* Align buttons to the left */
+    width: auto; /* Allow container to adjust to the content width */
+    margin: 0; /* Remove auto centering */
+}
+
+
+.styled-button, .styled-button-link {
+    color: #3b392c;
+    background-color: #fdf9ed; /* initial color */
+    border: 1px solid #3b392c;
+    padding: 15px 0px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 #3b392c; /* shadow effect */
+    display: inline-block;
+    width: 388px; /* Fixed width for all buttons */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    margin: 10px 0; /* Add margin to vertically space out buttons */
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
+.styled-button:hover, .styled-button-link:hover {
+    background-color: rgb(255, 177, 104); /* pink color on hover */
+    color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 black; /* shadow effect */
+}
+
 @keyframes slide-out-slow-in {
     0%, 8% { 
       transform: translateX(0); 

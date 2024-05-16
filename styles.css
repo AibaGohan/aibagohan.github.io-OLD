@@ -556,6 +556,14 @@ img {
     height: auto;
 }
 
+#tools-link {
+    display: none;
+}
+
+#password-link{
+    display: none;
+}
+
 @keyframes slide-out-slow-in {
     0%, 8% { 
       transform: translateX(0); 
@@ -633,6 +641,14 @@ img {
         display: flex; /* 当菜单打开时显示 */
     }
 
+    #tools-link, #password-link {
+        display: block;
+    }
+
+    #password-link:hover {
+        background-color: rgb(124, 178, 253); /* 悬停背景颜色 */
+    }
+
     .dropdown-menu {
         display: none; /* 初始狀態隱藏 */
         flex-direction: column; /* 垂直排列 */
@@ -640,4 +656,5 @@ img {
     .dropdown-menu.active {
         display: flex; /* 顯示次級菜單 */
     }
+    
 }

@@ -6,6 +6,38 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburgerIcon.src = `${basePath}hamburger.svg`;
     }
 
+    // 确保工具链接仅在小屏幕上显示
+    const toolsLink = document.getElementById('tools-link');
+    if (window.innerWidth <= 650) {
+        toolsLink.style.display = 'block';
+    } else {
+        toolsLink.style.display = 'none';
+    }
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= 650) {
+            toolsLink.style.display = 'block';
+        } else {
+            toolsLink.style.display = 'none';
+        }
+    });
+
+    // 确保工具链接仅在小屏幕上显示
+    const passwordLink = document.getElementById('password-link');
+    if (window.innerWidth <= 650) {
+        passwordLink.style.display = 'block';
+    } else {
+        passwordLink.style.display = 'none';
+    }
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= 650) {
+            passwordLink.style.display = 'block';
+        } else {
+            passwordLink.style.display = 'none';
+        }
+    });
+
     document.querySelector('.hamburger').addEventListener('click', function() {
         const nav = document.getElementById('navbar');
         nav.classList.toggle('active');

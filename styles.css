@@ -627,14 +627,14 @@ img {
     #navbar a {
         text-align: center; /* 居中导航链接 */
         padding: 15px; /* 增加填充 */
-        border-top: 1px solid gray; /* 添加顶部边框 */
+        border-top: 1px solid #3b392c; /* 添加顶部边框 */
         margin-left: 20px;
         margin-right: 20px;
         text-decoration: none;
     }
 
     #navbar a:last-child {
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid #3b392c;
     }
 
     #navbar.active {

@@ -15,10 +15,7 @@ document.querySelector('.hamburger').addEventListener('click', function() {
     const contactInfo = document.createElement('div');
     contactInfo.classList.add('contact-info');
     contactInfo.innerHTML = `
-        <p style="font-size: 1.3rem; font-weight: 800; margin-bottom: 5px;">連絡先</p>
-        <p>騰訊QQ：1016070674</p>
-        <p>百度貼吧：@相葉五月半</p>
-        <p>Discord：@ShortIslandBoilingTea</p>
+        <p>版權所有 © 2024 by AibaGogetsuhan</p>
     `;
     if (nav.classList.contains('active')) {
         nav.appendChild(contactInfo);

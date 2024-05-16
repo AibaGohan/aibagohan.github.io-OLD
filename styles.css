@@ -533,7 +533,6 @@ img {
     text-align: left;
     font-size: 1rem;
     margin: 0.2rem 0; /* 调整段落之间的间隙 */
-    font-family: 'Noto Serif SC', 'Noto Serif Japanese', 'Noto Serif TC', serif;
 }
 @keyframes slide-out-slow-in {
     0%, 8% { 

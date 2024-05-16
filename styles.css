@@ -533,10 +533,10 @@ img {
 
 .social-icons {
     position: fixed;
-    bottom: 3.5rem;
+    bottom: 3.75rem;
     left: 1rem;
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     z-index: 1000;
 }
 
@@ -544,8 +544,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem; /* 调整图标大小 */
-    height: 2rem;
+    width: 2.25rem; /* 调整图标大小 */
+    height: 2.25rem;
     padding: 0;
     background: none;
     transition: none;

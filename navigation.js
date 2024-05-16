@@ -23,6 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const contactInfo = document.createElement('div');
         contactInfo.classList.add('contact-info');
         contactInfo.innerHTML = `
+        <div class="social-icons">
+            <a href="https://tieba.baidu.com/home/main?id=tb.1.428b3914.fTqSzh1wdmWO4V30k21dFw?t=1706283902" target="_blank">
+                <img src="${basePath}contact/tieba-icon.svg" alt="Tieba">
+            </a>
+            <a href="https://qm.qq.com/q/LV1tWyKKeQ" target="_blank">
+                <img src="${basePath}contact/qq-icon.svg" alt="QQ">
+            </a>
+            <a href="https://discordapp.com/users/315194753757085697" target="_blank">
+                <img src="${basePath}contact/discord-icon.svg" alt="Discord">
+            </a>
+        </div>
         <p>版權所有 © 2024 by AibaGogetsuhan</p>
         `;
         if (nav.classList.contains('active')) {

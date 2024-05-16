@@ -530,6 +530,16 @@ img {
     color: #999;
 }
 
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-icons img {
+    width: 2rem; /* 调整图标大小 */
+    height: auto;
+}
+
 @keyframes slide-out-slow-in {
     0%, 8% { 
       transform: translateX(0); 

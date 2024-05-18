@@ -564,6 +564,14 @@ img {
     display: none;
 }
 
+#tools-link:hover {
+    background-color: rgb(245, 153, 160);
+}
+
+#password-link:hover {
+    background-color: rgb(124, 178, 253);
+}
+
 @keyframes slide-out-slow-in {
     0%, 8% { 
       transform: translateX(0); 

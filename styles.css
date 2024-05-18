@@ -136,6 +136,13 @@ p {
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
+ul{
+    line-height: 1.80;
+    font-size: 1.15rem;
+    margin-bottom: 0px; 
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
 .title-link {
     text-align: center;
     padding: 20px 10px;  /* 应用于整个 div，确保边框有足够的空间 */
@@ -636,6 +643,40 @@ img {
     header h1{
         font-size: 30px;
         padding-left: 10px;
+    }
+
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    h3 {
+        font-size: 1.30rem;
+    }
+
+    .article-number{
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+    }
+
+    ul {
+        font-size: 1.05rem;
+    }
+
+    .date {
+        font-size: 1.05rem;
+    }
+
+    .excerpt {
+        font-size: 1.05rem;
+    }
+
+    .tag {
+        padding: 4px 10px; /* 添加一些内边距使标签更易读 */
+        margin-right: 4px; /* 标签之间的间距 */
+        font-size: 0.8rem; /* 字体大小 */
     }
 
     .warning{

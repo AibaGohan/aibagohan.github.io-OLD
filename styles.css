@@ -168,7 +168,7 @@ p {
     margin-right: 5px; /* 标签之间的间距 */
     border: 1.5px solid rgb(76, 150, 252); 
     color: rgb(76, 150, 252); /* 字体颜色 */
-    border-radius: 25px; /* 圆角边框 */
+    border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
@@ -181,7 +181,7 @@ p {
     margin-right: 5px; /* 标签之间的间距 */
     border: 1.5px solid #999; 
     color: #999; /* 字体颜色 */
-    border-radius: 25px; /* 圆角边框 */
+    border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
@@ -194,7 +194,7 @@ p {
     margin-right: 5px; /* 标签之间的间距 */
     border: 1.5px solid rgb(0, 187, 178); 
     color: rgb(0, 187, 178); /* 字体颜色 */
-    border-radius: 25px; /* 圆角边框 */
+    border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
@@ -269,7 +269,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     margin-right: 5px; /* 标签之间的间距 */
     background-color: rgb(76, 150, 252); /* 背景颜色 */
     color: #fff; /* 字体颜色 */
-    border-radius: 25px; /* 圆角边框 */
+    border-radius: 0px; /* 圆角边框 */
     font-size: 0.9rem; /* 字体大小 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }

@@ -4,5 +4,6 @@ $(document).ready(function() {
 
     $.get(`${basePath}header.html`, function(data) {
         $('body').prepend(data);
+        $.getScript(`${basePath}navigation.js`);
     });
 });

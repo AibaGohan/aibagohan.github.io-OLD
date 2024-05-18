@@ -250,6 +250,15 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     color:black;
 }
 
+.article-link{
+    color: rgb(255,123,0);
+    text-decoration: none;
+}
+
+.article-link:hover{
+    color: rgb(167, 80, 0);
+    text-decoration: underline;
+}
 
 .warning {
     width: 100%;

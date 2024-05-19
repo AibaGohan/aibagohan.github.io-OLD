@@ -927,14 +927,22 @@ img {
         color: #3b392c;
         background-color: #fdf9ed;
         padding: 16px;
-        font-size: 16px;
+        font-size: 1.05rem;
         cursor: pointer;
         width: 100%; /* 按钮宽度占据整个容器 */
         box-sizing: border-box; /* 确保 padding 包含在宽度内 */
-        text-align: center; /* 水平居中对齐文本 */
-        display: flex; /* 使用 flexbox */
-        justify-content: center; /* 水平居中对齐 */
+        display: flex; /* 使用 flexbox 布局 */
+        justify-content: space-between; /* 两端对齐 */
         align-items: center; /* 垂直居中对齐 */
+    }
+
+    .dropbtnblue .button-text {
+        flex-grow: 1;
+        text-align: left;
+    }
+    
+    .dropbtnblue img {
+        margin-left: 10px;
     }
     
     .dropdown-content-blue {
@@ -952,7 +960,7 @@ img {
         text-decoration: none;
         box-sizing: border-box; /* 确保 padding 包含在宽度内 */
         text-align: center; /* 水平居中对齐文本 */
-        display: flex; /* 使用 flexbox */
+        display: block;
         justify-content: center; /* 水平居中对齐 */
         align-items: center; /* 垂直居中对齐 */
     }
@@ -962,14 +970,14 @@ img {
 
     }
     
-    .dropdownblue:hover .dropdown-content-blue {
-        display: block;
+    .dropdown-content-blue a:hover {
+        background-color: black;
     }
     
-    .dropdownblue:hover .dropbtnblue {
-        background-color: #fff1c8;
-        color:#3b392c;
+    .dropdownblue.active .dropdown-content-blue {
+        display: block; /* 点击时显示 */
     }
+
 }
 
 @media (min-width: 601px) {

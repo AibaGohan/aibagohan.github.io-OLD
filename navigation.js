@@ -1,3 +1,11 @@
+function toggleDropdown() {
+    const dropdown = document.querySelector('.dropdownblue');
+    const dropdownArrow = document.getElementById('dropdown-arrow');
+    dropdown.classList.toggle('active');
+    const isActive = dropdown.classList.contains('active');
+    dropdownArrow.src = isActive ? '../../arrow-up.svg' : '../../arrow-down.svg';
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const depth = window.location.pathname.split('/').length - 1;
     const basePath = depth === 1 ? './' : '../'.repeat(depth - 1);
@@ -84,6 +92,17 @@ document.addEventListener('DOMContentLoaded', function() {
             if (socialIcons) socialIcons.remove();
         }
     });
+    const categorySelect = document.querySelector('.dropdownblue');
+    if (categorySelect) {
+        categorySelect.addEventListener('click', function() {
+            const dropdownContent = this.querySelector('.dropdown-content-blue');
+            const dropdownArrow = this.querySelector('#dropdown-arrow');
+            const isVisible = dropdownContent.style.display === 'block';
+
+            dropdownContent.style.display = isVisible ? 'none' : 'block';
+            dropdownArrow.src = isVisible ? '../../arrow-down.svg' : '../../arrow-up.svg';
+        });
+    }
 });
 
 

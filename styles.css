@@ -316,14 +316,14 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     }
 
 .note {
-    background-color: #fff;
+    background-color: white;
     break-inside: avoid; /* 防止note被分割到两列 */
     margin-bottom: 20px; /* 仅设置底部间距 */
     padding: 15px;
     border-radius: 25px;
     box-sizing: border-box;
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
-    border: 1.5px solid #b3b3b3; /* 添加浅灰色边框 */
+    border: 1.5px solid #3b392c; /* 添加浅灰色边框 */
 }
 
 .note h2 {

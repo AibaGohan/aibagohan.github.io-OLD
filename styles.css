@@ -664,6 +664,7 @@ img {
 
     h2 {
         font-size: 1.65rem;
+        margin-bottom: 10px;
     }
 
     h3 {
@@ -676,6 +677,7 @@ img {
 
     p {
         font-size: 1.05rem;
+        margin-top: 10px;
     }
 
     ul {

@@ -939,6 +939,7 @@ img {
     .dropbtnblue .button-text {
         flex-grow: 1;
         text-align: left;
+        font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
     }
     
     .dropbtnblue img {

@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 确保工具链接仅在小屏幕上显示
     const toolsLink = document.getElementById('tools-link');
-    if (window.innerWidth <= 650) {
+    if (window.innerWidth <= 600) {
         toolsLink.style.display = 'block';
     } else {
         toolsLink.style.display = 'none';
     }
 
     window.addEventListener('resize', function() {
-        if (window.innerWidth <= 650) {
+        if (window.innerWidth <= 600) {
             toolsLink.style.display = 'block';
         } else {
             toolsLink.style.display = 'none';
@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 确保工具链接仅在小屏幕上显示
     const passwordLink = document.getElementById('password-link');
-    if (window.innerWidth <= 650) {
+    if (window.innerWidth <= 600) {
         passwordLink.style.display = 'block';
     } else {
         passwordLink.style.display = 'none';
     }
 
     window.addEventListener('resize', function() {
-        if (window.innerWidth <= 650) {
+        if (window.innerWidth <= 600) {
             passwordLink.style.display = 'block';
         } else {
             passwordLink.style.display = 'none';

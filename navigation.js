@@ -121,3 +121,19 @@ function loadMessages() {
 }
 
 loadMessages(); // 初始加載留言
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 你的现有代码...
+
+    const categorySelect = document.querySelector('.category-select'); // 使用类选择器获取 select 元素
+
+    if (categorySelect) {
+        categorySelect.addEventListener('change', function() {
+            const selectedYearUrl = this.value;
+            if (selectedYearUrl) {
+                window.location.href = selectedYearUrl;
+            }
+        });
+    }
+});

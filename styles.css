@@ -274,6 +274,67 @@ ul{
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
+.category-container {
+    border: 1.5px solid #3b392c;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #fdf9ed, #f8f3e8);
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures the border is included in the max-width */
+    margin-top: 10px;
+}
+
+.category {
+    color: #888;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.category-items {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.category-items a {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #3b392c;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.category-items a:hover {
+    background-color: rgb(76, 150, 252);
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.separator {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #3b392c;
+    cursor: default; /* Ensures it doesn't show the pointer cursor */
+    text-decoration: none;
+}
+
+.separator:hover {
+    background-color: transparent; /* Ensures no background color change on hover */
+}
+.category-items span.active {
+    border-bottom: 1px solid #333;
+    color: #3b392c;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .excerpt {
     color: #666;
     font-size: 1.15rem;
@@ -700,6 +761,16 @@ img {
     animation: slide-out-slow-in 3s ease-in-out infinite;
   }
   
+  @media (max-width: 680px) {
+    .category {
+        font-size: 0.8rem;
+    }
+
+    .category-items {
+        font-size: 0.8rem;
+    }
+  }
+
 
 @media (max-width: 600px) {
     header {
@@ -822,5 +893,33 @@ img {
     .dropdown-menu.active {
         display: flex; /* 顯示次級菜單 */
     }
-    
+
+    .category-container {
+        display: block;
+        padding: 0px;
+        border: none;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .category-select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #3b392c;
+        cursor: pointer;
+    }
+
+    .category-items {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+    .category-select {
+        display: none;
+    }
 }

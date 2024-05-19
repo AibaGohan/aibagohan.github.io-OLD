@@ -144,7 +144,7 @@ h2 {
 }
 
 h3{
-    font-size: 1.40rem;
+    font-size: 1.35rem;
 }
 
 p {
@@ -173,6 +173,58 @@ ul{
     font-weight: bolder;
 }
 
+.event-container {
+    border-top: 1.5px solid #3b392c;
+    border-bottom: 1.5px solid #3b392c;
+    padding: 26px 0px 21px 0px;  /* 应用于整个 div，确保边框有足够的空间 */
+    margin-bottom: 40px;
+}
+
+.event-details {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.event-details .tag1 {
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+}
+
+.event-details .date1 {
+    margin-right: 2.5px;
+}
+
+.date1{
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.tag1 {
+    font-size: 1rem;
+    display: inline-block;
+    color: rgb(255,123,0); /* 字体颜色 */
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    vertical-align: middle;
+}
+
+
+.event-details .separator {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.event-content {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color:black;
+    font-weight: bolder;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color:#3b392c;
+}
 
 
 .date {
@@ -664,15 +716,18 @@ img {
 
     h2 {
         font-size: 1.65rem;
-        margin-bottom: 10px;
     }
 
     h3 {
-        font-size: 1.30rem;
+        font-size: 1.25rem;
     }
 
     .article-number{
         font-size: 1.15rem;
+    }
+
+    .event-content{
+        font-size: 1.65rem;
     }
 
     p {
@@ -696,6 +751,19 @@ img {
         padding: 4px 10px; /* 添加一些内边距使标签更易读 */
         margin-right: 4px; /* 标签之间的间距 */
         font-size: 0.8rem; /* 字体大小 */
+    }
+
+    .tag1, .date1{
+        font-size: 0.9rem; /* 字体大小 */
+    }
+
+    .event-details .tag1 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .event-details .date1 {
+        margin-right: 0px;
     }
 
     .warning{

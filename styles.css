@@ -3,8 +3,23 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fdf9ed;
+    position: relative;
+    overflow: hidden;
     color: #3b392c;
     font-size: 18px;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHJlY3Qgd2lkdGg9IjMiIGhlaWdodD0iMyIgcng9IjMiIHJ5PSIzIiBmaWxsPSIjZjhmOGY4IiBvcGFjaXR5PSIwLjEiLz48L3N2Zz4=');
+    background-size: 3px 3px;
+    opacity: 0.3;
 }
 
 body.menu-open {

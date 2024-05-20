@@ -9,21 +9,65 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
-button {
-    padding: 12px;
-    border: 1.5px solid #ccc;
-    background-color: white;
+#password-input {
+    padding: 12px 10px;
+    border: 1px solid #3b392c;
+    background-color: transparent;
     font-size: 1.15rem;
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
     outline: none;
+    max-width: 180px;
     color: #666;
-    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 5px;
+}
+
+#password-input:focus {
+    border-color: #00cf98;
+    background-color: white;
+}
+
+#password-section button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #3b392c;
+    font-size: 1.15rem;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    color: #fdf9ed;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-button:hover {
-    background-color: rgb(216, 236, 231);
-    border-color: rgb(0, 207, 152);
+#password-section button:hover {
+    background-color: black;
+}
+
+.download-button{
+    margin-bottom: 25px;
+    color: #3b392c;
+    background-color: #fdf9ed; /* initial color */
+    border: 1px solid #3b392c;
+    padding: 15px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 #3b392c; /* shadow effect */
+    display: inline-block;
+    width: 450px; /* Fixed width for all buttons */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
+.download-button:hover{
+    background-color: rgb(255, 177, 104); /* pink color on hover */
+    color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 black; /* shadow effect */
+}
+
+@media (max-width: 480px) {
+    .download-button {
+        width: 100%; /* Adjust the width as needed */
+    }
 }
 </style>
 <body>
@@ -58,23 +102,23 @@ button:hover {
         <p>歡迎進入！
         <br>這裡是加密後的內容區域，請享用。</p>
         <a href="Nostalgia01.pdf" download="《Re: seE neW thE worlD》花落流水：雷嵐&極樂組" target="_blank">
-            <button type="button" style="margin-bottom: 25px;">《Re: seE neW thE worlD》花落流水：雷嵐&極樂組</button>
+            <button type="button" class="download-button">《Re: seE neW thE worlD》花落流水：雷嵐&極樂組</button>
         </a>
         <br>
         <a href="Daydream02.pdf" download="《Re: seE neW thE worlD》一蓮托生：全員" target="_blank">
-            <button type="button" style="margin-bottom: 25px;">《Re: seE neW thE worlD》一蓮托生：全員</button>
+            <button type="button" class="download-button">《Re: seE neW thE worlD》一蓮托生：全員</button>
         </a>
         <br>
         <a href="qingxiao1.txt" download="《青霄有路》卷一：大風捲水" target="_blank">
-            <button type="button" style="margin-bottom: 25px;">《青霄有路》卷一：大風捲水</button>
+            <button type="button" class="download-button">《青霄有路》卷一：大風捲水</button>
         </a>
         <br>
         <a href="download2.zip" download="《青霄有路》卷二：浩然彌哀" target="_blank">
-            <button type="button" style="margin-bottom: 25px;">《青霄有路》卷二：浩然彌哀</button>
+            <button type="button" class="download-button">《青霄有路》卷二：浩然彌哀</button>
         </a>
         <br>
         <a href="Chitchat_by_3ben.jpg" download="【闲聊】关于别家的孩子" target="_blank">
-            <button type="button" style="margin-bottom: 25px;">【闲聊】关于别家的孩子</button>
+            <button type="button" class="download-button">【闲聊】关于别家的孩子</button>
         </a>
     </div>
     <script src="/footer.js"></script>

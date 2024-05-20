@@ -982,7 +982,9 @@ img {
     
     .dropdown-content-blue a {
         color: #fdf9ed;
-        padding: 12px 16px;
+        font-size: 1.15rem;
+        font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+        padding: 19px;
         text-decoration: none;
         box-sizing: border-box; /* 确保 padding 包含在宽度内 */
         text-align: center; /* 水平居中对齐文本 */

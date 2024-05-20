@@ -448,6 +448,31 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     color: #666;
 }
 
+.quote-section {
+    border-left: 2px solid #3b392c; /* Adjust color as needed */
+    border-right: 2px solid #3b392c; /* Adjust color as needed */
+    margin: 20px 0;
+    padding: 15px 35px;
+    position: relative;
+    line-height: 1.75rem;
+}
+
+.quote-section::before {
+    content: "—";
+    font-size: 1.15rem;
+    position: absolute;
+    left: -15px;
+    top: 0;
+}
+
+.quote-section cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: right;
+    color: #555;
+}
+
 .page-navigation {
     text-align: center;
     margin: 15px auto;
@@ -977,6 +1002,14 @@ img {
     
     .dropdownblue.active .dropdown-content-blue {
         display: block; /* 点击时显示 */
+    }
+
+    .quote-section {
+        padding: 10px 25px;
+    }
+
+    .quote-section::before {
+        font-size: 1.05rem;
     }
 
 }

@@ -405,6 +405,16 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     box-sizing: border-box;
 }
 
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content img {
+    margin-right: 10px; /* 调整图标与文字之间的间距 */
+}
+
 .tags {
     margin: 0px; /* 在标签和标题之间添加一些间距 */
 }
@@ -876,6 +886,12 @@ img {
 
     ul {
         font-size: 1.05rem;
+    }
+
+    .center-content img {
+        margin-right: 6px;
+        width: 14px; /* 小屏幕下的固定宽度 */
+        height: 14px; /* 小屏幕下的固定高度 */
     }
 
     .date {

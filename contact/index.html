@@ -19,13 +19,13 @@
         }
         
 
-        section{
-            padding: 0px 0px 0px 0px;
-            margin: 0px auto;
-        }
+
         .warning {
-            background-color: rgb(216, 236, 231); 
-            color: rgb(28, 95, 77); 
+        background-color: none; /* Pinkish background color */
+        border: 1.5px solid #3b392c;
+        color: #3b392c; /* White text for contrast and readability */
+        border-left: none;
+        border-right: none;
         }
 
         .form-group {
@@ -43,7 +43,6 @@
             font-size: 1.15rem;
             font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
             outline: none;
-            max-width: 420px;
         }
 
         .form-group label {
@@ -183,13 +182,18 @@
         </nav>
     </header>
     <script src="../navigation.js"></script>
-    <div class="warning">
+    
+    <section id="warning" style="max-width: 800px; padding-left: 0px; padding-right: 0px;">
+    <div class="warning" style="max-width: 800px;">
         注意：由於存在時區差異，站主可能無法即時回覆您的訊息。
     </div>
+
+
+    </section>
         <div id="contact-container" style="max-width: 800px;">
             <div id="left-container" style="width: 360px;">
-                <section class="contact-section" id="social-info">
-                    <h2><span class="hover-effect">【連絡先】</span></h2>
+                <section class="contact-section" id="social-info" style= "padding: 0px 0px 0px 0px; margin: 0px auto;">
+                    <h2><span class="hover-effect">連絡先</span></h2>
                     <p style="margin-bottom: 40px; line-height: 2.25;">
                         <img src="qq-icon-2.svg" alt="QQ" /> <a href="https://qm.qq.com/q/LV1tWyKKeQ" target="_blank" class="socialmed-link">1016070674</a>
                         <br>
@@ -198,16 +202,16 @@
                         <img src="discord-icon-2.svg" alt="Discord" /> <a href="https://discordapp.com/users/315194753757085697" target="_blank" class="socialmed-link">@ShortIslandBoilingTea</a>
                     </p>
                 </section>
-                <section class="contact-section" id="personal-banner">
-                    <h2><span class="hover-effect">【バナー自取】</span></h2>
+                <section class="contact-section" id="personal-banner" style= "padding: 0px 0px 0px 0px; margin: 0px auto;">
+                    <h2><span class="hover-effect">バナー自取</span></h2>
                     <p style="margin-bottom: 40px;">
                         <img src="banner.svg" alt="Personal Banner" /> <!-- 更改src为你的实际横幅图像链接 -->
                     </p>
                 </section>
             </div>
-            <section class="contact-section" id="contact-form" style="max-width: 440px;">
-                <section class="message-board">
-                    <h2><span class="hover-effect">【聯絡表單】（後端銳意製作中）</span></h2>
+            <section class="contact-section" id="contact-form" style="max-width: 440px; padding: 0px 0px 0px 0px; margin: 0px auto;">
+                <section class="message-board" style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
+                    <h2><span class="hover-effect">聯絡表單（後端銳意製作中）</span></h2>
                     <p>和我簽訂契約成為..... 還是算了</p>
                     <ul id="messages-list">
                         <!-- 留言將被動態插入這裡 -->
@@ -220,8 +224,8 @@
                 </section>   
             </section>
         </div>
-        <section class="about" id="friend-links">
-            <h2><span class="hover-effect">【友情連結】</span></h2>
+        <section class="about" id="friend-links" style= "padding: 0px 0px 0px 0px; margin: 0px auto;">
+            <h2><span class="hover-effect">友情連結</span></h2>
                 <a href="https://utauchn.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5" class="styled-button1-link" target="_blank"><img src="../contact/Link/utau.gif" alt="中華組UTAUの情報まとめウィキ" /></a>
                 <a href="https://pifuyuuust.blogspot.com/" class="styled-button1-link" target="_blank"><img src="../contact/Link/ustmarket.png" alt="ustMarket" /></a>
                 <a href="https://munoshowakusei.jimdofree.com/information/" class="styled-button1-link" target="_blank"><img src="../contact/Link/munoshowakusei.png" alt="munoshowakusei"/></a>

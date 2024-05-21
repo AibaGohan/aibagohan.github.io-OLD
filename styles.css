@@ -558,13 +558,13 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     font-size: 1.15rem;
     margin-bottom: 10px; /* 增加間隔 */
     outline: none;
-    max-width: 440px;
     font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
 .message-board input[type="text"]:focus,
 .message-board textarea:focus {
     border-color: rgb(0, 207, 152); /* 聚焦時的邊框顏色 */
+    padding: 12px;
 }
 
 .message-board button {

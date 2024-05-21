@@ -695,6 +695,53 @@ img {
 }
 
 
+.containerHP {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.headerHP {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.headerHP h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+.headerHP .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin-left: 20px;
+}
+.profile-contentHP {
+    margin-left: 80px;
+}
+.profile-contentHP h2 {
+    font-size: 2em;
+    margin: 0;
+}
+.profile-contentHP p {
+    font-size: 1em;
+    margin: 5px 0;
+    margin-bottom: 15px;
+}
+.contact-detailsHP {
+    margin-top: 20px;
+}
+.contact-detailsHP h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+.contact-detailsHP p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
 .contact-info {
     position: fixed;
     bottom: 1rem;
@@ -868,6 +915,10 @@ img {
 
     .hamburger {
         display: block; /* 在小屏幕上显示汉堡菜单按钮 */
+    }
+
+    .profile-contentHP {
+        margin-left: 40px;
     }
 
     #navbar {

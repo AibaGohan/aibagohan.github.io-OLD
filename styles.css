@@ -400,7 +400,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .warning {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px; /* 保持警告框底部间隔 */
+    margin-bottom: 10px; /* 保持警告框底部间隔 */
     text-align: center;
     box-sizing: border-box;
 }

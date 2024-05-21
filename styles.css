@@ -233,6 +233,7 @@ ul{
     line-height: 1.5;
     margin-top: 7.5px;
     margin-bottom: 2.5px;
+    margin-right: 10px; /* 在元素之間添加一些間隔 */
 }
 
 .nametag{
@@ -241,7 +242,7 @@ ul{
     font-size: 1rem;
     display: inline-block;
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
-    margin-right: 5px; /* 标签之间的间距 */
+    margin-right: 6px; /* 标签之间的间距 */
     border: 1.5px solid rgb(76, 150, 252); 
     color: rgb(76, 150, 252); /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
@@ -254,7 +255,7 @@ ul{
     font-size: 1rem;
     display: inline-block;
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
-    margin-right: 5px; /* 标签之间的间距 */
+    margin-right: 6px; /* 标签之间的间距 */
     border: 1.5px solid #999; 
     color: #999; /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
@@ -267,7 +268,7 @@ ul{
     font-size: 1rem;
     display: inline-block;
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
-    margin-right: 5px; /* 标签之间的间距 */
+    margin-right: 6px; /* 标签之间的间距 */
     border: 1.5px solid rgb(0, 187, 178); 
     color: rgb(0, 187, 178); /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
@@ -622,10 +623,6 @@ img {
     flex-wrap: wrap; /* 允許元素換行 */
 }
 
-.date, .nametag {
-    margin-right: 10px; /* 在元素之間添加一些間隔 */
-}
-
 .box-header {
     cursor: pointer;
     padding: 10px 15px;
@@ -850,6 +847,10 @@ img {
 
     .tag1, .date1{
         font-size: 0.9rem; /* 字体大小 */
+    }
+
+    .nametag,.nametagdelete, .zhaochan{
+        margin-right: 4px;
     }
 
     .event-details .tag1 {

@@ -1,25 +1,14 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express();
+let innerCursor = document.querySelector('.inner-cursor');
+let outerCursor = document.querySelector('.outer-cursor');
 
-app.use(bodyParser.json());
-app.use(express.static('public')); // 用於訪問靜態文件，如 CSS, JS
+document.addEventListener('mousemove', moveCursor);
 
-let messages = []; // 存儲留言的數組
+function moveCursor(e){
+    let x = e.clientX;
+    let y = e.clientY;
 
-// 獲取留言的 API
-app.get('/api/messages', (req, res) => {
-    res.json(messages);
-});
-
-// 發送留言的 API
-app.post('/api/messages', (req, res) => {
-    const { username, content } = req.body;
-    messages.push({ username, content, id: messages.length + 1 });
-    res.status(201).send({ success: true });
-});
-
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+innerCursor.style.left = '${x}px';
+innerCursor.style.top = '${y}px';
+outerCursor.style.left = '${x}px';
+outerCursor.style.top = '${y}px';
+}

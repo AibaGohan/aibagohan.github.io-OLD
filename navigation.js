@@ -1,9 +1,3 @@
-new kursor({
-    type 1,
-    removeDefaultCursor: true
-    color: "#3b392c";
-});
-
 function toggleDropdown() {
     const dropdown = document.querySelector('.dropdownblue');
     const dropdownArrow = document.getElementById('dropdown-arrow');

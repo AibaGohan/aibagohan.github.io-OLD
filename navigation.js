@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!contactInfo) {
             contactInfo = document.createElement('div');
             contactInfo.classList.add('contact-info');
-            contactInfo.innerHTML = `<p>版權所有 © 2024 by AibaGogetsuhan</p>`;
+            contactInfo.innerHTML = `<p>版權所有 © 2024 AibaGogetsuhan</p>`;
             document.body.appendChild(contactInfo); // 将 contactInfo 添加到 body
         }
 

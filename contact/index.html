@@ -33,6 +33,16 @@
             color:black;
         }
 
+        .contact-detailsSocial {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* 确保内容左对齐 */
+            gap: 10px; /* 根据需要调整图标和文字之间的间距 */
+        }
+
+        .contact-detailsSocial img {
+            vertical-align: middle; /* 使图标和文字垂直居中对齐 */
+        }
 
         #contact-container {
             display: flex;
@@ -85,7 +95,11 @@
             width: 100%; /* 图片宽度自动填满链接宽度 */
             height: auto; /* 保持图片的纵横比 */
         }
-
+        @media (max-width: 600px) {
+            .contact-detailsSocial {
+                flex-direction: column;
+            }
+        }
         @media (max-width: 420px) {
             .styled-button1, .styled-button1-link {
                 width: calc(50% - 10px); /* Each button takes up full width minus the gap */
@@ -124,11 +138,18 @@
         </div>
         <div class="profile-contentHP">
             <p style="line-height: 2.25;">
-                <img src="qq-icon-2.svg" alt="QQ" /> <a href="https://qm.qq.com/q/LV1tWyKKeQ" target="_blank" class="socialmed-link">1016070674</a>
-                <br>
-                <img src="tieba-icon-2.svg" alt="百度贴吧" /> <a href="https://tieba.baidu.com/home/main?id=tb.1.428b3914.fTqSzh1wdmWO4V30k21dFw?t=1706283902" target="_blank" class="socialmed-link">@相葉五月半</a>
-                <br>
-                <img src="discord-icon-2.svg" alt="Discord" /> <a href="https://discordapp.com/users/315194753757085697" target="_blank" class="socialmed-link">@ShortIslandBoilingTea</a>
+                <div class="contact-detailsSocial">
+                    <img src="qq-icon-2.svg" alt="QQ" /> 
+                    <a href="https://qm.qq.com/q/LV1tWyKKeQ" target="_blank" class="socialmed-link">1016070674</a>
+                </div>
+                <div class="contact-detailsSocial">
+                    <img src="tieba-icon-2.svg" alt="百度贴吧" /> 
+                    <a href="https://tieba.baidu.com/home/main?id=tb.1.428b3914.fTqSzh1wdmWO4V30k21dFw?t=1706283902" target="_blank" class="socialmed-link">@相葉五月半</a>
+                </div>
+                <div class="contact-detailsSocial">
+                    <img src="discord-icon-2.svg" alt="Discord" /> 
+                    <a href="https://discordapp.com/users/315194753757085697" target="_blank" class="socialmed-link">@ShortIslandBoilingTea</a>
+                </div>
             </p>
         </div>
     </section>

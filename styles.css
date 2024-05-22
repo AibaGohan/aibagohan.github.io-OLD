@@ -1019,7 +1019,7 @@ img {
         border: 1.5px solid #3b392c;
         color: #3b392c;
         background-color: #fdf9ed;
-        padding: 16px;
+        padding: 14px 16px;
         font-size: 1.05rem;
         cursor: pointer;
         width: 100%; /* 按钮宽度占据整个容器 */
@@ -1051,19 +1051,29 @@ img {
     .dropdown-content-blue a {
         color: #fdf9ed;
         font-size: 1.15rem;
-        font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
-        padding: 19px;
+        font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+        padding: 14px;
         text-decoration: none;
         box-sizing: border-box; /* 确保 padding 包含在宽度内 */
         text-align: center; /* 水平居中对齐文本 */
-        display: block;
+        display: flex;
         justify-content: center; /* 水平居中对齐 */
         align-items: center; /* 垂直居中对齐 */
+        position: relative; /* 使得子元素的定位相对于父元素 */
     }
     
-    .dropdown-content-blue a:hover {
-        background-color: rgb(76, 150, 252);
+    .dropdown-content-blue a::after {
+        content: "";
+        display: block;
+        width: 92%; /* 白色横线的长度 */
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        bottom: 0; /* 横线在每个a元素的底部 */
+    }
 
+    .dropdown-content-blue a:last-child::after {
+        display: none; /* 移除最后一个元素的底部横线 */
     }
     
     .dropdown-content-blue a:hover {

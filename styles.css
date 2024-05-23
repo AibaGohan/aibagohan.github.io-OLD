@@ -328,11 +328,12 @@ ul{
     background-color: transparent; /* Ensures no background color change on hover */
 }
 .category-items span.active {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #3b392c;
     color: #3b392c;
     text-decoration: none;
     margin-left: 8px;
     margin-right: 8px;
+    font-weight: 800;
 }
 
 .excerpt {
@@ -838,8 +839,26 @@ img {
   .link-with-arrow:hover img {
     animation: slide-out-slow-in 3s ease-in-out infinite;
   }
-  
-  @media (max-width: 680px) {
+
+@media (max-width: 855px) {
+    .buttons-container {
+        column-gap: 0px;
+    }
+
+    .styled-button, .styled-button-link {
+        width: calc(100% - 0px); /* Each button takes up full width minus the gap */
+    }
+}
+
+@media (max-width: 800px) {
+    .buttons-container {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 685px) {
     .category {
         font-size: 0.8rem;
     }

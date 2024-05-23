@@ -1,48 +1,6 @@
 @font-face {
-    font-family: 'Noto Serif TC';
-    src: url('/font/Noto_Serif_TC/NotoSerifTC-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Serif SC';
-    src: url('/font/Noto_Serif_SC/NotoSerifSC-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Noto Serif Japanese';
     src: url('/font/Noto_Serif_JP/NotoSerifJP-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Serif Japanese';
-    src: url('/font/Noto_Serif_JP/static/NotoSerifJP-ExtraBold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans Traditional Chinese';
-    src: url('/font/Noto_Sans_TC/NotoSansTC-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans Simplified Chinese';
-    src: url('/font/Noto_Sans_SC/NotoSansSC-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    src: url('/font/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }

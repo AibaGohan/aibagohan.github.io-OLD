@@ -809,6 +809,10 @@ img {
     display: none;
 }
 
+#dice-link{
+    display: none;
+}
+
 #password-link{
     display: none;
 }
@@ -821,8 +825,12 @@ img {
     background-color: rgb(245, 153, 160);
 }
 
-#password-link:hover {
+#dice-link:hover {
     background-color: rgb(124, 178, 253);
+}
+
+#password-link:hover {
+    background-color: rgb(255, 177, 104);
 }
 
 #article-link:hover {

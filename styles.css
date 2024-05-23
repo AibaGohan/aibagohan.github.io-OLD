@@ -1016,12 +1016,16 @@ img {
         display: flex; /* 当菜单打开时显示 */
     }
 
-    #tools-link, #password-link {
+    #tools-link, #dice-link, #password-link {
         display: block;
     }
 
-    #password-link:hover {
+    #dice-link:hover {
         background-color: rgb(124, 178, 253); /* 悬停背景颜色 */
+    }
+
+    #password-link:hover {
+        background-color: rgb(255, 177, 104); /* 悬停背景颜色 */
     }
 
     .dropdown-menu {

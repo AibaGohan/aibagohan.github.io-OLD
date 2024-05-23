@@ -31,6 +31,19 @@ $(document).ready(function(){
         $("#result").text("結果: " + resultText);
     });
 
+    $(".custom-button").click(function(){
+        const count = parseInt($(this).siblings(".custom-input").val());
+        let individualRolls = [];
+        let total = 0;
+        for(let i = 0; i < count; i++){
+            let roll = Math.floor(Math.random() * 100) + 1;
+            individualRolls.push(roll);
+            total += roll;
+        }
+        const resultText = `${count}d100 = ${individualRolls.join(' + ')} = ${total}`;
+        $("#result").text("結果: " + resultText);
+    });
+
     $("#clear-dice").click(function(){
         $(".dice-button").each(function(){
             const sides = $(this).text().split('d')[1];

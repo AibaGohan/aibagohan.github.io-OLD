@@ -9,21 +9,22 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
+/* Add these styles at the end of the file */
 .dice-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
     margin: 20px 0;
 }
 
 .dice-control {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
 }
 
-.dice-button, .control-button {
+.dice-button, .control-button, .custom-button {
     background-color: #fdf9ed;
     border: 2px solid #3b392c;
     color: #3b392c;
@@ -32,22 +33,35 @@
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     box-shadow: 3px 3px 0 #3b392c;
-    margin: 5px 0;
+    text-align: center;
 }
 
-.dice-button:hover, .control-button:hover {
+.dice-button:hover, .control-button:hover, .custom-button:hover {
     background-color: #ffa500;
     border-color: #3b392c;
     color: #fff;
     box-shadow: 3px 3px 0 #ffa500;
 }
 
+.custom-input {
+    width: 50px;
+    padding: 10px;
+    font-size: 1.25rem;
+    text-align: center;
+    border: 2px solid #3b392c;
+    color: #3b392c;
+    background-color: #fdf9ed;
+    box-shadow: 3px 3px 0 #3b392c;
+}
+
 .result {
     font-size: 1.75rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
+    padding: 20px;
     color: #3b392c;
+    border: 3px solid #3b392c;
 }
 
 .actions {
@@ -98,39 +112,43 @@
             <div id="result" class="result">結果: -</div>
             <div class="dice-container">
                 <div class="dice-control" data-sides="2">
+                    <button class="control-button up">Up</button>
                     <button class="dice-button">1d2</button>
-                    <button class="control-button up">↑</button>
-                    <button class="control-button down">↓</button>
+                    <button class="control-button down">Down</button>
                 </div>
                 <div class="dice-control" data-sides="6">
+                    <button class="control-button up">Up</button>
                     <button class="dice-button">1d6</button>
-                    <button class="control-button up">↑</button>
-                    <button class="control-button down">↓</button>
+                    <button class="control-button down">Down</button>
                 </div>
                 <div class="dice-control" data-sides="8">
+                    <button class="control-button up">Up</button>
                     <button class="dice-button">1d8</button>
-                    <button class="control-button up">↑</button>
-                    <button class="control-button down">↓</button>
+                    <button class="control-button down">Down</button>
                 </div>
                 <div class="dice-control" data-sides="10">
+                    <button class="control-button up">Up</button>
                     <button class="dice-button">1d10</button>
-                    <button class="control-button up">↑</button>
-                    <button class="control-button down">↓</button>
+                    <button class="control-button down">Down</button>
                 </div>
                 <div class="dice-control" data-sides="12">
+                    <button class="control-button up">Up</button>
                     <button class="dice-button">1d12</button>
-                    <button class="control-button up">↑</button>
-                    <button class="control-button down">↓</button>
+                    <button class="control-button down">Down</button>
                 </div>
                 <div class="dice-control" data-sides="20">
+                    <button class="control-button up">Up</button>
                     <button class="dice-button">1d20</button>
-                    <button class="control-button up">↑</button>
-                    <button class="control-button down">↓</button>
+                    <button class="control-button down">Down</button>
                 </div>
                 <div class="dice-control" data-sides="100">
+                    <button class="control-button up">Up</button>
                     <button class="dice-button">1d100</button>
-                    <button class="control-button up">↑</button>
-                    <button class="control-button down">↓</button>
+                    <button class="control-button down">Down</button>
+                </div>
+                <div class="dice-control custom-dice">
+                    <input type="number" class="custom-input" min="1" value="1">
+                    <button class="dice-button custom-button">自定</button>
                 </div>
             </div>
             <div class="actions">

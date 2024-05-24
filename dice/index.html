@@ -38,6 +38,7 @@
     font-size: 1.25rem;
     width: 100px;
     height: 68px;
+    max-height: 68px;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     box-shadow: 3px 3px 0 #3b392c;
@@ -47,6 +48,7 @@
 
 .control-button {
     width: 65px;
+    max-height: 68px;
     background-color: #fdf9ed;
     border: 2px solid #3b392c;
     color: #3b392c;
@@ -87,6 +89,21 @@
     max-width: 354px;
     margin: 0 auto; /* 这行代码将使容器水平居中 */
     margin-bottom: 20px;
+    position: relative;
+}
+
+.result-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+.result-content {
+    padding-top: 30px;
+    text-align: center;
 }
 
 .actions {
@@ -157,7 +174,10 @@
             <h2>線上擲骰</h2>
         </div>
         <div class="section">
-            <div id="result" class="result">結果: -</div>
+            <div id="result" class="result">
+                <div class="result-header">結果</div>
+                <div class="result-content">-</div>
+            </div>
             <div class="dice-container">
                 <div class="dice-control" data-sides="2">
                     <div class="control-buttons">

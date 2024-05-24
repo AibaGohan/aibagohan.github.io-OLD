@@ -35,7 +35,7 @@ $(document).ready(function(){
         } else {
             resultText = `${count}d${sides} = ${individualRolls.join(' + ')} = ${total}`;
         }
-        $("#result").text("結果: " + resultText);
+        $("#result .result-content").text(resultText);
     });
 
     $(".custom-button").click(function(){
@@ -56,7 +56,7 @@ $(document).ready(function(){
         } else {
             resultText = `${count}d${sides} = ${individualRolls.join(' + ')} = ${total}`;
         }
-        $("#result").text("結果: " + resultText);
+        $("#result .result-content").text(resultText);
     });
 
     $("#clear-dice").click(function(){
@@ -66,6 +66,6 @@ $(document).ready(function(){
                 $(this).text("1d" + sides);
             }
         });
-        $("#result").text("結果: -");
+        $("#result .result-content").text("-");
     });
 });

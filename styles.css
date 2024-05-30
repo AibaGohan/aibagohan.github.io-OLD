@@ -402,6 +402,16 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     text-decoration: underline;
 }
 
+.character-link{
+    color: rgb(76, 150, 252);
+    text-decoration: none;
+}
+
+.character-link:hover{
+    color: rgb(0, 82, 197);
+    text-decoration: underline;
+}
+
 .warning {
     width: 100%;
     padding: 10px;

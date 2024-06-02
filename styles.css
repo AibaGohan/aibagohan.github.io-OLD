@@ -1008,6 +1008,8 @@ img {
         justify-content: start;
         text-align: center;
         position: fixed; 
+        background-image: url('navbk.svg'); /* 添加背景图片 */
+        background-repeat: no-repeat; /* 背景图片不重复 */
     }
 
     #navbar a {

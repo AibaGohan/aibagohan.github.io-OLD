@@ -5,6 +5,7 @@ body {
     background-color: #fdf9ed;
     color: #3b392c;
     font-size: 18px;
+    background-image: url('bk.svg');
 }
 
 body.menu-open {

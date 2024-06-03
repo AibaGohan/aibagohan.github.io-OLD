@@ -1088,7 +1088,7 @@ img {
     .dropbtnblue {
         border: 1.5px solid #3b392c;
         color: #3b392c;
-        background-color: #fdf9ed;
+        background-color: transparent;
         padding: 14px 16px;
         font-size: 1.05rem;
         cursor: pointer;

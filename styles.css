@@ -5,7 +5,11 @@ body {
     background-color: #fdf9ed;
     color: #3b392c;
     font-size: 18px;
-    background-image: url('bk.svg');
+    background-image: url('bk.svg'), url('paper.png');
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center; /* 调整位置 */
+    background-size: auto, cover; /* 调整大小 */
+    background-blend-mode: multiply;
 }
 
 body.menu-open {
@@ -1008,8 +1012,11 @@ img {
         justify-content: start;
         text-align: center;
         position: fixed; 
-        background-image: url('navbk.svg'); /* 添加背景图片 */
-        background-repeat: no-repeat; /* 背景图片不重复 */
+        background-image: url('navbk.svg'), url('navpaper.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, center; /* 调整位置 */
+        background-size: auto, cover; /* 调整大小 */
+        background-blend-mode: multiply;
     }
 
     #navbar a {

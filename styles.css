@@ -10,6 +10,7 @@ body {
     background-position: top left, center; /* 调整位置 */
     background-size: auto, cover; /* 调整大小 */
     background-blend-mode: multiply;
+    background-attachment: scroll, fixed;
 }
 
 body.menu-open {

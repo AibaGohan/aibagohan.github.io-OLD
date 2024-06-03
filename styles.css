@@ -5,12 +5,12 @@ body {
     background-color: #fdf9ed;
     color: #3b392c;
     font-size: 18px;
-    background-image: url('bk.svg'), url('paper.png');
-    background-repeat: repeat, no-repeat;
-    background-position: top left, center; /* 调整位置 */
-    background-size: auto, cover; /* 调整大小 */
+    background-image: url('bk.svg'), url('paper.png'), url('top-left-triangle.svg'), url('top-right-triangle.svg'), url('bottom-left-triangle.svg'), url('bottom-right-triangle.svg'), url('mid-right-star.svg');
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, center, top left, top right, bottom left, bottom right, right center; /* 调整位置 */
+    background-size: auto;
     background-blend-mode: multiply;
-    background-attachment: fixed, fixed;
+    background-attachment: fixed;
 }
 
 body.menu-open {
@@ -1016,7 +1016,7 @@ img {
         background-image: url('navbk.svg'), url('navpaper.png');
         background-repeat: no-repeat, no-repeat;
         background-position: top left, center; /* 调整位置 */
-        background-size: auto, cover; /* 调整大小 */
+        background-size: auto; /* 调整大小 */
         background-blend-mode: multiply;
         background-attachment: fixed, fixed;
     }

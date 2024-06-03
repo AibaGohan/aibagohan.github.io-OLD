@@ -18,7 +18,7 @@ body.menu-open {
     background-image: url('bk.svg'), url('paper.png');
     background-repeat: repeat, no-repeat;
     background-position: top left, center;
-    background-size: auto, cover;
+    background-size: auto;
 }
 
 body.menu-open {

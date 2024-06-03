@@ -2,23 +2,34 @@ body {
     font-family: 'Noto Serif SC', 'Noto Serif Japanese', 'Noto Serif TC', serif;
     margin: 0;
     padding: 0;
-    background-color: #fdf9ed;
-    color: #3b392c;
-    font-size: 18px;
-    background-image: url('bk.svg'), url('paper.png'), url('top-left-triangle.svg'), url('top-right-triangle.svg'), url('bottom-left-triangle.svg'), url('bottom-right-triangle.svg'), url('mid-left-star.svg'),url('mid-right-star.svg');
-    background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top left, center, top left, top right, bottom left, bottom right, left center,right center; /* 调整位置 */
+    background: linear-gradient(to top right, #fdf9ed, #fdf9ed), 
+                url('bk.svg'), 
+                url('paper.png'), 
+                url('top-left-triangle.svg'), 
+                url('top-right-triangle.svg'), 
+                url('bottom-left-triangle.svg'), 
+                url('bottom-right-triangle.svg'), 
+                url('mid-left-star.svg'), 
+                url('mid-right-star.svg');
+    background-repeat: no-repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: center, top left, center, top left, top right, bottom left, bottom right, left center, right center;
     background-size: auto;
     background-blend-mode: multiply;
     background-attachment: fixed;
+    color: #3b392c;
+    font-size: 18px;
 }
 
 body.menu-open {
     overflow: hidden;
-    background-image: url('bk.svg'), url('paper.png');
-    background-repeat: repeat, no-repeat;
-    background-position: top left, center;
+    background: linear-gradient(to top right, #fdf9ed, #fdf9ed), 
+                url('bk.svg'), 
+                url('paper.png');
+    background-repeat: no-repeat, repeat;
+    background-position: center, top left;
     background-size: auto;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
 }
 
 body.menu-open {
@@ -1021,12 +1032,14 @@ img {
         justify-content: start;
         text-align: center;
         position: fixed; 
-        background-image: url('bk.svg'), url('navpaper.png');
-        background-repeat: no-repeat, no-repeat;
-        background-position: top left, center; /* 调整位置 */
-        background-size: auto; /* 调整大小 */
+        background: linear-gradient(to top right, #fdf9ed, #fdf9ed), 
+                    url('bk.svg'), 
+                    url('navpaper.png');
+        background-repeat: no-repeat, repeat;
+        background-position: center, top left;
+        background-size: auto;
         background-blend-mode: multiply;
-        background-attachment: fixed, fixed;
+        background-attachment: fixed;
     }
 
     #navbar a {

@@ -1021,7 +1021,7 @@ img {
         justify-content: start;
         text-align: center;
         position: fixed; 
-        background-image: url('navbk.svg'), url('navpaper.png');
+        background-image: url('bk.svg'), url('navpaper.png');
         background-repeat: no-repeat, no-repeat;
         background-position: top left, center; /* 调整位置 */
         background-size: auto; /* 调整大小 */

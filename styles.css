@@ -15,6 +15,14 @@ body {
 
 body.menu-open {
     overflow: hidden;
+    background-image: url('bk.svg'), url('paper.png');
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center;
+    background-size: auto, cover;
+}
+
+body.menu-open {
+    overflow: hidden;
 }
 
 html body button {

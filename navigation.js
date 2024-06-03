@@ -1,65 +1,27 @@
-function toggleDropdown() {
-    const dropdown = document.querySelector('.dropdownblue');
-    const dropdownArrow = document.getElementById('dropdown-arrow');
-    dropdown.classList.toggle('active');
-    const isActive = dropdown.classList.contains('active');
-    dropdownArrow.src = isActive ? '../../arrow-up.svg' : '../../arrow-down.svg';
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     const depth = window.location.pathname.split('/').length - 1;
     const basePath = depth === 1 ? './' : '../'.repeat(depth - 1);
     const hamburgerIcon = document.getElementById('hamburger-icon');
+
     if (hamburgerIcon) {
         hamburgerIcon.src = `${basePath}hamburger.svg`;
     }
 
-    // 确保工具链接仅在小屏幕上显示
-    const toolsLink = document.getElementById('tools-link');
-    if (window.innerWidth <= 600) {
-        toolsLink.style.display = 'block';
-    } else {
-        toolsLink.style.display = 'none';
-    }
-
-    window.addEventListener('resize', function() {
-        if (window.innerWidth <= 600) {
-            toolsLink.style.display = 'block';
-        } else {
-            toolsLink.style.display = 'none';
-        }
-    });
-
-    // 确保工具链接仅在小屏幕上显示
-    const passwordLink = document.getElementById('password-link');
-    if (window.innerWidth <= 600) {
-        passwordLink.style.display = 'block';
-    } else {
-        passwordLink.style.display = 'none';
-    }
-
-    window.addEventListener('resize', function() {
-        if (window.innerWidth <= 600) {
-            passwordLink.style.display = 'block';
-        } else {
-            passwordLink.style.display = 'none';
-        }
-    });
-
+    const nav = document.getElementById('navbar');
+    const body = document.body;
+    
     document.querySelector('.hamburger').addEventListener('click', function() {
-        const nav = document.getElementById('navbar');
         nav.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
+        body.classList.toggle('menu-open');
 
-        // 切换图标
-        this.classList.toggle('active');
+        // Toggle icon
         if (this.classList.contains('active')) {
-            this.innerHTML = `<img src="${basePath}delete.svg" alt="Close Menu" />`; // 替换为 delete.svg
+            this.innerHTML = `<img src="${basePath}delete.svg" alt="Close Menu" />`; // Replace with delete.svg
         } else {
-            this.innerHTML = `<img src="${basePath}hamburger.svg" alt="Menu" />`; // 汉堡包
+            this.innerHTML = `<img src="${basePath}hamburger.svg" alt="Menu" />`; // Hamburger icon
         }
 
-        // 移动端显示联系方式和社交媒体图标
+        // Mobile contact info and social icons handling
         let contactInfo = document.querySelector('.contact-info');
         let socialIcons = document.querySelector('.social-icons');
 
@@ -67,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             contactInfo = document.createElement('div');
             contactInfo.classList.add('contact-info');
             contactInfo.innerHTML = `<p>版權所有 © 2024 AibaGogetsuhan</p>`;
-            document.body.appendChild(contactInfo); // 将 contactInfo 添加到 body
+            document.body.appendChild(contactInfo); // Append contactInfo to body
         }
 
         if (!socialIcons) {
@@ -84,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="${basePath}contact/discord-icon.svg" alt="Discord">
                 </a>
             `;
-            document.body.appendChild(socialIcons); // 将 socialIcons 添加到 body
+            document.body.appendChild(socialIcons); // Append socialIcons to body
         }
 
         if (!nav.classList.contains('active')) {
@@ -92,6 +54,29 @@ document.addEventListener('DOMContentLoaded', function() {
             if (socialIcons) socialIcons.remove();
         }
     });
+
+    const toolsLink = document.getElementById('tools-link');
+    const passwordLink = document.getElementById('password-link');
+
+    // Ensure tool links only display on small screens
+    if (window.innerWidth <= 600) {
+        toolsLink.style.display = 'block';
+        passwordLink.style.display = 'block';
+    } else {
+        toolsLink.style.display = 'none';
+        passwordLink.style.display = 'none';
+    }
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= 600) {
+            toolsLink.style.display = 'block';
+            passwordLink.style.display = 'block';
+        } else {
+            toolsLink.style.display = 'none';
+            passwordLink.style.display = 'none';
+        }
+    });
+
     const categorySelect = document.querySelector('.dropdownblue');
     if (categorySelect) {
         categorySelect.addEventListener('click', function() {
@@ -104,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
 
 document.getElementById('message-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -121,16 +105,15 @@ document.getElementById('message-form').addEventListener('submit', function(even
         },
         body: JSON.stringify(data)
     }).then(() => {
-        loadMessages(); // 重新加載留言
-        event.target.reset(); // 清空表單
+        loadMessages(); // Reload messages
+        event.target.reset(); // Clear the form
     });
 });
-
 
 function loadMessages() {
     fetch('/api/messages').then(response => response.json()).then(messages => {
         const messagesList = document.getElementById('messages-list');
-        messagesList.innerHTML = ''; // 清空現有留言
+        messagesList.innerHTML = ''; // Clear existing messages
         messages.forEach(message => {
             const li = document.createElement('li');
             li.textContent = `${message.username}: ${message.content}`;
@@ -139,6 +122,4 @@ function loadMessages() {
     });
 }
 
-loadMessages(); // 初始加載留言
-
-
+loadMessages(); // Initial load of messages

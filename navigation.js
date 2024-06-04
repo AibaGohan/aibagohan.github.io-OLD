@@ -104,8 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
         let cursorX = 0, cursorY = 0;
 
         const updateCursorPosition = () => {
-            magicPointer.style.left = `${mouseX}px`;
-            magicPointer.style.top = `${mouseY}px`;
+            const scrollX = window.scrollX;
+            const scrollY = window.scrollY;
+            magicPointer.style.left = `${mouseX + scrollX}px`;
+            magicPointer.style.top = `${mouseY + scrollY}px`;
         };
 
         document.addEventListener('mousemove', (e) => {
@@ -117,8 +119,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('scroll', updateCursorPosition);
 
         function animateCursor() {
-            cursorX += (mouseX - cursorX) * 0.175;
-            cursorY += (mouseY - cursorY) * 0.175;
+            const scrollX = window.scrollX;
+            const scrollY = window.scrollY;
+            cursorX += (mouseX + scrollX - cursorX) * 0.175;
+            cursorY += (mouseY + scrollY - cursorY) * 0.175;
 
             magicMouseCursor.style.left = `${cursorX}px`;
             magicMouseCursor.style.top = `${cursorY}px`;

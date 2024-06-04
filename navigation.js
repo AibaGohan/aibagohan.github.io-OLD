@@ -130,6 +130,24 @@ document.addEventListener('DOMContentLoaded', function() {
             requestAnimationFrame(animateCursor);
         }
 
+        // Initialize the cursor position at the mouse's current position
+        const initCursor = () => {
+            const initialX = window.innerWidth / 2;
+            const initialY = window.innerHeight / 2;
+
+            mouseX = initialX;
+            mouseY = initialY;
+
+            cursorX = initialX;
+            cursorY = initialY;
+
+            magicPointer.style.left = `${initialX}px`;
+            magicPointer.style.top = `${initialY}px`;
+            magicMouseCursor.style.left = `${initialX}px`;
+            magicMouseCursor.style.top = `${initialY}px`;
+        };
+
+        initCursor();
         animateCursor();
 
         document.querySelectorAll('a, button, .hover-effect').forEach((el) => {
@@ -167,6 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
 
 document.getElementById('message-form').addEventListener('submit', function(event) {
     event.preventDefault();

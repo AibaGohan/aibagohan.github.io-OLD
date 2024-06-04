@@ -862,10 +862,10 @@ img {
 }
 
 .magicMouseCursor.hover {
-    width: 60px;
-    height: 60px;
-    margin-left: -30px;
-    margin-top: -30px;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
 }
 
 .magicPointer {
@@ -1026,6 +1026,10 @@ img {
 
     body {
         cursor: auto;
+    }
+
+    a, button, input[type="button"], input[type="submit"] {
+        cursor: pointer;
     }
 
     .center-content img {
@@ -1257,6 +1261,9 @@ img {
 
 @media (min-width: 601px) {
     body {
+        cursor: none;
+    }
+    a, button, input[type="button"], input[type="submit"] {
         cursor: none;
     }
     .category-select, .dropdownblue {

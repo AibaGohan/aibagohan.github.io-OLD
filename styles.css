@@ -59,13 +59,22 @@ a, button, input[type="button"], input[type="submit"] {
 header {
     color: #3b392c;
     text-align: center;
-    padding: 5px 0px 5px 0px;
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 35px 20px 0px 20px;
 }
 
 nav {
     text-align: center;
     padding: 0px 0px 20px 0px;
     margin: 0;
+    display: flex;
+    align-items: flex-end; /* Ensure the buttons are aligned at the bottom */
+    padding-bottom: 10px !important; /* Optional: adjust padding to fine-tune spacing */
+    margin-left: auto; /* Push the nav to the right */
 }
 
 
@@ -76,6 +85,7 @@ nav a {
     padding: 5px 7.5px;
     margin: 0;
     font-weight: 400;
+    margin: 0 2px !important; /* Increase the horizontal spacing between buttons */
 }
 
 nav a:hover {
@@ -93,6 +103,20 @@ nav a:nth-child(2):hover { background-color: rgb(124, 178, 253); }
 nav a:nth-child(3):hover { background-color: rgb(255, 177, 104); }
 nav a:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
+nav a:hover {
+    background-color: rgb(255, 177, 104) !important;
+}
+
+.linehead {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #3b392c;
+}
+
+.logo {
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 
 /* 次级菜单设置 */
 .dropdown {
@@ -190,10 +214,10 @@ ul{
 
 .title-link {
     text-align: center;
-    padding: 20px 10px;  /* 应用于整个 div，确保边框有足够的空间 */
-    border-top: 1.5px solid #3b392c;
+    padding: 0px 10px 20px 10px;  /* 应用于整个 div，确保边框有足够的空间 */
     border-bottom: 1.5px solid #3b392c;
     margin-bottom: 40px;
+    margin-top: 0px;
 }
 
 .title-link h2 {
@@ -378,6 +402,10 @@ ul{
 .b:hover {
     color: black;
     background-color: rgb(245, 153, 160);
+}
+
+.b:hover {
+    background-color: rgb(255, 177, 104) !important;
 }
 
 /* Additional hover colors for different links */
@@ -973,6 +1001,18 @@ img {
 
 }
 
+@media (max-width: 745px) {
+    .logo {
+        width: 245px; /* Adjust the size as needed for smaller screens */
+    }
+}
+
+@media (max-width: 700px) {
+    .logo {
+        width: 160px; /* Adjust the size as needed for smaller screens */
+    }
+}
+
 
 @media (max-width: 685px) {
     .category {
@@ -986,11 +1026,15 @@ img {
 
 
 @media (max-width: 600px) {
+    .logo {
+        width: 160px; /* Adjust the size as needed for smaller screens */
+    }
+
     header {
         display: flex; /* 使用Flex布局 */
         justify-content: space-between; /* 左右布局 */
         align-items: center; /* 垂直居中 */
-        padding: 5px 10px; /* 调整内边距 */
+        padding: 30px 20px 7px 20px !important;
     }
 
     header h1{
@@ -1084,14 +1128,16 @@ img {
     #navbar {
         display: none; /* 默认隐藏导航栏 */
         flex-direction: column; /* 垂直排列导航项 */
-        padding-top: 20px;
-        width: 100%; /* 宽度100% */
+        padding-top: 16px !important;
+        width: 100vw; /* Ensure the navbar takes full viewport width */
         height: 100%;
-        top: 84px; /* 从顶部开始的位置，调整以适应你的页眉高度 */
+        top: 88px !important; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
-        background-color: #faf4e4; /* 设置背景色与页面背景一致 */
         z-index: 1000; /* 确保在最前面 */
         position: absolute; /* 用绝对定位 */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        padding-left: 20px;
+        padding-right: 20px;
         justify-content: start;
         text-align: center;
         position: fixed; 
@@ -1112,6 +1158,9 @@ img {
         margin-left: 20px;
         margin-right: 20px;
         text-decoration: none;
+        width: 100%; /* Full width plus 40px for left and right padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+        margin: 0; /* Remove auto margin to prevent centering */
     }
 
     #navbar a:last-child {
@@ -1120,6 +1169,9 @@ img {
 
     #navbar.active {
         display: flex; /* 当菜单打开时显示 */
+        flex-direction: column;
+        width: 100%;
+        left: 0;
     }
 
     #tools-link, #dice-link, #password-link {

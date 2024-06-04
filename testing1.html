@@ -25,10 +25,52 @@
     color: #fdf9ed; /* White text for contrast and readability */
     }
 
+    header {
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 30px 20px 0px 20px;
+    }
+
+    nav {
+    display: flex;
+    align-items: flex-end; /* Ensure the buttons are aligned at the bottom */
+    padding-bottom: 10px; /* Optional: adjust padding to fine-tune spacing */
+    margin-left: auto; /* Push the nav to the right */
+    }
+
+    nav a {
+    margin: 0 2px; /* Increase the horizontal spacing between buttons */
+    }
+
+    .linehead {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    }
+
+    .logo {
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    }
+    
+    @media (max-width: 745px) {
+        .logo {
+            width: 250px; /* Adjust the size as needed for smaller screens */
+        }
+    }
+    @media (max-width: 700px) {
+        .logo {
+            width: 175px; /* Adjust the size as needed for smaller screens */
+        }
+    }
 </style>
 <body>
-    <header style="margin-top: 30px;">
-        <img src="top.svg" alt="logo">
+    <header>
+        <img src="top.svg" alt="logo" class="logo">
         <button class="hamburger" aria-label="Open Menu"><img src="hamburger.svg" alt="Menu" /></button>
         <nav id="navbar">
             <a href="/">本站簡介</a>
@@ -40,6 +82,7 @@
             <a href="/password" id="password-link">第四面牆</a>
         </nav>
     </header>
+    <section id="about"><div class="linehead"></div></section>
     <script src="navigation.js"></script>
     <section id="warning">
     <div class="warning">

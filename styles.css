@@ -840,6 +840,63 @@ img {
     height: auto;
 }
 
+/* Cursor Magic Mouse Styles */
+.magicMouseCursor,
+.magicPointer {
+    display: block;
+}
+
+.magicMouseCursor {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.1s, height 0.1s, margin 0.1s, background-color 0.1s;
+    z-index: 9999;
+    mix-blend-mode: hard-light;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    background-color: transparent;
+    border: 1px solid #3b392c;
+}
+
+.magicMouseCursor.hover {
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.magicPointer {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
+.is-hover .magicMouseCursor {
+    width: 60px !important;
+    height: 60px !important;
+    margin-left: -30px !important;
+    margin-top: -30px !important;
+}
+
+.pointer-blur.is-hover .magicPointer {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.pointer-overlay.is-hover .magicPointer {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
 #tools-link {
     display: none;
 }
@@ -961,6 +1018,14 @@ img {
 
     ul {
         font-size: 1.05rem;
+    }
+
+    .magicMouseCursor, .magicPointer {
+        display: none;
+    }
+
+    body {
+        cursor: auto;
     }
 
     .center-content img {
@@ -1191,6 +1256,9 @@ img {
 }
 
 @media (min-width: 601px) {
+    body {
+        cursor: none;
+    }
     .category-select, .dropdownblue {
         display: none;
     }

@@ -88,6 +88,63 @@ document.addEventListener('DOMContentLoaded', function() {
             dropdownArrow.src = isVisible ? '../../arrow-down.svg' : '../../arrow-up.svg';
         });
     }
+
+    // Cursor Magic Mouse Initialization
+    if (window.innerWidth > 600) {
+        const magicMouseCursor = document.createElement('div');
+        const magicPointer = document.createElement('div');
+
+        magicMouseCursor.classList.add('magicMouseCursor', 'default');
+        magicPointer.classList.add('magicPointer');
+
+        document.body.appendChild(magicMouseCursor);
+        document.body.appendChild(magicPointer);
+
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            magicPointer.style.left = `${mouseX}px`;
+            magicPointer.style.top = `${mouseY}px`;
+        });
+
+        function animateCursor() {
+            cursorX += (mouseX - cursorX) * 0.175;
+            cursorY += (mouseY - cursorY) * 0.175;
+
+            magicMouseCursor.style.left = `${cursorX}px`;
+            magicMouseCursor.style.top = `${cursorY}px`;
+
+            requestAnimationFrame(animateCursor);
+        }
+
+        animateCursor();
+
+        document.querySelectorAll('a, button, .hover-effect').forEach((el) => {
+            el.addEventListener('mouseover', () => {
+                magicMouseCursor.classList.add('hover');
+                magicPointer.classList.add('is-hover');
+            });
+            el.addEventListener('mouseout', () => {
+                magicMouseCursor.classList.remove('hover');
+                magicPointer.classList.remove('is-hover');
+            });
+        });
+
+        document.querySelectorAll('.no-cursor').forEach((el) => {
+            el.addEventListener('mouseenter', () => {
+                magicMouseCursor.style.opacity = 0;
+                magicPointer.style.opacity = 0;
+            });
+            el.addEventListener('mouseleave', () => {
+                magicMouseCursor.style.opacity = 1;
+                magicPointer.style.opacity = 1;
+            });
+        });
+    }
+
 });
 
 document.getElementById('message-form').addEventListener('submit', function(event) {

@@ -22,7 +22,7 @@ body {
 
 body.menu-open {
     overflow: hidden;
-    background: linear-gradient(to top right, #faf4e4, ##faf4e4), 
+    background: linear-gradient(to top right, #faf4e4, #faf4e4), 
                 url('bk.svg'), 
                 url('paper.png');
     background-repeat: no-repeat, repeat;

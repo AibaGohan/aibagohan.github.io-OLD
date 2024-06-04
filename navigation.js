@@ -21,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
             this.innerHTML = `<img src="${basePath}hamburger.svg" alt="Menu" />`; // Hamburger icon
         }
 
+        // Add or remove background class when menu is open
+        if (body.classList.contains('menu-open')) {
+            body.classList.add('menu-open');
+        } else {
+            body.classList.remove('menu-open');
+        }
+
         // Mobile contact info and social icons handling
         let contactInfo = document.querySelector('.contact-info');
         let socialIcons = document.querySelector('.social-icons');

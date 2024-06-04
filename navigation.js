@@ -139,19 +139,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Initialize the cursor position at the mouse's current position
         const initCursor = () => {
-            const initialX = window.innerWidth / 2;
-            const initialY = window.innerHeight / 2;
-
-            mouseX = initialX;
-            mouseY = initialY;
-
-            cursorX = initialX;
-            cursorY = initialY;
-
-            magicPointer.style.left = `${initialX}px`;
-            magicPointer.style.top = `${initialY}px`;
-            magicMouseCursor.style.left = `${initialX}px`;
-            magicMouseCursor.style.top = `${initialY}px`;
+            // Remove the initial centered positioning
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                cursorX = e.clientX;
+                cursorY = e.clientY;
+                magicPointer.style.left = `${e.clientX}px`;
+                magicPointer.style.top = `${e.clientY}px`;
+                magicMouseCursor.style.left = `${e.clientX}px`;
+                magicMouseCursor.style.top = `${e.clientY}px`;
+            }, { once: true });
         };
 
         initCursor();
@@ -187,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 magicPointer.classList.remove('text');
             }
         }
-        
+
         document.addEventListener('mousemove', handleTextCursor);
     }
 

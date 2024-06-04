@@ -58,7 +58,7 @@
     
     @media (max-width: 745px) {
         .logo {
-            width: 250px; /* Adjust the size as needed for smaller screens */
+            width: 245px; /* Adjust the size as needed for smaller screens */
         }
     }
     @media (max-width: 700px) {
@@ -76,20 +76,26 @@
         }
         header {
             align-items: center; /* Vertically align items in the center */
+            padding: 30px 20px 5px 20px !important;
         }
 
-        #navbar{
-            top: 94px;
-            padding-top: 10px;
+        #navbar {
+            top: 100px;
+            padding-top: 7px;
+            width: 100vw; /* Ensure the navbar takes full viewport width */
+            left: 0; /* Align the navbar to the left */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            position: absolute; /* Ensure the navbar is positioned relative to the viewport */
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         #navbar a {
-            width: calc(100% - 40px); /* Full width minus 40px for left and right padding */
-            padding: 15px 20px; /* 15px top/bottom padding, 20px left/right padding */
+            width: 100%; /* Full width plus 40px for left and right padding */
             border-top: 1px solid #3b392c;
             text-align: center; /* Center align text */
             box-sizing: border-box; /* Include padding in width calculation */
-            margin: 0 auto; /* Center the links */
+            margin: 0; /* Remove auto margin to prevent centering */
         }
 
         #navbar a:last-child {

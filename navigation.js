@@ -103,17 +103,18 @@ document.addEventListener('DOMContentLoaded', function() {
         let mouseX = 0, mouseY = 0;
         let cursorX = 0, cursorY = 0;
 
+        const updateCursorPosition = () => {
+            magicPointer.style.left = `${mouseX}px`;
+            magicPointer.style.top = `${mouseY}px`;
+        };
+
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            magicPointer.style.left = `${mouseX}px`;
-            magicPointer.style.top = `${mouseY}px`;
+            updateCursorPosition();
         });
 
-        document.addEventListener('scroll', () => {
-            magicPointer.style.left = `${mouseX}px`;
-            magicPointer.style.top = `${mouseY}px`;
-        });
+        document.addEventListener('scroll', updateCursorPosition);
 
         function animateCursor() {
             cursorX += (mouseX - cursorX) * 0.175;

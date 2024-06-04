@@ -841,11 +841,6 @@ img {
 }
 
 /* Cursor Magic Mouse Styles */
-.magicMouseCursor,
-.magicPointer {
-    display: block;
-}
-
 .magicMouseCursor {
     position: absolute;
     border-radius: 50%;
@@ -862,17 +857,17 @@ img {
 }
 
 .magicMouseCursor.hover {
-    width: 70px;
-    height: 70px;
-    margin-left: -35px;
-    margin-top: -35px;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 .magicPointer {
     position: absolute;
     width: 6px;
     height: 6px;
-    background-color: black;
+    background-color: #3b392c;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -892,6 +887,7 @@ img {
 }
 
 .pointer-overlay.is-hover .magicPointer {
+    background-color: transparent !important;
     width: 30px !important;
     height: 30px !important;
 }
@@ -1023,15 +1019,6 @@ img {
     .magicMouseCursor, .magicPointer {
         display: none;
     }
-
-    body {
-        cursor: auto;
-    }
-
-    a, button, input[type="button"], input[type="submit"] {
-        cursor: pointer;
-    }
-
     .center-content img {
         margin-right: 6px;
         width: 14px; /* 小屏幕下的固定宽度 */
@@ -1260,12 +1247,6 @@ img {
 }
 
 @media (min-width: 601px) {
-    body {
-        cursor: none;
-    }
-    a, button, input[type="button"], input[type="submit"] {
-        cursor: none;
-    }
     .category-select, .dropdownblue {
         display: none;
     }

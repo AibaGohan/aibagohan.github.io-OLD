@@ -110,6 +110,13 @@ document.addEventListener('DOMContentLoaded', function() {
             magicPointer.style.top = `${mouseY}px`;
         });
 
+        document.addEventListener('scroll', () => {
+            magicPointer.style.left = `${mouseX}px`;
+            magicPointer.style.top = `${mouseY}px`;
+            magicMouseCursor.style.left = `${cursorX}px`;
+            magicMouseCursor.style.top = `${cursorY}px`;
+        });
+
         function animateCursor() {
             cursorX += (mouseX - cursorX) * 0.175;
             cursorY += (mouseY - cursorY) * 0.175;

@@ -1244,9 +1244,21 @@ img {
     .headerChar .line {
         margin-top: 15px;
     }
+    body {
+        cursor: auto;
+    }
+    a, button, input[type="button"], input[type="submit"] {
+        cursor: pointer;
+    }
 }
 
 @media (min-width: 601px) {
+    body {
+        cursor: none;
+    }
+    a, button, input[type="button"], input[type="submit"] {
+        cursor: none;
+    }
     .category-select, .dropdownblue {
         display: none;
     }

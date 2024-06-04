@@ -1,6 +1,36 @@
-<svg width="14" height="361" viewBox="0 0 14 361" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_138_403)">
-<line y1="-0.5" x2="361" y2="-0.5" transform="matrix(0 -1 -1 0 0.501953 361.005)" stroke="#3B392C" stroke-opacity="0.33"/>
+<svg width="14" height="451" viewBox="0 0 14 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_141_36)">
+<line y1="-0.5" x2="451" y2="-0.5" transform="matrix(0 -1 -1 0 0.501953 451.005)" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="450.5" x2="6" y2="450.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="447.5" x2="6" y2="447.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="444.5" x2="6" y2="444.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="441.5" x2="6" y2="441.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="438.5" x2="6" y2="438.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="435.5" x2="6" y2="435.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="432.5" x2="6" y2="432.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="429.5" x2="6" y2="429.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="426.5" x2="6" y2="426.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="423.5" x2="6" y2="423.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="420.5" x2="6" y2="420.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="417.5" x2="6" y2="417.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="414.5" x2="6" y2="414.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="411.5" x2="6" y2="411.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="408.5" x2="6" y2="408.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="405.5" x2="6" y2="405.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="402.5" x2="6" y2="402.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="399.5" x2="6" y2="399.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="396.5" x2="6" y2="396.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="393.5" x2="6" y2="393.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="390.5" x2="6" y2="390.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="387.5" x2="6" y2="387.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="384.5" x2="6" y2="384.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="381.5" x2="6" y2="381.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="378.5" x2="6" y2="378.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="375.5" x2="6" y2="375.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="372.5" x2="6" y2="372.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="369.5" x2="6" y2="369.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="366.5" x2="6" y2="366.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="3" y1="363.5" x2="6" y2="363.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="3" y1="360.5" x2="6" y2="360.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="3" y1="357.5" x2="6" y2="357.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="3" y1="354.5" x2="6" y2="354.5" stroke="#3B392C" stroke-opacity="0.33"/>
@@ -122,6 +152,7 @@
 <line x1="3" y1="6.5" x2="6" y2="6.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="3" y1="3.5" x2="6" y2="3.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="3" y1="0.5" x2="6" y2="0.5" stroke="#3B392C" stroke-opacity="0.33"/>
+<line x1="8" y1="450.5" x2="14" y2="450.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="8" y1="360.5" x2="14" y2="360.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="8" y1="270.5" x2="14" y2="270.5" stroke="#3B392C" stroke-opacity="0.33"/>
 <line x1="8" y1="180.5" x2="14" y2="180.5" stroke="#3B392C" stroke-opacity="0.33"/>
@@ -129,8 +160,8 @@
 <line x1="8" y1="0.5" x2="14" y2="0.5" stroke="#3B392C" stroke-opacity="0.33"/>
 </g>
 <defs>
-<clipPath id="clip0_138_403">
-<rect width="361" height="14" fill="white" transform="matrix(0 -1 1 0 0 361)"/>
+<clipPath id="clip0_141_36">
+<rect width="451" height="14" fill="white" transform="matrix(0 -1 1 0 0 451)"/>
 </clipPath>
 </defs>
 </svg>

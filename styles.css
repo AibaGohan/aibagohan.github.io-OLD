@@ -1251,7 +1251,7 @@ img {
     .headerChar .line {
         margin-top: 15px;
     }
-    body {
+    body, footer {
         cursor: auto;
     }
     a, button, input[type="button"], input[type="submit"] {
@@ -1260,7 +1260,7 @@ img {
 }
 
 @media (min-width: 601px) {
-    body {
+    body, footer {
         cursor: none;
     }
     a, button, input[type="button"], input[type="submit"] {

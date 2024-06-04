@@ -64,9 +64,51 @@
     }
     @media (max-width: 700px) {
         .logo {
-            width: 175px; /* Adjust the size as needed for smaller screens */
+            width: 160px; /* Adjust the size as needed for smaller screens */
         }
     }
+
+    @media (max-width: 600px) {
+        .logo {
+            width: 160px; /* Adjust the size as needed for smaller screens */
+        }
+        .hamburger {
+            display: block;
+        }
+        header {
+            align-items: center; /* Vertically align items in the center */
+        }
+
+        #navbar{
+            top: 94px;
+            padding-top: 10px;
+        }
+
+        #navbar a {
+            width: calc(100% - 40px); /* Full width minus 40px for left and right padding */
+            padding: 15px 20px; /* 15px top/bottom padding, 20px left/right padding */
+            border-top: 1px solid #3b392c;
+            text-align: center; /* Center align text */
+            box-sizing: border-box; /* Include padding in width calculation */
+            margin: 0 auto; /* Center the links */
+        }
+
+        #navbar a:last-child {
+            border-bottom: 1px solid #3b392c;
+        }
+
+        #navbar a:hover {
+            background-color: rgb(245, 153, 160);
+            color: black;
+        }
+
+        #navbar.active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            left: 0;
+        }
+}
 </style>
 <body>
     <header>
@@ -138,6 +180,7 @@
             </p>
         </div>
     </section>
+    
     <script src="footer.js"></script>
 </body>
 </html>

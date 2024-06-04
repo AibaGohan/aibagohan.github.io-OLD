@@ -227,7 +227,7 @@ ul{
 
 .event-container {
     border-bottom: 1.5px solid #3b392c;
-    padding: 12px 0px 23px 0px;  /* 应用于整个 div，确保边框有足够的空间 */
+    padding: 10px 0px 22px 0px;  /* 应用于整个 div，确保边框有足够的空间 */
     margin-bottom: 40px;
 }
 

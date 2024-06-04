@@ -333,7 +333,6 @@ ul{
     padding-left: 8px;
     padding-right: 8px;
     color: #3b392c;
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -674,7 +673,6 @@ img {
 }
 
 .box-header {
-    cursor: pointer;
     padding: 10px 15px;
     font-size: 1.3rem;
     border: 1px solid #3b392c;

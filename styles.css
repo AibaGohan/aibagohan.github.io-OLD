@@ -727,7 +727,6 @@ img {
     border: 1px solid #3b392c;
     padding: 15px 0px;
     font-size: 1rem;
-    cursor: pointer;
     box-shadow: 5px 5px 0 #3b392c; /* shadow effect */
     display: inline-block;
     width: 388px; /* Fixed width for all buttons */

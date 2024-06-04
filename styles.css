@@ -478,7 +478,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     }
 
 .note {
-    background-color: white;
+    background-color: #fffcf5;
     break-inside: avoid; /* 防止note被分割到两列 */
     margin-bottom: 20px; /* 仅设置底部间距 */
     padding: 15px;

@@ -153,6 +153,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 magicPointer.style.opacity = 1;
             });
         });
+
+        function handleTextCursor(event) {
+            const element = document.elementFromPoint(event.clientX, event.clientY);
+            if (element && element.tagName === 'P') {
+                magicPointer.classList.add('text');
+            } else {
+                magicPointer.classList.remove('text');
+            }
+        }
+        
+        document.addEventListener('mousemove', handleTextCursor);
     }
 
 });

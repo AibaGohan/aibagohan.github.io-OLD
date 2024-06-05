@@ -12,6 +12,7 @@
     p {
         color: #666;
         line-height: 1.6;
+        margin: 0px !important;
     }
 
     .hover-effect:hover {
@@ -22,8 +23,127 @@
     .warning {
     background-color: none; /* Pinkish background color */
     background-color: #3b392c;
-    color: #fdf9ed; /* White text for contrast and readability */
+    color: #faf4e4; /* White text for contrast and readability */
     }
+
+/* Background text */
+.background-text {
+    position: absolute;
+    font-family: 'Oooh Baby', sans-serif;
+    color: #F47B32;
+    font-size: 1.45rem; /* Adjust size to be smaller */
+    z-index: -1; /* Make sure it stays in the background */
+    pointer-events: none; /* Make sure it doesn't interfere with mouse events */
+    top: 38px; /* Position it slightly below */
+    left: 40px; /* Position it slightly to the right */
+    transform: rotate(-4deg); /* Apply 3-degree tilt */
+    -webkit-text-stroke: 0.3px #F47B32; /* 添加1像素的文本描边 */
+}
+
+/* Section layout */
+.about-section {
+    position: relative;
+    padding: 5px 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content-box {
+    border: 1.5px solid #3b392c;
+    padding: 0px 20px 20px 20px;
+    margin: 10px auto; /* Center content-box with auto margins */
+    position: relative;
+    max-width: 800px; /* Maximum width for large screens */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure parent is relative for absolute positioning */
+    margin-bottom: 12px; /* Add margin to align with bottom of line */
+}
+
+.header-content h2 {
+    position: relative;
+    z-index: 1; /* Ensure it's above the background text */
+    margin: 12px 0px 0px 0px;
+}
+
+.header-content .details-button {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 200px; /* Set width to 200px */
+    height: 64px; /* Set height */
+    background-color: #3b392c;
+    color: #faf4e4;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Make it absolute to position it relative to content-box */
+    right: -20px; /* Align to the right edge of the content-box */
+    top: 0; /* Align with the top edge of the content-box */
+    bottom: -20px; /* Align with the bottom edge of the line (considering its negative margin) */
+}
+
+.header-content .details-button img {
+    margin-left: 5px; /* Add space between text and image */
+}
+
+.header-content .details-button:hover {
+    background-color: #F47B32;
+}
+
+.line {
+    height: 1px;
+    background-color: #3b392c;
+    margin: 10px -20px; /* Extend to the edges of the content-box */
+}
+
+.text-content {
+    padding-top: 10px;
+    line-height: 1.80;
+    font-size: 1.15rem;
+    font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+@media (max-width: 600px) {
+    .background-text {
+    font-size: 1.35rem; /* Adjust size to be smaller */
+    -webkit-text-stroke: 0.4px #F47B32; /* 添加1像素的文本描边 */
+    }
+    .header-content .details-button {
+    width: 150px;
+    height: 62px;
+    }
+}
+
+@media (max-width: 400px) {
+    .background-text {
+    font-size: 1.20rem; /* Adjust size to be smaller */
+    -webkit-text-stroke: 0.5px #F47B32; /* 添加1像素的文本描边 */
+    }
+    .header-content .details-button {
+    width: 135px;
+    height: 62px;
+    }
+    .header-content h2 {
+    font-size: 1.55rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-content .details-button {
+        width: 120px;
+        font-size: 0.9rem;
+    }
+    .header-content .details-button img {
+        width: 20px;
+        height: auto;
+    }
+}
 
 </style>
 <body>
@@ -43,60 +163,56 @@
     <section id="about" style="margin-top: 0px;"><div class="linehead"></div></section>
     <script src="navigation.js"></script>
     <section id="warning">
-    <div class="warning">
-        <div class="center-content">
-            <img src="notice.svg" alt="Warning Icon">
-            <span>推薦使用電腦等大屏設備閱讀本站</span>
-        </div>
-    </div>
-    </section>
-    <section id="about" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="/about" class="b">
-                    <span class="link-with-arrow">
-                        這裡是哪裡？<img src="arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
-            <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>站主用來儲存過往撰寫的人設和那些不適合公開發布的古怪言論的自留地，草泥馬的百度貼吧再吞就跟你拼了。
-                <br>站主前端從零學起，沒借助任何模板全靠chatgpt及海量教程苦撐到底，本站能正常運行已屬不易，<s>既然能跑就別嫌不夠美觀</s>。
-                <br>Less is More，Content is King（＾ω＾）
-            </p>
+        <div class="warning">
+            <div class="center-content">
+                <img src="notice.svg" alt="Warning Icon">
+                <span>推薦使用電腦等大屏設備閱讀本站</span>
+            </div>
         </div>
     </section>
-    <section id="about" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="/about" class="b">
-                    <span class="link-with-arrow">
-                        站主係邊位？<img src="arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="about-website">
+        <div class="background-text">Purpose of this website?</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>這裡是哪裡？</h2>
+                <a href="/about" class="details-button link-with-arrow">更多详情 <img src="arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>一年前曾是生活西化的單親二孩量子力學博士後怨婦，現在是渣爹回鄉下找的二婚艷俗小媽。135反同246反異7參加光明會之後喝中藥調理。
-            </p>
+            <div class="text-content">
+                <p>站主用來儲存過往撰寫的人設和那些不適合公開發布的古怪言論的自留地，草泥馬的百度貼吧再吞就跟你拼了。
+                    <br>站主前端從零學起，沒借助任何模板全靠chatgpt及海量教程苦撐到底，本站能正常運行已屬不易，<s>既然能跑就別嫌不夠美觀</s>。
+                    <br>Less is More，Content is King（＾ω＾）
+                </p>
+            </div>
         </div>
     </section>
-    <section id="about" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                與站主溝通
-            </h2>
+    <section class="about-section" id="about-owner">
+        <div class="background-text">Who is the site owner?</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>站主係邊位？</h2>
+                <a href="/about" class="details-button link-with-arrow">更多详情 <img src="arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
+            <div class="text-content">
+                <p>一年前曾是生活西化的單親二孩量子力學博士後怨婦，現在是渣爹回鄉下找的二婚艷俗小媽。135反同246反異7參加光明會之後喝中藥調理。
+                </p>
+            </div>
         </div>
-        <div class="profile-contentHP">
-            <p>如果你有任何問題或建議，請點擊導航欄中的「假人慢打」獲得我的聯絡方式。
-            </p>
+    </section>
+    <section class="about-section" id="about-contact">
+        <div class="background-text">Get in touch with me</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>與站主溝通</h2>
+            </div>
+            <div class="line"></div>
+            <div class="text-content">
+                <p>如果你有任何問題或建議，請點擊導航欄中的「假人慢打」獲得我的聯絡方式。
+                </p>
+            </div>
         </div>
     </section>
     <script src="footer.js"></script>
 </body>
 </html>
-

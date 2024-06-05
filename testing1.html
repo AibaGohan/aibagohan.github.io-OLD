@@ -20,12 +20,63 @@
     color: black;
     }
 
-    .warning {
-    background-color: none; /* Pinkish background color */
-    background-color: #3b392c;
-    color: #faf4e4; /* White text for contrast and readability */
+    .warning-wrapper {
+    max-width: 840px;
+    box-sizing: border-box;
+    padding: 0px 20px 30px 20px;
+    margin-top: 0px;
+
     }
 
+.warning-container {
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: flex-start; /* 垂直方向上贴齐顶部 */
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0; /* 去除水平居中 */
+}
+
+.barcode-wrapper {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden; /* 确保超出部分被隐藏 */
+}
+
+.barcode {
+    height: 36px; /* 固定宽度 */
+    width: auto; /* 高度自动 */
+    flex-grow: 1; /* 允许条码横向扩展 */
+    object-fit: cover; /* 保持条码内容适应框 */
+    margin-left: 0; /* 贴左边 */
+}
+
+.warning {
+    padding: 8px 10px;
+    text-align: left; /* Align text to the left */
+    background-color: #3b392c;
+    color: #faf4e4;
+    margin-bottom: 0px;
+    width: 258px !important; /* 固定宽度 */
+    height: 36px !important; /* 固定高度 */
+}
+
+.warning .center-content {
+    display: flex;
+    align-items: center;
+    width: 238px !important; /* 固定宽度 */
+    height: 20px !important; /* 固定高度 */
+}
+
+.warning .center-content span {
+    font-size: 0.85rem; /* 或根据需要调整 */
+    font-weight: 200;
+}
+
+.warning .warning-icon {
+    margin-right: 10px; /* Add space between icon and text */
+    width: 14px;
+}
 /* Background text */
 .background-text {
     position: absolute;
@@ -90,7 +141,8 @@
 }
 
 .header-content .details-button img {
-    margin-left: 5px; /* Add space between text and image */
+    margin-left: 10px; /* Add space between text and image */
+    width: 28px;
 }
 
 .header-content .details-button:hover {
@@ -137,9 +189,14 @@
     -webkit-text-stroke: 0.4px #F47B32; /* 添加1像素的文本描边 */
     }
     .header-content .details-button {
-    width: 150px;
+    width: 145px;
     height: 62px;
     }
+    .header-content .details-button img {
+        width: 26px;
+        height: auto;
+    }
+
     .license-box {
         width: 150px;
     }
@@ -155,8 +212,13 @@
     -webkit-text-stroke: 0.5px #F47B32; /* 添加1像素的文本描边 */
     }
     .header-content .details-button {
-    width: 135px;
+    width: 130px;
     height: 62px;
+    }
+    .header-content .details-button img {
+        margin-left: 7.5px; /* Add space between text and image */
+        width: 24px;
+        height: auto;
     }
     .header-content h2 {
     font-size: 1.55rem;
@@ -172,6 +234,7 @@
         font-size: 0.9rem;
     }
     .header-content .details-button img {
+        margin-left: 5px; /* Add space between text and image */
         width: 20px;
         height: auto;
     }
@@ -199,13 +262,18 @@
             <a href="/password" id="password-link">第四面牆</a>
         </nav>
     </header>
-    <section id="about" style="margin-top: 0px;"><div class="linehead"></div></section>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px;"><div class="linehead"></div></section>
     <script src="navigation.js"></script>
-    <section id="warning">
-        <div class="warning">
-            <div class="center-content">
-                <img src="notice.svg" alt="Warning Icon">
-                <span>推薦使用電腦等大屏設備閱讀本站</span>
+    <section class="warning-wrapper">
+        <div class="warning-container">
+            <div class="barcode-wrapper">
+                <img src="barcode.svg" alt="Barcode" class="barcode">
+            </div>
+            <div class="warning">
+                <div class="center-content">
+                    <img src="notice.svg" alt="Warning Icon" class="warning-icon">
+                    <span>推薦使用電腦等大屏設備閱讀本站</span>
+                </div>
             </div>
         </div>
     </section>

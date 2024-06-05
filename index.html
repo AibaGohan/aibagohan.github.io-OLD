@@ -10,21 +10,10 @@
 </head>
 <style>
     p {
-        color: #666;
-        line-height: 1.6;
+        color: #555;
+        line-height: 1.6 !important;
+        margin: 0px !important;
     }
-
-    .hover-effect:hover {
-    background-color: rgb(255, 177, 104) !important;
-    color: black;
-    }
-
-    .warning {
-    background-color: none; /* Pinkish background color */
-    background-color: #3b392c;
-    color: #fdf9ed; /* White text for contrast and readability */
-    }
-
 </style>
 <body>
     <header>
@@ -40,60 +29,64 @@
             <a href="/password" id="password-link">第四面牆</a>
         </nav>
     </header>
-    <section id="about" style="margin-top: 0px;"><div class="linehead"></div></section>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px;"><div class="linehead"></div></section>
     <script src="navigation.js"></script>
-    <section id="warning">
-    <div class="warning">
-        <div class="center-content">
-            <img src="notice.svg" alt="Warning Icon">
-            <span>推薦使用電腦等大屏設備閱讀本站</span>
-        </div>
-    </div>
-    </section>
-    <section id="about" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="/about" class="b">
-                    <span class="link-with-arrow">
-                        這裡是哪裡？<img src="arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
-            <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>站主用來儲存過往撰寫的人設和那些不適合公開發布的古怪言論的自留地，草泥馬的百度貼吧再吞就跟你拼了。
-                <br>站主前端從零學起，沒借助任何模板全靠chatgpt及海量教程苦撐到底，本站能正常運行已屬不易，<s>既然能跑就別嫌不夠美觀</s>。
-                <br>Less is More，Content is King（＾ω＾）
-            </p>
+    <section class="warning-wrapper">
+        <div class="warning-container">
+            <div class="barcode-wrapper">
+                <img src="barcode.svg" alt="Barcode" class="barcode">
+            </div>
+            <div class="warning">
+                <div class="center-content">
+                    <img src="notice.svg" alt="Warning Icon" class="warning-icon">
+                    <span>建議使用電腦等大螢幕設備瀏覽本站</span>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="about" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="/about" class="b">
-                    <span class="link-with-arrow">
-                        站主係邊位？<img src="arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="about-website">
+        <div class="background-text">Purpose of this website?</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>這裡是哪裡？</h2>
+                <a href="/about" class="details-button link-with-arrow">更多详情 <img src="arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>一年前曾是生活西化的單親二孩量子力學博士後怨婦，現在是渣爹回鄉下找的二婚艷俗小媽。135反同246反異7參加光明會之後喝中藥調理。
-            </p>
+            <div class="text-content">
+                <p>站主用來存放過去撰寫的人設以及那些不適合公開發布的古怪言論的自留地，草泥馬的百度貼吧再吞就跟你拼了。
+                    <br>站主前端從零學起，沒借助任何模板全靠ChatGPT及海量教程苦撐到底，本站能正常運行已屬不易，<s>既然能跑就別嫌醜</s>。
+                    <br>Less is More，Content is King（＾ω＾）
+                </p>
+            </div>
         </div>
     </section>
-    <section id="about" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                與站主溝通
-            </h2>
+    <section class="about-section" id="about-owner">
+        <div class="background-text">Who is the site owner?</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>站主係邊位？</h2>
+                <a href="/about" class="details-button link-with-arrow">更多详情 <img src="arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
+            <div class="text-content">
+                <p>一年前曾是生活西化的單親二孩量子力學博士後怨婦，現在是渣爹回鄉下找的二婚艷俗小媽。135反同246反異7參加光明會之後喝中藥調理。
+                </p>
+            </div>
         </div>
-        <div class="profile-contentHP">
-            <p>如果你有任何問題或建議，請點擊導航欄中的「假人慢打」獲得我的聯絡方式。
-            </p>
+    </section>
+    <section class="about-section" id="about-contact">
+        <div class="background-text">Get in touch with me</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>與站主溝通</h2>
+                <div class="license-box">
+                    <img src="cclicenses.svg" alt="Licenses" class="license-icon">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="text-content">
+                <p>如果你有任何問題或建議，請點選導覽列中的「假人慢打」來取得站主的聯絡方式。</p>
+            </div>
         </div>
     </section>
     <script src="footer.js"></script>

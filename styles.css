@@ -478,13 +478,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     text-decoration: underline;
 }
 
-.warning {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px; /* 保持警告框底部间隔 */
-    text-align: center;
-    box-sizing: border-box;
-}
+
 
 .center-content {
     display: flex;
@@ -509,6 +503,169 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     border-radius: 0px; /* 圆角边框 */
     font-size: 0.9rem; /* 字体大小 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
+.warning {
+    padding: 8px 10px !important;
+    text-align: left !important; /* Align text to the left */
+    background-color: #3b392c;
+    color: #faf4e4;
+    margin-bottom: 0px !important;
+    width: 262px !important; /* 固定宽度 */
+    height: 36px !important; /* 固定高度 */
+    box-sizing: border-box;
+}
+
+.warning-wrapper {
+    max-width: 840px;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    margin-top: 0px !important;
+}
+
+.warning-container {
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: flex-start; /* 垂直方向上贴齐顶部 */
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0; /* 去除水平居中 */
+}
+
+.barcode-wrapper {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden; /* 确保超出部分被隐藏 */
+}
+
+.barcode {
+    height: 36px; /* 固定宽度 */
+    width: auto; /* 高度自动 */
+    flex-grow: 1; /* 允许条码横向扩展 */
+    object-fit: cover; /* 保持条码内容适应框 */
+    margin-left: 0; /* 贴左边 */
+}
+
+.warning .center-content {
+    display: flex;
+    align-items: center;
+    width: 242px !important; /* 固定宽度 */
+    height: 19px !important; /* 固定高度 */
+}
+
+.warning .center-content span {
+    font-size: 0.85rem; /* 或根据需要调整 */
+    font-weight: 300;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
+.warning .warning-icon {
+    margin-right: 10px; /* Add space between icon and text */
+    width: 14px;
+}
+
+/* Background text */
+.background-text {
+    position: absolute;
+    font-family: 'Oooh Baby', sans-serif;
+    color: #F47B32;
+    font-size: 1.45rem; /* Adjust size to be smaller */
+    z-index: -1; /* Make sure it stays in the background */
+    pointer-events: none; /* Make sure it doesn't interfere with mouse events */
+    top: 38px; /* Position it slightly below */
+    left: 40px; /* Position it slightly to the right */
+    transform: rotate(-4deg); /* Apply 3-degree tilt */
+    -webkit-text-stroke: 0.3px #F47B32; /* 添加1像素的文本描边 */
+}
+
+/* Section layout */
+.about-section {
+    position: relative;
+    padding: 5px 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content-box {
+    border: 1.5px solid #3b392c;
+    padding: 0px 20px 20px 20px;
+    margin: 10px auto; /* Center content-box with auto margins */
+    position: relative;
+    max-width: 800px; /* Maximum width for large screens */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure parent is relative for absolute positioning */
+    margin-bottom: 12px; /* Add margin to align with bottom of line */
+}
+
+.header-content h2 {
+    position: relative;
+    z-index: 1; /* Ensure it's above the background text */
+    margin: 12px 0px 0px 0px;
+}
+
+.header-content .details-button {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 200px; /* Set width to 200px */
+    height: 64px; /* Set height */
+    background-color: #3b392c;
+    color: #faf4e4;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    position: absolute; /* Make it absolute to position it relative to content-box */
+    right: -20px; /* Align to the right edge of the content-box */
+    top: 0; /* Align with the top edge of the content-box */
+    bottom: -20px; /* Align with the bottom edge of the line (considering its negative margin) */
+}
+
+.header-content .details-button img {
+    margin-left: 10px; /* Add space between text and image */
+    width: 28px;
+}
+
+.header-content .details-button:hover {
+    background-color: #F47B32;
+}
+
+.line {
+    height: 1px;
+    background-color: #3b392c;
+    margin: 10px -20px; /* Extend to the edges of the content-box */
+}
+
+.text-content {
+    padding-top: 10px;
+    line-height: 1.80;
+    font-size: 1.15rem;
+    font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
+.license-box {
+    width: 200px;
+    height: calc(100% + 10px); /* Extend the height to cover the line's margin */
+    border-left: 1px solid #3b392c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Align with the top edge of the header-content */
+    right: -20px; /* Offset by the content-box's padding */
+    bottom: 0; /* Align with the bottom edge of the header-content */
+    margin-bottom: -10px; /* Adjust to align with the bottom of the line */
+    padding-top: 2px;
+}
+
+.license-icon {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .notes-container {
@@ -1142,10 +1299,6 @@ img {
         margin-right: 0px;
     }
 
-    .warning{
-        font-size: 15px;
-    }
-
     .hamburger {
         display: block; /* 在小屏幕上显示汉堡菜单按钮 */
     }
@@ -1337,6 +1490,79 @@ img {
     }
     a, button, input[type="button"], input[type="submit"] {
         cursor: pointer;
+    }
+
+    .background-text {
+        font-size: 1.35rem; /* Adjust size to be smaller */
+        -webkit-text-stroke: 0.4px #F47B32; /* 添加1像素的文本描边 */
+    }
+    .header-content .details-button {
+        width: 145px;
+        height: 62px;
+    }
+    .header-content .details-button img {
+        width: 26px;
+        height: auto;
+    }
+    
+    .header-content{
+        height: 50px !important;
+    }
+    
+    .license-box {
+        width: 150px;
+    }
+    .license-icon {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .background-text {
+    font-size: 1.20rem; /* Adjust size to be smaller */
+    -webkit-text-stroke: 0.5px #F47B32; /* 添加1像素的文本描边 */
+    }
+    .header-content{
+        height: 48px !important;
+    }
+    .header-content .details-button {
+    width: 130px;
+    height: 60px;
+    }
+    .header-content .details-button img {
+        margin-left: 7.5px; /* Add space between text and image */
+        width: 24px;
+        height: auto;
+    }
+    .header-content h2 {
+        font-size: 1.55rem;
+    }
+    .license-box {
+        width: 135px;
+    }
+    p{
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-content .details-button {
+        width: 120px;
+        font-size: 0.9rem;
+        height: 60px;
+    }
+    .header-content .details-button img {
+        margin-left: 5px; /* Add space between text and image */
+        width: 20px;
+        height: auto;
+    }
+    .license-box {
+        width: 120px;
+    }
+    .license-icon {
+        max-width: 85%;
+        max-height: 85%;
     }
 }
 

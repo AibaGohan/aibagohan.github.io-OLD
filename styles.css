@@ -289,7 +289,7 @@ ul{
 
 .date {
     font-size: 1.15rem;
-    color: #888;
+    color: #777;
     line-height: 1.5;
     margin-top: 7.5px;
     margin-bottom: 2.5px;
@@ -401,7 +401,7 @@ ul{
 }
 
 .excerpt {
-    color: #666;
+    color: #555;
     font-size: 1.15rem;
     margin-top: 5px;
     line-height: 1.65;

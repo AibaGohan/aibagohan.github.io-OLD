@@ -479,7 +479,6 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 
-
 .center-content {
     display: flex;
     align-items: center;
@@ -506,13 +505,13 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .warning {
-    padding: 8px 10px !important;
-    text-align: left !important; /* Align text to the left */
+    padding: 8px 10px;
+    text-align: left; /* Align text to the left */
     background-color: #3b392c;
     color: #faf4e4;
-    margin-bottom: 0px !important;
-    width: 262px !important; /* 固定宽度 */
-    height: 36px !important; /* 固定高度 */
+    margin-bottom: 0px;
+    width: 262px; /* 固定宽度 */
+    height: 36px; /* 固定高度 */
     box-sizing: border-box;
 }
 
@@ -549,8 +548,8 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .warning .center-content {
     display: flex;
     align-items: center;
-    width: 242px !important; /* 固定宽度 */
-    height: 19px !important; /* 固定高度 */
+    width: 242px; /* 固定宽度 */
+    height: 19px; /* 固定高度 */
 }
 
 .warning .center-content span {
@@ -575,7 +574,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     top: 38px; /* Position it slightly below */
     left: 40px; /* Position it slightly to the right */
     transform: rotate(-4deg); /* Apply 3-degree tilt */
-    -webkit-text-stroke: 0.3px #F47B32; /* 添加1像素的文本描边 */
+    -webkit-text-stroke: 0.35px #F47B32; /* 添加1像素的文本描边 */
 }
 
 /* Section layout */
@@ -1516,6 +1515,10 @@ img {
         max-width: 90%;
         max-height: 90%;
     }
+
+    .warning-wrapper {
+        padding-bottom: 15px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1540,9 +1543,6 @@ img {
     }
     .license-box {
         width: 135px;
-    }
-    p{
-        font-size: 1rem !important;
     }
 }
 

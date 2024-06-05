@@ -10,42 +10,26 @@
 </head>
 <style>
     p {
-        color: #666;
-        line-height: 1.6;
-    }
-
-    .hover-effect:hover {
-    background-color: rgb(255, 177, 104);
-    color: black;
-    }
-
-    .b:hover {
-    color: black;
-    background-color: rgb(255, 177, 104);
+        color: #555;
+        line-height: 1.6 !important;
+        margin: 0px !important;
     }
 
     .warning {
-    background-color: none; /* Pinkish background color */
-    background-color: #3b392c;
-    color: #fdf9ed; /* White text for contrast and readability */
+        width: 294px !important; /* 固定宽度 */
+        height: 36px !important; /* 固定高度 */
     }
 
-    /* 保持背景颜色 */
-    nav a:nth-child(3):hover, .dropdown:hover > a.dropdown-toggle {
-        background-color: rgb(255, 177, 104);
-    }
-    .dropdown-menu a:hover {
-        background-color: rgb(255, 177, 104); /* 次级菜单项目 hover 颜色 */
+    .warning .center-content {
+        width: 274px !important; /* 固定宽度 */
+        height: 19px !important; /* 固定高度 */
     }
 
-    .dropdown-menu a:nth-child(2):hover {
-        background-color: rgb(255, 177, 104);
+    @media (max-width: 400px) {
+        p{
+            font-size: 1rem !important;
+        }
     }
-
-    .dropdown-menu a:nth-child(4):hover {
-        background-color: rgb(255, 177, 104);
-    }
-
 </style>
 <body>
     <header>
@@ -61,119 +45,112 @@
             <a href="/password" id="password-link">第四面牆</a>
         </nav>
     </header>
-    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
-    <script src="../navigation.js"></script>
-    <section id="warning">
-        <div class="warning">
-            <div class="center-content">
-                <img src="../notice.svg" alt="Warning Icon">
-                <span>以下欄目內可能包含敏感內容，請自行斟酌閱讀</span>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px;"><div class="linehead"></div></section>
+    <script src="navigation.js"></script>
+    <section class="warning-wrapper">
+        <div class="warning-container">
+            <div class="barcode-wrapper">
+                <img src="../barcode.svg" alt="Barcode" class="barcode">
+            </div>
+            <div class="warning">
+                <div class="center-content">
+                    <img src="../notice.svg" alt="Warning Icon" class="warning-icon">
+                    <span>以下欄目可能包含敏感內容，請自行斟酌</span>
+                </div>
             </div>
         </div>
     </section>
-    <section id="treasure" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="../tools" class="b">
-                    <span class="link-with-arrow">
-                        龍的寶庫 <img src="../arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="Dragon-Hoard">
+        <div class="background-text">Dragon's Hoard</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>龍的寶庫</h2>
+                <a href="../tools" class="details-button link-with-arrow">點擊進入 <img src="../arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>站主從各地搜刮來的各種（寫人設用/文字創作用）實用網路資源的放置處。
-                <br>內含靈感產生器+人名生成器等工具。
-            </p>
+            <div class="text-content">
+                <p>站主從各地搜刮來的各種（寫人設用/文字創作用）實用網路資源的放置處。
+                    <br>內含靈感產生器+人名生成器等工具。
+                </p>
+            </div>
         </div>
     </section>
-    <section id="article" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="../dice" class="b">
-                    <span class="link-with-arrow">
-                        線上擲骰 <img src="../arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="Online-Dice-Roller">
+        <div class="background-text">Online Dice Roller</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>線上擲骰</h2>
+                <a href="../dice" class="details-button link-with-arrow">點擊進入 <img src="../arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>由屎山JavaScript撐起來的自製線上骰子工具。
-                <br>適合用於桌遊、RPG遊戲和決策困難時的隨機選擇。
-                <br>提供D2，D6，D8，D10，D12，D20，D100，以及自訂擲骰功能。
-            </p>
+            <div class="text-content">
+                <p>由屎山JavaScript撐起來的自製線上骰子工具。
+                    <br>適合用於桌遊、RPG遊戲和決策困難時的隨機選擇。
+                    <br>提供D2，D6，D8，D10，D12，D20，D100，以及自訂擲骰功能。
+                </p>
+            </div>
         </div>
     </section>
-    <section id="curated" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="../note/curated" class="b">
-                    <span class="link-with-arrow">
-                        五胖嚴選 <img src="../arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="Manga-Picks">
+        <div class="background-text">Site Owner's Picks</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>五胖嚴選</h2>
+                <a href="../note/curated" class="details-button link-with-arrow">點擊進入 <img src="../arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>真的有在認真推薦漫畫的一個欄目。
-                <br>只推薦漫畫是因為站主平時只有在看漫畫時才會廣泛涉獵不同類型。
-                <br>小說都在讀異世界廁紙，遊戲都在打種田或JRPG，動畫都在看子供向。
-            </p>
+            <div class="text-content">
+                <p>真的有在認真推薦漫畫的一個欄目。
+                    <br>只推薦漫畫是因為站主平時只有在看漫畫時才會廣泛涉獵不同類型。
+                    <br>小說都在讀異世界廁紙，遊戲都在打種田或JRPG，動畫都在看子供向。
+                </p>
+            </div>
         </div>
     </section>
-    <section id="article" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="../article" class="b">
-                    <span class="link-with-arrow">
-                        長篇大論 <img src="../arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="article">
+        <div class="background-text">In-Depth Blog Posts</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>長篇大論</h2>
+                <a href="../article" class="details-button link-with-arrow">點擊進入 <img src="../arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>本站明明是部落格站，但真正的網誌區為什麼被塞在這麼不起眼的小角落？
-                <br>人類觀察和學術殘渣等tag下的文章不可避免地會出現敏感鍵政內容，請自行斟酌閱讀。
-            </p>
+            <div class="text-content">
+                <p>本站明明是部落格站，但真正的網誌區為什麼被塞在這麼不起眼的小角落？
+                    <br>人類觀察和學術殘渣等tag下的文章不可避免地會出現敏感鍵政內容，請自行斟酌閱讀。
+                </p>
+            </div>
         </div>
     </section>
-    <section id="sehsehliam" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="../note/sehsehliam" class="b">
-                    <span class="link-with-arrow">
-                        閱後即焚 <img src="../arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="Sehsehliam">
+        <div class="background-text">Sehsehliam Section</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>閱後即焚</h2>
+                <a href="../note/sehsehliam" class="details-button link-with-arrow">點擊進入 <img src="../arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>該欄目內的发言大部分來自站主腦內飄過的幻想橋段、無意識的碎片化囈語以及一些下三濫的賠錢笑點，除了直接抱怨生活的內容外與現實的關聯度都不算特別大。
-                <br>但是人與人的電波頻段不盡相同，辨識過程中產生的雜音在特定節點有轉化為毒電波的可能。
-                <br>因此，若是連結內某些毫無分量的言語對您造成了困擾，站主向您道歉。請您點擊假人慢打欄目直抒胸臆，不要讓疑惑與不安積壓在心底。
-                <br>對於善意的關心，站主由衷地向您表示感謝，您的舉動帶來了珍貴的慰藉，在這方0和1構成的冰冷夜空中顯得溫暖而閃亮。
-            </p>
+            <div class="text-content">
+                <p>該欄目內的发言大部分來自站主腦內飄過的幻想橋段、無意識的碎片化囈語以及一些下三濫的賠錢笑點，除了直接抱怨生活的內容外與現實的關聯度都不算特別大。
+                    <br>但是人與人的電波頻段不盡相同，辨識過程中產生的雜音在特定節點有轉化為毒電波的可能。
+                    <br>因此，若是連結內某些毫無分量的言語對您造成了困擾，站主向您道歉。請您點擊假人慢打欄目直抒胸臆，不要讓疑惑與不安積壓在心底。
+                    <br>對於善意的關心，站主由衷地向您表示感謝，您的舉動帶來了珍貴的慰藉，在這方0和1構成的冰冷夜空中顯得溫暖而閃亮。
+                </p>
+            </div>
         </div>
     </section>
-    <section id="password" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>
-                <a href="../password" class="b">
-                    <span class="link-with-arrow">
-                        第四面牆 <img src="../arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
-                    </span>
-                </a>
-            </h2>
+    <section class="about-section" id="Password-Protected">
+        <div class="background-text">Password Protected</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>第四面牆</h2>
+                <a href="../password" class="details-button link-with-arrow">點擊進入 <img src="../arrow1.svg" alt="arrow" class="arrow-img"></a>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p>不思議なエリア
-            </p>
+            <div class="text-content">
+                <p>不思議なエリア
+                </p>
+            </div>
         </div>
     </section>
     <script src="/footer.js"></script>

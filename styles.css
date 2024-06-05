@@ -580,15 +580,15 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     border-color: rgb(76, 150, 252); /* Orange border for hovered page link */
     background-color: rgb(76, 150, 252);
     color: black; /* To ensure text color stays black */
-    border-color: rgb(255, 177, 104) !important; /* Orange border for hovered page link */
+    border-color: #ffa500 !important; /* Orange border for hovered page link */
     border-radius: 25px; /* Rounded border on hover */
-    background-color: rgb(255, 177, 104) !important;
+    background-color: #ffa500 !important;
 }
 
 .page-link.active {
     padding: 8px 15px 8px 15px;
     border: 1.5px solid rgb(76, 150, 252); /* Orange border for the active page link */
-    border: 1.5px solid rgb(255, 177, 104) !important; /* Orange border for the active page link */
+    border: 1.5px solid #ffa500 !important; /* Orange border for the active page link */
     color: black;
     border-radius: 25px; /* Rounded border for the active page */
     pointer-events: none; /* To prevent clicking on the active page number */

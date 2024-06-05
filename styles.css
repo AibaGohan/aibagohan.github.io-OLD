@@ -340,7 +340,7 @@ ul{
 
 .category-container {
     border: 1.5px solid #3b392c;
-    padding: 15px 20px;
+    padding: 15px 5px 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -351,7 +351,7 @@ ul{
 }
 
 .category {
-    color: #888;
+    color: #F47B32;
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
     font-size: 0.9em;
     font-weight: 500;

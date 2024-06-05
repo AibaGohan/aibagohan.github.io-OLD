@@ -104,7 +104,8 @@ nav a:nth-child(3):hover { background-color: rgb(255, 177, 104); }
 nav a:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 nav a:hover {
-    background-color: rgb(255, 177, 104) !important;
+    background-color: #F47B32 !important;
+    color: black;
 }
 
 .linehead {
@@ -365,7 +366,7 @@ ul{
 
 .category-items a:hover {
     background-color: rgb(76, 150, 252);
-    background-color: rgb(255, 177, 104) !important;
+    background-color: #F47B32 !important;
     color: black;
     padding-left: 8px;
     padding-right: 8px;
@@ -409,7 +410,7 @@ ul{
 }
 
 .b:hover {
-    background-color: rgb(255, 177, 104) !important;
+    background-color: #F47B32 !important;
 }
 
 /* Additional hover colors for different links */
@@ -424,7 +425,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 .c:hover {
     background-color: rgb(76, 150, 252);
-    background-color: rgb(255, 177, 104) !important;
+    background-color: #F47B32 !important;
     color:black;
 }
 
@@ -447,6 +448,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .e:hover {
     background-color: rgb(255, 177, 104);;
     color:black;
+    background-color: #F47B32 !important;
 }
 
 .article-link{
@@ -580,15 +582,15 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     border-color: rgb(76, 150, 252); /* Orange border for hovered page link */
     background-color: rgb(76, 150, 252);
     color: black; /* To ensure text color stays black */
-    border-color: #ffa500 !important; /* Orange border for hovered page link */
+    border-color: #F47B32 !important; /* Orange border for hovered page link */
     border-radius: 25px; /* Rounded border on hover */
-    background-color: #ffa500 !important;
+    background-color: #F47B32 !important;
 }
 
 .page-link.active {
     padding: 8px 15px 8px 15px;
     border: 1.5px solid rgb(76, 150, 252); /* Orange border for the active page link */
-    border: 1.5px solid #ffa500 !important; /* Orange border for the active page link */
+    border: 1.5px solid #F47B32 !important; /* Orange border for the active page link */
     color: black;
     border-radius: 25px; /* Rounded border for the active page */
     pointer-events: none; /* To prevent clicking on the active page number */
@@ -772,7 +774,7 @@ img {
 }
 
 .styled-button:hover, .styled-button-link:hover {
-    background-color: rgb(255, 177, 104); /* pink color on hover */
+    background-color: #F47B32; /* pink color on hover */
     color: black;
     border: 1px solid black;
     box-shadow: 5px 5px 0 black; /* shadow effect */

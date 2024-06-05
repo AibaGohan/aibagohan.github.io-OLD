@@ -256,7 +256,7 @@ ul{
 .tag1 {
     font-size: 1rem;
     display: inline-block;
-    color: rgb(255,123,0); /* 字体颜色 */
+    color: #F47B32; /* 字体颜色 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
     vertical-align: middle;
 }
@@ -365,6 +365,7 @@ ul{
 
 .category-items a:hover {
     background-color: rgb(76, 150, 252);
+    background-color: rgb(255, 177, 104) !important;
     color: black;
     padding-left: 8px;
     padding-right: 8px;
@@ -449,7 +450,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .article-link{
-    color: rgb(255,123,0);
+    color: #F47B32;
     text-decoration: none;
 }
 
@@ -579,15 +580,15 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     border-color: rgb(76, 150, 252); /* Orange border for hovered page link */
     background-color: rgb(76, 150, 252);
     color: black; /* To ensure text color stays black */
-    border-color: #F47B32 !important; /* Orange border for hovered page link */
+    border-color: rgb(255, 177, 104) !important; /* Orange border for hovered page link */
     border-radius: 25px; /* Rounded border on hover */
-    background-color: #F47B32 !important;
+    background-color: rgb(255, 177, 104) !important;
 }
 
 .page-link.active {
     padding: 8px 15px 8px 15px;
     border: 1.5px solid rgb(76, 150, 252); /* Orange border for the active page link */
-    border: 1.5px solid #F47B32 !important; /* Orange border for the active page link */
+    border: 1.5px solid rgb(255, 177, 104) !important; /* Orange border for the active page link */
     color: black;
     border-radius: 25px; /* Rounded border for the active page */
     pointer-events: none; /* To prevent clicking on the active page number */

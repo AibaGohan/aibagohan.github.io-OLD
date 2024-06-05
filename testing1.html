@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本格水冷</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .hover-effect:hover {
+    background-color: rgb(255, 177, 104) !important;
+    color: black;
+    }
+
+    .warning {
+    background-color: none; /* Pinkish background color */
+    background-color: #3b392c;
+    color: #fdf9ed; /* White text for contrast and readability */
+    }
+
+</style>
+<body>
+    <header>
+        <img src="top.svg" alt="logo" class="logo">
+        <button class="hamburger" aria-label="Open Menu"><img src="hamburger.svg" alt="Menu" /></button>
+        <nav id="navbar">
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">雜七雜八</a>
+            <a href="/contact">假人慢打</a>
+            <a href="/tools" id="tools-link">龍的寶庫</a>
+            <a href="/dice" id="dice-link">線上擲骰</a>
+            <a href="/password" id="password-link">第四面牆</a>
+        </nav>
+    </header>
+    <section id="about" style="margin-top: 0px;"><div class="linehead"></div></section>
+    <script src="navigation.js"></script>
+    <section id="warning">
+    <div class="warning">
+        <div class="center-content">
+            <img src="notice.svg" alt="Warning Icon">
+            <span>推薦使用電腦等大屏設備閱讀本站</span>
+        </div>
+    </div>
+    </section>
+    <section id="about" style="padding-top: 0.1px;">
+        <div class="headerHP">
+            <h2>
+                <a href="/about" class="b">
+                    <span class="link-with-arrow">
+                        這裡是哪裡？<img src="arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
+                    </span>
+                </a>
+            </h2>
+            <div class="line"></div>
+        </div>
+        <div class="profile-contentHP">
+            <p>站主用來儲存過往撰寫的人設和那些不適合公開發布的古怪言論的自留地，草泥馬的百度貼吧再吞就跟你拼了。
+                <br>站主前端從零學起，沒借助任何模板全靠chatgpt及海量教程苦撐到底，本站能正常運行已屬不易，<s>既然能跑就別嫌不夠美觀</s>。
+                <br>Less is More，Content is King（＾ω＾）
+            </p>
+        </div>
+    </section>
+    <section id="about" style="padding-top: 0.1px;">
+        <div class="headerHP">
+            <h2>
+                <a href="/about" class="b">
+                    <span class="link-with-arrow">
+                        站主係邊位？<img src="arrow.svg" style="height: auto; vertical-align: middle; margin-left: 0px; margin-right: 0;">
+                    </span>
+                </a>
+            </h2>
+            <div class="line"></div>
+        </div>
+        <div class="profile-contentHP">
+            <p>一年前曾是生活西化的單親二孩量子力學博士後怨婦，現在是渣爹回鄉下找的二婚艷俗小媽。135反同246反異7參加光明會之後喝中藥調理。
+            </p>
+        </div>
+    </section>
+    <section id="about" style="padding-top: 0.1px;">
+        <div class="headerHP">
+            <h2>
+                與站主溝通
+            </h2>
+            <div class="line"></div>
+        </div>
+        <div class="profile-contentHP">
+            <p>如果你有任何問題或建議，請點擊導航欄中的「假人慢打」獲得我的聯絡方式。
+            </p>
+        </div>
+    </section>
+    <script src="footer.js"></script>
+</body>
+</html>
+

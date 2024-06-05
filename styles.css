@@ -64,7 +64,7 @@ header {
     justify-content: space-between;
     max-width: 800px;
     margin: 0px auto;
-    padding: 35px 20px 0px 20px;
+    padding: 40px 20px 0px 20px;
 }
 
 nav {
@@ -1015,11 +1015,23 @@ img {
     .logo {
         width: 245px; /* Adjust the size as needed for smaller screens */
     }
+
+    nav a{
+        font-size: 1.15rem;
+    }
+
+    header{
+        padding: 30px 20px 0px 20px;
+    }
 }
 
 @media (max-width: 700px) {
     .logo {
         width: 160px; /* Adjust the size as needed for smaller screens */
+    }
+
+    nav a{
+        font-size: 1.10rem;
     }
 }
 
@@ -1162,7 +1174,6 @@ img {
     }
 
     #navbar a {
-        font-weight: 400;
         text-align: center; /* 居中导航链接 */
         padding: 15px; /* 增加填充 */
         border-top: 1px solid #3b392c; /* 添加顶部边框 */

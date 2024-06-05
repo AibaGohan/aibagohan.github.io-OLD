@@ -9,23 +9,45 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
     <style>
-        p {
-        color: #666;
-        line-height: 1.75;
-        font-size: 1.15rem;
-        }
+    p {
+        color: #555;
+        line-height: 1.6 !important;
+        margin: 0px !important;
+    }
 
-        .warning {
-        background-color: none; /* Pinkish background color */
-        background-color: #3b392c;
-        color: #fdf9ed; /* White text for contrast and readability */
+    .warning {
+        width: 276px !important; /* 固定宽度 */
+        height: 36px !important; /* 固定高度 */
+    }
+
+    .warning .center-content {
+        width: 256px !important; /* 固定宽度 */
+        height: 19px !important; /* 固定高度 */
+    }
+
+    @media (max-width: 600px) {
+        p{
+            font-size: 1.05rem !important;
         }
+        .text-content {
+            font-size: 1.05rem  !important;
+        }
+    }
+
+    @media (max-width: 400px) {
+        p{
+            font-size: 1rem !important;
+        }
+        .text-content {
+            font-size: 1rem !important;
+        }
+    }
 
         .socialmed-link {
-            color: #666; /* Set the text color to black */
+            color: #555; /* Set the text color to black */
             text-decoration: none; /* Removes underline from the link */
-            padding-top: 8px;
-            padding-bottom: 8px;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
 
         .socialmed-link:hover {
@@ -119,26 +141,33 @@
             <a href="/password" id="password-link">第四面牆</a>
         </nav>
     </header>
-    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px;"><div class="linehead"></div></section>
     <script src="../navigation.js"></script>
-    <section id="warning">
-        <div class="warning">
-            <div class="center-content">
-                <img src="../notice.svg" alt="Warning Icon">
-                <span>由於時區差異，站主可能無法即時回訊</span>
+    <section class="warning-wrapper">
+        <div class="warning-container">
+            <div class="barcode-wrapper">
+                <img src="../barcode.svg" alt="Barcode" class="barcode">
+            </div>
+            <div class="warning">
+                <div class="center-content">
+                    <img src="../notice.svg" alt="Warning Icon" class="warning-icon">
+                    <span>由於時區差異，站主可能無法即時回訊</span>
+                </div>
             </div>
         </div>
     </section>
-
-    <section id="contact" style="padding-top: 0.1px;">
-        <div class="headerHP">
-            <h2>連絡先
-            </h2>
+    <section class="about-section" id="contact">
+        <div class="background-text">My Contact Info</div>
+        <div class="content-box">
+            <div class="header-content">
+                <h2>連絡先</h2>
+                <div class="license-box">
+                    <img src="contact-icons.svg" alt="contact" class="contact-icon">
+                </div>
+            </div>
             <div class="line"></div>
-        </div>
-        <div class="profile-contentHP">
-            <p style="margin-bottom: 10px;">
-                <div class="contact-detailsSocial">
+            <div class="text-content">
+                <p><div class="contact-detailsSocial">
                     <img src="qq-icon.svg" alt="QQ" /> 
                     <a href="https://qm.qq.com/q/LV1tWyKKeQ" target="_blank" class="socialmed-link">1016070674</a>
                 </div>
@@ -149,8 +178,8 @@
                 <div class="contact-detailsSocial">
                     <img src="discord-icon.svg" alt="Discord" /> 
                     <a href="https://discordapp.com/users/315194753757085697" target="_blank" class="socialmed-link">@ShortIslandBoilingTea</a>
-                </div>
-            </p>
+                </div></p>
+            </div>
         </div>
     </section>
     <script src="/footer.js"></script>

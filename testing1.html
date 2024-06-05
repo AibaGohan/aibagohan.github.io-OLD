@@ -97,6 +97,7 @@
     background-color: #F47B32;
 }
 
+
 .line {
     height: 1px;
     background-color: #3b392c;
@@ -109,6 +110,27 @@
     font-size: 1.15rem;
     font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
+
+.license-box {
+    width: 200px;
+    height: calc(100% + 10px); /* Extend the height to cover the line's margin */
+    border-left: 1px solid #3b392c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Align with the top edge of the header-content */
+    right: -20px; /* Offset by the content-box's padding */
+    bottom: 0; /* Align with the bottom edge of the header-content */
+    margin-bottom: -10px; /* Adjust to align with the bottom of the line */
+    padding-top: 2px;
+}
+
+.license-icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 @media (max-width: 600px) {
     .background-text {
     font-size: 1.35rem; /* Adjust size to be smaller */
@@ -117,6 +139,13 @@
     .header-content .details-button {
     width: 150px;
     height: 62px;
+    }
+    .license-box {
+        width: 150px;
+    }
+    .license-icon {
+        max-width: 90%;
+        max-height: 90%;
     }
 }
 
@@ -132,6 +161,9 @@
     .header-content h2 {
     font-size: 1.55rem;
     }
+    .license-box {
+        width: 135px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -142,6 +174,13 @@
     .header-content .details-button img {
         width: 20px;
         height: auto;
+    }
+    .license-box {
+        width: 120px;
+    }
+    .license-icon {
+        max-width: 85%;
+        max-height: 85%;
     }
 }
 
@@ -180,7 +219,7 @@
             <div class="line"></div>
             <div class="text-content">
                 <p>站主用來儲存過往撰寫的人設和那些不適合公開發布的古怪言論的自留地，草泥馬的百度貼吧再吞就跟你拼了。
-                    <br>站主前端從零學起，沒借助任何模板全靠chatgpt及海量教程苦撐到底，本站能正常運行已屬不易，<s>既然能跑就別嫌不夠美觀</s>。
+                    <br>站主前端從零學起，沒借助任何模板全靠chatgpt及海量教程苦撐到底，本站能正常運行已屬不易，<s>既然能跑就別嫌醜</s>。
                     <br>Less is More，Content is King（＾ω＾）
                 </p>
             </div>
@@ -205,11 +244,13 @@
         <div class="content-box">
             <div class="header-content">
                 <h2>與站主溝通</h2>
+                <div class="license-box">
+                    <img src="cclicenses.svg" alt="Licenses" class="license-icon">
+                </div>
             </div>
             <div class="line"></div>
             <div class="text-content">
-                <p>如果你有任何問題或建議，請點擊導航欄中的「假人慢打」獲得我的聯絡方式。
-                </p>
+                <p>如果你有任何問題或建議，請點擊導航欄中的「假人慢打」獲得我的聯絡方式。</p>
             </div>
         </div>
     </section>

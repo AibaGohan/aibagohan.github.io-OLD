@@ -295,6 +295,7 @@ ul{
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
     margin-right: 5px; /* 标签之间的间距 */
     background-color: rgb(76, 150, 252);
+    background-color: #F47B32 !important;
     color: #faf4e4; /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
@@ -307,8 +308,8 @@ ul{
     display: inline-block;
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
     margin-right: 9px; /* 标签之间的间距 */
-    border: 1.5px solid #999; 
-    color: #999; /* 字体颜色 */
+    border: 1.5px solid #666; 
+    color: #666; /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
@@ -320,8 +321,8 @@ ul{
     display: inline-block;
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
     margin-right: 6px; /* 标签之间的间距 */
-    background-color: rgb(0, 187, 178); 
-    color: #faf4e4; /* 字体颜色 */
+    background-color: #FFA500; 
+    color: #3b392c; /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
@@ -419,6 +420,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 .c:hover {
     background-color: rgb(76, 150, 252);
+    background-color: rgb(255, 177, 104) !important;
     color:black;
 }
 
@@ -571,15 +573,18 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .page-link:hover {
-    border-color: #FFA500; /* Orange border for hovered page link */
+    border-color: rgb(76, 150, 252); /* Orange border for hovered page link */
+    background-color: rgb(76, 150, 252);
     color: black; /* To ensure text color stays black */
+    border-color: #F47B32 !important; /* Orange border for hovered page link */
     border-radius: 25px; /* Rounded border on hover */
-    background-color: #FFA500;
+    background-color: #F47B32 !important;
 }
 
 .page-link.active {
     padding: 8px 15px 8px 15px;
-    border: 1.5px solid #FFA500; /* Orange border for the active page link */
+    border: 1.5px solid rgb(76, 150, 252); /* Orange border for the active page link */
+    border: 1.5px solid #F47B32 !important; /* Orange border for the active page link */
     color: black;
     border-radius: 25px; /* Rounded border for the active page */
     pointer-events: none; /* To prevent clicking on the active page number */

@@ -84,7 +84,7 @@ nav a {
     font-size: 1.20rem;
     padding: 5px 7.5px;
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 2px !important; /* Increase the horizontal spacing between buttons */
 }
 
@@ -1162,6 +1162,7 @@ img {
     }
 
     #navbar a {
+        font-weight: 400;
         text-align: center; /* 居中导航链接 */
         padding: 15px; /* 增加填充 */
         border-top: 1px solid #3b392c; /* 添加顶部边框 */

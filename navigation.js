@@ -128,8 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
         function animateCursor() {
             const scrollX = window.scrollX;
             const scrollY = window.scrollY;
-            cursorX += (mouseX + scrollX - cursorX) * 0.15;
-            cursorY += (mouseY + scrollY - cursorY) * 0.15;
+            cursorX += (mouseX + scrollX - cursorX) * 0.125;
+            cursorY += (mouseY + scrollY - cursorY) * 0.125;
 
             magicMouseCursor.style.left = `${cursorX}px`;
             magicMouseCursor.style.top = `${cursorY}px`;

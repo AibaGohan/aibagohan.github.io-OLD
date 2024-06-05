@@ -295,8 +295,9 @@ ul{
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
     margin-right: 5px; /* 标签之间的间距 */
     background-color: rgb(76, 150, 252);
-    background-color: #F47B32 !important;
-    color: #faf4e4; /* 字体颜色 */
+    background-color: transparent !important;
+    border: 1.5px solid #F47B32; 
+    color: #F47B32; /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
@@ -308,8 +309,8 @@ ul{
     display: inline-block;
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
     margin-right: 9px; /* 标签之间的间距 */
-    border: 1.5px solid #666; 
-    color: #666; /* 字体颜色 */
+    border: 1.5px solid #777; 
+    color: #777; /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
@@ -321,8 +322,10 @@ ul{
     display: inline-block;
     padding: 2px 10px; /* 添加一些内边距使标签更易读 */
     margin-right: 6px; /* 标签之间的间距 */
-    background-color: #FFA500; 
+    background-color: transparent; 
     color: #3b392c; /* 字体颜色 */
+    border: 1.5px solid #a76c00 !important; 
+    color: #a76c00; /* 字体颜色 */
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }

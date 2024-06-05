@@ -340,14 +340,14 @@ ul{
 
 .category-container {
     border: 1.5px solid #3b392c;
-    padding: 15px 5px 15px 20px;
+    padding: 12.5px 5px 12.5px 17.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 800px;
     width: 100%;
     box-sizing: border-box; /* Ensures the border is included in the max-width */
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 .category {
@@ -1316,7 +1316,7 @@ img {
         padding-top: 16px !important;
         width: 100vw; /* Ensure the navbar takes full viewport width */
         height: 100%;
-        top: 88px !important; /* 从顶部开始的位置，调整以适应你的页眉高度 */
+        top: 89px !important; /* 从顶部开始的位置，调整以适应你的页眉高度 */
         left: 0; /* 从左边界开始 */
         z-index: 1000; /* 确保在最前面 */
         position: absolute; /* 用绝对定位 */

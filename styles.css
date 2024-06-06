@@ -346,6 +346,10 @@ ul{
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
+.introduction{
+
+}
+
 .category-container {
     /*border: 1.5px solid #3b392c;*/
     background-color: #3b392c;
@@ -394,8 +398,7 @@ ul{
 .separator {
     margin-right: 2px;
     margin-left: 2px;
-    /* color: #3b392c; */
-    color: #faf4e4;
+    color: #3b392c;
     cursor: default; /* Ensures it doesn't show the pointer cursor */
     text-decoration: none;
 }
@@ -403,6 +406,20 @@ ul{
 .separator:hover {
     background-color: transparent; /* Ensures no background color change on hover */
 }
+
+.separatorchara {
+    margin-right: 2px;
+    margin-left: 2px;
+    color: #faf4e4;
+    cursor: default; /* Ensures it doesn't show the pointer cursor */
+    text-decoration: none;
+}
+
+.separatorchara:hover {
+    background-color: transparent; /* Ensures no background color change on hover */
+}
+
+
 .category-items span.active {
     /*border-bottom: 1px solid #3b392c;*/
     /* color: #3b392c; */

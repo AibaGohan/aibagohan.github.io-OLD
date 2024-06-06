@@ -60,7 +60,7 @@ a, button, input[type="button"], input[type="submit"] {
 
 ::selection {
     background: rgb(50 50 50);
-    color: white;
+    color: #faf4e4;
 }
 
 header {
@@ -1446,7 +1446,8 @@ img {
         color: #faf4e4;
         background-color: transparent;
         padding: 5.25px 16px;
-        font-size: 1rem;
+        height: 37px !important;
+        font-size: 0.95rem;
         cursor: pointer;
         width: 100%; /* 按钮宽度占据整个容器 */
         box-sizing: border-box; /* 确保 padding 包含在宽度内 */

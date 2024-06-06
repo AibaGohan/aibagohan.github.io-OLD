@@ -369,7 +369,7 @@ ul{
 .category-items {
     display: flex;
     align-items: center;
-    font-size: 0.9em;
+    font-size: 0.85em;
     text-decoration: none;
 }
 

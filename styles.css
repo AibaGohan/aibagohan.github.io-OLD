@@ -349,7 +349,7 @@ ul{
 .category-container {
     /*border: 1.5px solid #3b392c;*/
     background-color: #3b392c;
-    padding: 5.5px 5px 5.5px 17.5px;
+    padding: 5px 5px 5px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -357,7 +357,7 @@ ul{
     width: 100%;
     box-sizing: border-box; /* Ensures the border is included in the max-width */
     margin-top: 5px;
-    height: 38px !important;
+    height: 37px !important;
 }
 
 .category {
@@ -1428,7 +1428,7 @@ img {
         border: 1.5px solid #3b392c;
         color: #faf4e4;
         background-color: transparent;
-        padding: 5.5px 16px;
+        padding: 5.25px 16px;
         font-size: 1rem;
         cursor: pointer;
         width: 100%; /* 按钮宽度占据整个容器 */

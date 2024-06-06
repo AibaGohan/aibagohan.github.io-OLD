@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (socialIcons) socialIcons.remove();
         }
     });
+    
     const categorySelect = document.querySelector('.dropdownblue');
     if (categorySelect) {
         categorySelect.addEventListener('click', function() {
@@ -195,5 +196,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.addEventListener('mousemove', handleTextCursor);
     }
+
+    // 添加点击事件监听器
+    document.getElementById('logo').addEventListener('click', function() {
+        window.location.href = '/';
+    });
 
 });

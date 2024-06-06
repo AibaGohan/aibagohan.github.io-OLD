@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
         logo.addEventListener('mouseover', () => {
             magicMouseCursor.classList.add('hover');
             magicPointer.classList.add('is-hover');
-            logo.style.boxShadow = 'inset 0 0 0 2px #F47B32'; // 添加内边缘橙色边框
+            logo.style.boxShadow = 'inset 0 0 10px rgba(244, 123, 50, 1), 0 0 25px rgba(244, 123, 50, 0.75)'; // 添加内边缘橙色边框
         });
         logo.addEventListener('mouseout', () => {
             magicMouseCursor.classList.remove('hover');

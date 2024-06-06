@@ -957,7 +957,8 @@ img {
     flex-grow: 1;
     height: 1px;
     background-color: #999;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 

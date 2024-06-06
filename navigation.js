@@ -180,8 +180,14 @@ document.addEventListener('DOMContentLoaded', function() {
         function handleTextCursor(event) {
             const element = document.elementFromPoint(event.clientX, event.clientY);
             const textTags = ['P', 'S', 'LI', 'STRONG'];
-            if (element && textTags.includes(element.tagName)) {
-                magicPointer.classList.add('text');
+            const parentClasses = ['quote-section', 'excerpt'];
+            
+            if (element) {
+                if (textTags.includes(element.tagName) || parentClasses.some(className => element.closest('.' + className))) {
+                    magicPointer.classList.add('text');
+                } else {
+                    magicPointer.classList.remove('text');
+                }
             } else {
                 magicPointer.classList.remove('text');
             }

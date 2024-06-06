@@ -179,7 +179,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function handleTextCursor(event) {
             const element = document.elementFromPoint(event.clientX, event.clientY);
-            if (element && element.tagName === 'P') {
+            const textTags = ['P', 'S', 'LI', 'STRONG'];
+            if (element && textTags.includes(element.tagName)) {
                 magicPointer.classList.add('text');
             } else {
                 magicPointer.classList.remove('text');

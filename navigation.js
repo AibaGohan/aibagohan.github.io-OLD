@@ -167,6 +167,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
+        const logo = document.getElementById('logo');
+        logo.addEventListener('mouseover', () => {
+            magicMouseCursor.classList.add('hover');
+            magicPointer.classList.add('is-hover');
+            logo.style.boxShadow = 'inset 0 0 0 2px #F47B32'; // 添加内边缘橙色边框
+        });
+        logo.addEventListener('mouseout', () => {
+            magicMouseCursor.classList.remove('hover');
+            magicPointer.classList.remove('is-hover');
+            logo.style.boxShadow = 'none'; // 移除边框
+        });
+
         document.querySelectorAll('.no-cursor').forEach((el) => {
             el.addEventListener('mouseenter', () => {
                 magicMouseCursor.style.opacity = 0;

@@ -5,7 +5,6 @@
     font-style: normal;
 }
 
-
 body {
     font-family: 'Noto Serif SC', 'Noto Serif Japanese', 'Noto Serif TC', serif;
     margin: 0;
@@ -349,7 +348,7 @@ ul{
 
 .category-container {
     border: 1.5px solid #3b392c;
-    padding: 12.5px 5px 12.5px 17.5px;
+    padding: 4.5px 5px 4.5px 17.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -357,12 +356,13 @@ ul{
     width: 100%;
     box-sizing: border-box; /* Ensures the border is included in the max-width */
     margin-top: 5px;
+    height: 36px !important;
 }
 
 .category {
     color: #F47B32;
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 500;
 }
 
@@ -405,7 +405,7 @@ ul{
     text-decoration: none;
     margin-left: 8px;
     margin-right: 8px;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .excerpt {
@@ -583,7 +583,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     top: 38px; /* Position it slightly below */
     left: 40px; /* Position it slightly to the right */
     transform: rotate(-4deg); /* Apply 3-degree tilt */
-    -webkit-text-stroke: 0.35px #F47B32; /* 添加1像素的文本描边 */
+    -webkit-text-stroke: 0.4px #F47B32; /* 添加1像素的文本描边 */
 }
 
 /* Section layout */
@@ -1422,7 +1422,7 @@ img {
         border: 1.5px solid #3b392c;
         color: #3b392c;
         background-color: transparent;
-        padding: 14px 16px;
+        padding: 8px 16px;
         font-size: 1.05rem;
         cursor: pointer;
         width: 100%; /* 按钮宽度占据整个容器 */
@@ -1455,7 +1455,7 @@ img {
         color: #faf4e4;
         font-size: 1.15rem;
         font-family: 'Noto Sans', 'Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
-        padding: 14px;
+        padding: 12px;
         text-decoration: none;
         box-sizing: border-box; /* 确保 padding 包含在宽度内 */
         text-align: center; /* 水平居中对齐文本 */
@@ -1507,7 +1507,7 @@ img {
 
     .background-text {
         font-size: 1.35rem; /* Adjust size to be smaller */
-        -webkit-text-stroke: 0.4px #F47B32; /* 添加1像素的文本描边 */
+        -webkit-text-stroke: 0.55px #F47B32; /* 添加1像素的文本描边 */
     }
     .header-content .details-button {
         width: 145px;
@@ -1538,7 +1538,7 @@ img {
 @media (max-width: 400px) {
     .background-text {
     font-size: 1.20rem; /* Adjust size to be smaller */
-    -webkit-text-stroke: 0.5px #F47B32; /* 添加1像素的文本描边 */
+    -webkit-text-stroke: 0.65px #F47B32; /* 添加1像素的文本描边 */
     }
     .header-content{
         height: 48px !important;
